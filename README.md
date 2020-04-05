@@ -2,7 +2,6 @@
 
 <center>
 	<img align="center" src="https://manticoresearch.com/wp-content/uploads/2018/03/logo-manticore-h.svg">
-	<img align="center" src="https://dhdesign.be/wp-content/uploads/2019/02/logo-wordpress.png">
 </center>
 
 This project is a docker compose installation of a single site WordPress instance using Nginx as the web server, MySQL as the database and Manticore as the full-text engine.
