@@ -1,0 +1,844 @@
+/*
+* Plugin Name: Themeum Core
+* Plugin URI: http://www.themeum.com/item/core
+* Author: Themeum
+* Author URI: http://www.themeum.com
+* License - GNU/GPL V2 or Later
+* Description: Themeum Core is a required plugin for this theme.
+* Version: 1.0
+*/
+
+
+
+/* ---------------------------------- */
+/* ------ Celebrities Shortcode ----- */
+/* ---------------------------------- */
+.movie-celebrities .movie-celebrity{
+    margin-bottom: 20px;
+}
+.movie-celebrities .movie-celebrity-thumb{
+    margin-right: 20px;
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+}
+.movie-celebrities .movie-celebrity-info{
+    margin-top: 0;
+}
+.movie-celebrities .movie-celebrity-name a{
+	color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+.movie-celebrities .movie-celebrity-name small{
+    display: block;
+    font-size: 14px;
+    color: #888;
+    font-weight: 400;
+}
+.moview-common-layout.moview-celebrities-filters {
+  margin-top: 0;
+}
+
+.celebrity-filmography {
+  margin-top: 30px;
+}
+
+/* ---------------------------------- */
+/* ------ themeum title ----- */
+/* ---------------------------------- */
+
+.themeum-title {
+    padding-bottom: 20px;
+}
+
+.themeum-title.yes {
+    border-bottom: 1px solid;
+    border-color: #e5e5e5;
+    margin-bottom: 30px;
+}
+
+.themeum-title .style-title {
+    margin: 0;
+}
+
+.title-icon-style {
+    margin-right: 15px;  
+}
+
+.themeum-title .title-link {
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    color: #808080;    
+    margin-top: -25px;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+.themeum-title .title-link  i {
+    margin-left: 10px;
+}
+
+
+/* ---------------------------------- */
+/* ------ News Feed Shortcode ----- */
+/* ---------------------------------- */
+
+.news-feed .news-feed-item .news-feed-thumb {
+    float: left;
+    margin: 0 20px 0 0;
+    overflow: hidden;
+}
+.news-feed .leading-item .news-feed-item .news-feed-thumb {
+    margin-right: 0;
+    margin-bottom: 30px;
+    float: none;
+}
+.news-feed .news-feed-item .news-feed-thumb img {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    max-width: 120px;
+}
+.news-feed .leading-item .news-feed-item .news-feed-thumb img {
+    max-width: 100%;
+}
+.news-feed .news-feed-item:hover .news-feed-thumb img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.news-feed-item .news-feed-info .meta-category a{
+    font-size: 12px;
+    background: rgba(0,0,0,0.2);
+    padding: 5px 10px;
+    display: inline-block;
+    font-weight: 600;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    margin-right: 5px;
+}
+.news-feed-item .news-feed-info .meta-category a {
+    color: #fff;
+}
+.news-feed-item .news-feed-info {
+    line-height: 12px;
+}
+.news-feed-info .news-feed-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 24px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.news-feed-info .news-feed-title a {
+    color: #000;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;    
+}
+.news-feed-info .news-feed-title a:hover {
+    color: #868686;
+}
+.leading-item .news-feed-info .news-feed-title {
+    font-size: 24px;
+    line-height: 28px;
+}
+.news-feed-item .news-feed-meta {
+    font-size: 12px;
+    margin: 0;
+}
+.news-feed-item .news-feed-meta i {
+    font-size: 14px;
+    margin-left: 1px;
+}
+.news-feed-item .news-feed-meta>span {
+    display: inline-block;
+    margin: 5px;
+    margin-left: 10px;
+    color: #888;
+    font-size: 13px;
+    font-weight: 400;
+}
+.news-feed .news-feed-item {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+/***********************************
+    ********  Social Share 
+***********************************/
+
+.social-share-title{
+    font-weight: 600;
+    margin-right: 15px;
+    float: left;
+    font-size: 16px;
+    display: inline-block;
+}
+.social-shares a{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.social-shares a.facebook{ color: #0e76bc; }
+.social-shares a.twitter{ color: #25aae1; }
+.social-shares a.google{ color: #e33d33; }
+.social-shares a.pinterest{ color: #B91B22; }
+.social-shares a.linkedin{ color: #0077B5; }
+.facebook{ color: #0e76bc; }
+.twitter{ color: #25aae1; }
+.google{ color: #e33d33; }
+.pinterest{ color: #B91B22; }
+.linkedin{ color: #0077B5; }
+
+
+/* ---------------------------------- */
+/* ------Celebrity Single Page------- */
+/* ---------------------------------- */
+
+.moview-info-sidebar .moview-social-icon ul{
+    margin: 0px;
+}
+.moview-info-sidebar .moview-social-icon ul,
+.moview-info-sidebar .moview-social-icon ul>li{
+    display: inline-block;
+}
+.moview-info-sidebar .moview-social-icon ul>li a{
+    font-size: 18px;
+}
+.moview-info-sidebar .moview-social-icon span{
+    font-weight: 600;
+    display: inline-block;
+}
+.celebrity-filmography .header-title>span{
+    color: #2e3192;
+}
+.celebrity-filmography ul.movie-film-list>li{
+    clear: both;
+    overflow: hidden;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 15px 0;
+}
+.celebrity-filmography ul.movie-film-list>li p{
+    margin: 0;
+}
+.celebrity-filmography ul.movie-film-list>li.main-title{
+    font-weight: 600;
+}
+.celebrity-filmography ul.movie-film-list>li .details .img-warp{
+    width: 55px;
+    height: 65px;
+    margin-right: 20px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.celebrity-filmography ul.movie-film-list>li .details .movie-name{
+    color: #000;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.celebrity-filmography ul.movie-film-list>li .details .celebrity-movie-genres{
+    color: #828282;
+}
+.filmography-info{
+    display: inline-block;
+}
+.celebrity-filmography ul.movie-film-list{
+    font-weight: 400;
+}
+.celebrity-filmography ul.movie-film-list>li .movie-rating-wrap {
+    margin-top: 16px;
+}
+.movie-rating {
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.movie-rating span{
+    color: #ffc000;
+}
+
+/* ---------------------------------- */
+/* ------Recommed------- */
+/* ---------------------------------- */
+.recommend-movies .movie-details .movie-title a {
+    color: #000;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+/* ---------------------------------- */
+/* ------Featured Movie------- */
+/* ---------------------------------- */
+
+.movie-featured .item {
+    position: relative;
+}
+.movie-featured .item:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-background-image: linear-gradient(to bottom,rgba(0,0,0,0) 50%,#000 100%);
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 50%,#000 100%);
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+.movie-featured .item:hover {
+    cursor: url(../images/cursor.png),auto;
+}
+
+.item .movie-poster {
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.item .play-icon {
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-40%) scale(0);
+    transform: translate(-50%,-40%) scale(0);
+    position: absolute;
+    font-size: 80px;
+    color: #fff;
+    z-index: 10;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+}
+
+.item:hover .play-icon {
+    -webkit-transform: translate(-50%,-40%) scale(1);
+    transform: translate(-50%,-40%) scale(1);
+    text-decoration: none;
+}
+
+.movie-featured .item .movie-details {
+    position: absolute;
+    bottom: -62px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    color: #fff;
+    padding: 30px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-timing-function: ease-in-out;
+    timing-function: ease-in-out;
+    font-weight: 400;
+}
+
+.movie-featured .item:hover .movie-details {
+    bottom: 0;
+}
+
+.movie-featured .item .movie-details .cast a {
+    margin-right: 5px;
+}
+
+.moview-rating {
+    font-size: 19px;
+}
+
+.moview-rating span.star {
+    font-family: 'moview';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    color: #ffc000;
+}
+
+.moview-rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.moview-rating span.star:before {
+    content: "\e927";
+    padding-right: 5px;
+}
+
+.moview-rating-summary {
+    font-size: 14px;
+}
+
+.movie-details .movie-title {
+    margin: 5px 0;
+    font-size: 22px;
+}
+
+.movie-details .movie-title a {
+    color: #fff;
+}
+
+.single.single-movie .logged-in-as {
+    margin: 0 15px 0px;
+}
+
+.single.single-movie .comment-form-rating-error label{
+    font-weight: 500;
+}
+
+.moview-details {
+    margin-top: 30px;
+}
+
+.movie-details .tag {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.movie-details .cast {
+    -webkit-transform: translate3d(0,50px,0);
+    transform: translate3d(0,50px,0);
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    -webkit-transition-delay: .15s;
+    transition-delay: .15s;
+    overflow: hidden;
+    height: 48px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.movie-details .cast span {
+    font-weight: 400;
+}
+
+.movie-featured .item .movie-details a {
+    color: #fff;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+.movie-featured .item:hover .movie-details .cast {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
+.movie-featured .item .movie-poster img {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.movie-featured .item:hover .movie-poster img {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: .5;
+}
+
+/* ---------------------------------- */
+/* ------spotlight------- */
+/* ---------------------------------- */
+
+.spotlight-post .list-inline {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.moview-common-layout {
+    position: relative;
+    margin-top: 30px;
+}
+
+.spotlight-post .list-inline li {
+    margin-right: 30px;
+    margin-left: 0;
+}
+
+.spotlight-post .list-inline >li>a {
+    color: #000;
+    font-weight: 400;
+    position: relative;
+    padding: 0 0 5px;
+}
+
+.spotlight-post .list-inline>li>a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+
+.spotlight-post .list-inline>li.active>a:after {
+    width: 50%;
+}
+
+.moview-common-layout .item .movie-poster {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.moview-common-layout .movie-details .movie-title a {
+    color: #000;
+}
+.moviews-tag .movie-details .movie-title a {
+    color: #000;
+}
+.moview-common-layout .item .movie-poster:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-background-image: linear-gradient(to bottom,rgba(0,0,0,0) 50%,#000 100%);
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 50%,#000 100%);
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    opacity: 0;
+}
+
+.moview-common-layout .item .movie-poster:hover:before {
+    opacity: 1;
+}
+
+.moview-common-layout .item .play-icon {
+    top:50%;
+}
+
+.movie-rating .themeum-moviewstar {
+    color: #ffc000;
+}
+
+.moview-common-layout .movie-rating {
+    margin-right: 10px;
+}
+
+.movie-details .movie-title {
+    margin: 8px 0;
+    font-size: 22px;
+}
+
+.moview-common-layout .owl-item .item{
+  display: none;
+}
+.moview-common-layout .owl-item.active .item {
+  display: block;
+  animation: zoomIn .2s;
+}
+
+.moview-common-layout .owl-controls {
+  position: absolute;
+  top: -75px;
+  right: 0;
+}
+
+.moview-common-layout .owl-controls .owl-nav {
+  font-size: 24px;
+}
+.moview-common-layout .owl-controls .owl-nav:before {
+  content: url(../images/content.jpg);
+  position: absolute;
+    left: -15px;
+    bottom: -16px;
+  color: #e3e3e3;
+}
+.moview-common-layout .owl-controls .owl-prev {
+  background: transparent !important;
+  text-indent: -999px;
+  position: relative;
+}
+.moview-common-layout .owl-controls .owl-prev::after {
+  content: '\e900';
+  font-family: 'moview';
+  color: #e3e3e3;
+  margin-left: 0;
+  text-indent: 0;
+  position: absolute;
+  right: 22px;
+  top:10px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+}
+.moview-common-layout .owl-controls .owl-next {
+  background: transparent !important;
+  text-indent: -999px;
+  position: relative;
+}
+.moview-common-layout .owl-controls .owl-next::after {
+  content: '\e901';
+  font-family: 'moview';
+  color: #e3e3e3;
+  margin-left: 0;
+  text-indent: 0;
+  position: absolute;
+  right: 0;
+  top:10px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+}
+.moview-common-layout.owl-theme .owl-controls .owl-nav [class*=owl-] {
+    margin: 0;
+    padding: 0;
+}
+
+.moview-common-layout .margin-bottom {
+    margin-bottom: 30px;
+}
+
+.moview-common-layout .item .movie-poster img {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+  backface-visibility: hidden;    
+}
+.moview-common-layout .item:hover .movie-poster img {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.moview-common-layout .item .movie-poster {
+  background: none;
+}
+
+/* ---------------------------------- */
+/* ------Trailer------- */
+/* ---------------------------------- */
+
+.trailers-videos .trailer-item .movie-title a {
+    color: #fff;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+}
+.themeum-title.yes.transparent-border {
+    border-color: rgba(255,255,255,0.2);
+}
+
+.trailer-item .count-rating {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+}
+.trailer-item .count-rating:before {
+    content: '\e913';
+    font-family: 'moview';
+    color: #ffc000;
+    position: absolute;
+    left: 0;
+    font-size: 60px;
+}
+.trailer-item .count-rating span {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 72px;
+    font-weight: 600;
+}
+
+
+/*movie-showtime*/
+
+.movie-showtime {
+  font-weight: 500;
+}
+.moview-details-wrap .movie-showtime .header-title {
+  margin: 70px 0 0;
+}
+.movie-showtime .header-title > span {
+  color: #ec008c;
+}
+
+.header-title .title {
+  display: inline-block;
+  margin: 0;
+}
+
+.movie-showtime .movie-schedule {
+  border-bottom: 1px solid #e3e3e3;
+  overflow: hidden;
+  padding: 30px 0;
+}
+
+.movie-showtime .movie-schedule .location-name, .movie-showtime .show-time {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.movie-showtime .movie-schedule .address {
+  color: #828282;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.movie-showtime .movie-schedule .times > ul {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.movie-showtime .movie-schedule .times > ul li::after {
+  color: #e3e3e3;
+  content: "|";
+  font-size: 14px;
+  margin-left: 15px;
+}
+.movie-showtime .movie-schedule .times > ul li:last-child::after{
+  content: "";
+}
+
+.movie-showtime .movie-schedule .ticket-urls .btn {
+  margin: 12px 0;
+}
+
+.movie-showtime .movie-schedule .ticket-urls .btn:hover,
+.movie-showtime .movie-schedule .ticket-urls .btn:focus {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* ---------------------------------- */
+/* ------Movie Listing------- */
+/* ---------------------------------- */
+
+.moview-filters {
+    margin-bottom: 30px;
+}
+.moview-filters .list-inline>li {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0 5px;
+}
+.moview-filters .list-inline >li >a {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: #000;
+}
+.moview-filters .movie-yearindex {
+    position: relative;
+}
+.moview-filters .movie-yearindex label {
+    margin: 0;
+    font-weight: normal;
+}
+.moview-filters .movie-yearindex select {
+    height: auto;
+    line-height: normal;
+    width: auto;
+    margin: 0;
+    max-width: 120px;
+    min-height: 28px!important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    padding: 0 15px 0 5px;
+    border-radius: 0;
+    cursor: pointer;
+    font-weight: 400;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.moview-filters .movie-yearindex:after {
+    content: '\e903';
+    font-family: 'moview';
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* ---------------------------------- */
+/* ------Search Result------- */
+/* ---------------------------------- */
+
+.moview-search-results {
+    position: absolute;
+    top: 54px;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+}
+.moview-search-results ul {
+    padding: 20px 0;
+    list-style: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+.moview-search-results ul li {
+    border-bottom: solid 1px #e5e5e5;
+    padding: 5px 0;
+}
+.moview-search-results ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.moview-search-results ul li:first-child {
+    padding-top: 0;
+}
+.moview-search-results ul li a {
+    padding: 6px 30px 6px 20px;
+    display: block;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.moview-search-results ul li a i {
+    color: #b5b5b5;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.moview-search-wrap .input-box {
+    position: relative;
+}
+.moview-search-wrap .input-box i.fa-spin {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+.moview-search-wrap .moview-search-icons.spinner .themeum-moviewsearch{
+    display: none;
+}
+
+/* ---------------------------------- */
+/* ------Search Result------- */
+/* ---------------------------------- */
+
+
+

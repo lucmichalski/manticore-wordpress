@@ -1,0 +1,26 @@
+<form id="comments-form" action="<?php echo $_SERVER["REQUEST_URI"]; ?>" method="post">
+<input type="hidden" name="menu" value="<?php echo $this->view->tab?>" />
+<input type="hidden" name="doaction" value="export" />
+<input type="hidden" name="action" value="export" />
+<fieldset class="options">
+    <table class="form-table" border="0">
+    <tbody>
+    <tr valign="top" >
+        <th scope="row">Select type of keywords:</th>
+        <td >
+            <select name="keywords_type">
+                <option value="new">New</option>
+                <option value="approved">Approved</option>
+                <option value="banned">Banned</option>
+                <option value="all">All</option>
+            </select>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+</fieldset>
+<p class="submit">
+<input type="submit" class="button-primary"
+    value="<?php _e('Export search terms', 'ManticoreSearch' ) ?>" />
+</p>
+</form>

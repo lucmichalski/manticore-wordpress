@@ -1,0 +1,253 @@
+<div id="searchbar">
+    <label for="s">
+        <a href="https://manticoresearch.com/" target="_blank"
+           title="Manticore Search Plugin"><img style="width: 20px;"
+                                                src="<?php echo plugins_url('assets/img/logo-manticore-mini.png', __FILE__ );?>"
+                                                alt="Manticore Search Plugin by Ivinco"/></a> <?php _e('Search'); ?>
+    </label>
+
+    <?php if ($defaultObjectSphinxSearch::$plugin->config->get_option('seo_url_all') == 'true') {?>
+
+    <var id="result-container" class="result-container"></var>
+
+    <form id="searchform" method="get" action="<?php echo get_bloginfo('url') ?>" onsubmit="sphinx_search_submit(this)">
+        <input type="hidden" name="s" size="15" value="<?php echo $defaultObjectSphinxSearch->get_search_string();?>"/>
+
+        <div class="typeahead__container">
+            <div class="typeahead__field">
+                    <span class="typeahead__query">
+                        <div id="entered-text"></div>
+                        <input id="sphinx_sinput" class="typeahead-input tt-input" size="25"
+                               value="<?php echo $defaultObjectSphinxSearch->get_search_string();?>"
+                               autocomplete="off" spellcheck="false">
+                    </span>
+            </div>
+        </div>
+        <input type="submit" value="<?php _e('Search'); ?>"/><br/>
+        <a href="javascript:void(0);" onclick="toggle_sidebar();"
+           style="font-size:10px;">Advanced</a>
+        <div id="searchform_advanced_bar" style="margin-top: 20px; display:none;"></div>
+    </form>
+
+
+    <?php } else { ?>
+
+    <var id="result-container" class="result-container"></var>
+
+    <form id="searchform" method="get" action="<?php echo get_bloginfo('url') ?>">
+        <div class="typeahead__container">
+            <div class="typeahead__field">
+                    <span class="typeahead__query">
+                        <div id="entered-text"></div>
+                        <input class="typeahead-input tt-input" name="s" size="15"
+                               value="<?php echo $defaultObjectSphinxSearch->get_search_string();?>"
+                               autocomplete="off" spellcheck="false">
+                    </span>
+            </div>
+        </div>
+        <input type="submit" value="<?php _e('Search'); ?>"/><br/>
+        <a href="javascript:void(0);" onclick="toggle_sidebar();"
+           style="font-size:10px;">Advanced</a>
+        <div id="searchform_advanced_bar" style="margin-top: 20px; display:none;"></div>
+    </form>
+
+    <?php } ?>
+
+    <div id="searchform_advanced_options_bar" style="display:none;">
+        <?php _e('Search in:'); ?>
+        <div class="container-advanced-search">
+            <div class="wrapper" style="width: 27%;">
+                <input type="checkbox" id="search_posts"
+                       name="search_posts" value="true" <?php echo $search_posts; ?>/>
+                <label for="search_posts" class="left">posts</label>
+
+            </div>
+            <div class="wrapper" style="width: 27%;">
+                <input type="checkbox" id="search_pages" name="search_pages"
+                       value="true" <?php echo $search_pages; ?> />
+                <label for="search_pages" class="center">pages</label>
+
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="search_comments" name="search_comments"
+                       value="true" <?php echo $search_comments; ?> />
+                <label for="search_comments" class="right">comments</label>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <?php if($search_sorting == 'user_defined') { ?>
+        <?php _e('Sort by:'); ?>
+        <div class="container-advanced-search">
+
+            <div class="wrapper">
+                <input type="checkbox" id="search_sortby_rel"
+                       name="search_sortby_relevance" <?php echo $search_sortby_relevance; ?> />
+                <label for="search_sortby_rel" class="left">Relevance</label>
+            </div>
+            <div class="wrapper">
+
+                <input type="checkbox" id="search_sortby_date"
+                       name="search_sortby_date" value="date" <?php echo $search_sortby_date; ?> />
+                <label for="search_sortby_date" class="right">Freshness</label>
+            </div>
+
+        </div>
+        <div style="clear: both;"></div>
+        <?php } ?>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    <?php if ($autocomplete_enabled == 'true') { ?>
+        init(jQuery);
+
+        function init($) {
+
+            class TypeAHead {
+                constructor() {
+                    this.formName = '#searchform';
+                    this.inputName = '.typeahead-input';
+                    this.enteredText = $('#entered-text');
+                    this.inputObject = $(this.inputName);
+                    this.enteredTextWidth = 0;
+                    var self = this;
+
+                    $.typeahead({
+                        input: this.inputName,
+                        dynamic: true,
+                        minLength: 1,
+                        delay: 200,
+                        source: {
+                            results: {
+                                ajax: function (query) {
+                                    return {
+                                        type: "GET",
+                                        url: "<?php echo $autocomplete_url; ?>",
+                                        path: "result",
+                                        data: {
+                                            action: 'get_autocomplete',
+                                            q: "{{query}}"
+                                        },
+                                        callback: {
+                                            done: function (data) {
+                                                if (data.correct != null && data.correct.corrected !== null && data.correct.corrected === 1) {
+                                                    self.correct(data.correct.result);
+                                                }
+                                                return data;
+                                            }
+                                        }
+                                    }
+                                },
+                                filter: false
+                            }
+                        },
+                        callback: {
+                        	onClickAfter: function (node, a, item, event) {
+                        		if (item != null){
+                        			$(self.formName).submit();
+                        		}
+                        	},
+                            onClickBefore: function (node, a, item, event) {
+                                if(item != null){
+                                    var regex = /(<([^>]+)>)/ig, text = '';
+                                    item.display = item.display.replace(regex, "");
+                                }
+                            },
+                            onEnter: function (node, a,item, event) {
+                                if(item != null) {
+                                    var regex = /(<([^>]+)>)/ig, text = '';
+                                    item.display = item.display.replace(regex, "");
+                                }
+                            },
+                            onNavigateBefore: function (node, query, event) {
+                                if (event.keyCode === 13) {
+                                    $(self.formName).submit();
+                                }
+                            }
+                        }
+                    });
+
+                    this.enteredText.css({
+                        'font-family': this.inputObject.css('font-family'),
+                        'font-size': this.inputObject.css('font-size')
+                    });
+
+                }
+
+                correct(result) {
+                    $(this.formName + ' .tt-correct').remove();
+                    if (this.checkCorrectFieldWidth()) {
+                        return false;
+                    }
+                    //return if correct has been disabled
+                    if (!isNaN($(this.formName).data("status")) && !$(this.formName).data("status") & 1) return false;
+
+                    if (result.length > 0) {
+                        if (typeof(result) !== "undefined") {
+                            //enable correct
+                            if (isNaN($(this.formName).data("status"))) {
+                                $(this.formName).data("status", 1);
+                            } else if (!$(this.formName).data("status") & 1) {
+                                $(this.formName).data("status", $(this.formName).data("status") + 1);
+                            }
+
+                            this.inputObject.before('<div class="tt-correct typeahead-input">' + result + '</div>');
+                        }
+
+                        $(this.formName + ' .tt-correct').css({
+                            'font-family': $(this.formName + ' .tt-input').css('font-family'),
+                            'font-size': $(this.formName + ' .tt-input').css('font-size'),
+                            'margin': $(this.formName + ' .tt-input').css('margin')
+                        });
+                    }
+                    return true;
+                }
+
+                duplicateText() {
+                    $(this.formName + ' .tt-correct').remove();
+                    this.enteredText.html(this.inputObject.val());
+                    this.enteredTextWidth = parseInt(this.enteredText.css('width'));
+                }
+
+                checkCorrectFieldWidth() {
+                    return this.enteredTextWidth >= this.inputObject.width() - 10
+                }
+            }
+
+            var typeAHead = new TypeAHead();
+
+            $(document)
+                .on('keyup', typeAHead.inputName, function () {
+                    typeAHead.duplicateText();
+                });
+
+            $(window).resize(function () {
+                typeAHead.duplicateText();
+            });
+        }
+
+    <?php } ?>
+
+    function toggle_sidebar() {
+        style = document.getElementById('searchform_advanced_bar').style.display;
+        if (style == 'block') {
+            document.getElementById('searchform_advanced_bar').style.display = 'none';
+            document.getElementById('searchform_advanced_bar').innerHTML = '';
+        }
+        else {
+            document.getElementById('searchform_advanced_bar').style.display = 'block';
+            document.getElementById('searchform_advanced_bar').innerHTML = document.getElementById('searchform_advanced_options_bar').innerHTML;
+        }
+    }
+
+    function sphinx_search_submit(form) {
+        var input = document.getElementById('sphinx_sinput');
+
+        form.s.value = input.value.replace("_", ' ').replace("'", '_');
+
+        return true;
+    }
+
+
+</script>

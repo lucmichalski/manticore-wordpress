@@ -1,0 +1,46 @@
+<link rel='stylesheet' href='<?php echo plugins_url('styles/styles.css', __FILE__); ?>' type='text/css' media='all' />
+
+
+<script type="text/javascript">
+    function wizard_next() {
+        var formData = jQuery("#wizard_form").serialize();
+        
+        jQuery('#wizard_page').html('<p style="text-align:center;width:100%;"><img src="<?php echo plugins_url('img/loadinfo.gif', __FILE__); ?>" /></p>');
+
+        jQuery.post("<?php echo site_url()?>/wp-admin/admin-ajax.php",
+            formData,
+            function(data)
+            {
+                if (data)
+                  jQuery('#wizard_page').html(data);
+
+            }
+        );
+        return false;
+    }
+    function wizard_skip(page) {
+         jQuery("#wizard_form").append("<input type='hidden' name='skip_wizard_"+page+"' value='1' />");
+         return wizard_next();
+    }
+    function wizard_cancel() {
+         jQuery("#wizard_form input[name=action]").val("stop");
+         return wizard_next();
+    }
+</script>
+
+
+
+<div class=wrap>
+    <div id="isAdminPanel"></div>
+    <h2><?php echo $this->view->header?></h2>
+	<?php if ( !$this->view->is_widget_active && $this->view->is_manticore_active) { ?>
+        <div class="metabox-holder postbox" id="sm_pnres" style="background-color: #ffeded;">
+            <h3 class="hndle"><span>WARNING:</span></h3>
+            <div class="inside">
+                Manticore Search daemon <b>is running</b>, but the search widget is not enabled. You can enable it
+                <a href="<?php echo get_bloginfo( 'url' ) ?>/wp-admin/widgets.php">here</a> (Manticore Search
+                widget)
+            </div>
+        </div>
+	<?php } ?>
+    <?php echo $this->render('admin/messagebox.phtml'); ?>

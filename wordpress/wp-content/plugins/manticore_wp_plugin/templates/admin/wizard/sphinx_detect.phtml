@@ -1,0 +1,86 @@
+<?php echo $this->render('admin/messagebox.phtml'); ?>
+<div class="postbox">
+    <h3 class="hndle">Install or use existing binaries</h3>
+    <div class="inside">
+
+    <form  action="<?php echo $_SERVER["REQUEST_URI"]; ?>" method="post" id="wizard_form">
+        <input type="hidden" name="detection_process" value="1" />
+        <input type="hidden" name="action" value="detection" />
+        <table class="form-table">
+        
+            <tr>
+                <th><label>detected system searchd</label></th>
+                <td>
+                    <input style="width: 98%" type="text" name="detected_system_searchd"
+                           value="<?php echo $this->view->detect_system_searchd?>" />
+                </td>
+            </tr>
+        <?php if($this->view->detect_system_searchd):?>
+            <tr style="border-bottom: 1px solid #f3f3f3;">
+                <th><label>use system binaries</label></th>
+                <td><input type="radio" name="detected_install"
+                           value="detect_system" checked="checked"/></td>
+            </tr>            
+        <?php else : ?>
+            <tr style="border-bottom: 1px solid #f3f3f3;">
+                <th><label>use system binaries</label></th>
+                <td>
+                    <input type="radio" name="detected_install" value="detect_system" />
+                    <i><small>Wizard was unable to find Manticore binaries but you can specify them manually</small></i>
+                </td>
+            </tr>            
+            
+        <?php endif; ?>
+
+        <?php if($this->view->detect_installed_searchd &&
+                $this->view->detect_installed_searchd != $this->view->detect_system_searchd):?>
+            <tr>
+                <th><label>detected installed searchd</label></th>
+                <td>
+                    <input style="width: 98%" type="text" name="detected_installed_searchd"
+                           value="<?php echo $this->view->detect_installed_searchd?>" />
+                </td>
+            </tr>
+            <tr style="border-bottom: 1px solid #f3f3f3;">
+                <th><label>use installed binaries</label></th>
+                <td><input type="radio" name="detected_install"
+                           value="detect_installed" checked="checked" /></td>
+            </tr>
+        <?php endif; ?>
+<?php /* TODO remove */if (false) {?>
+        <?php if (empty($this->view->detect_system_searchd) &&
+                empty($this->view->detect_installed_searchd)):?>
+            <tr style="border-bottom: 1px solid #f3f3f3;">
+                <th><label>Download Manticore binaries to</label></th>
+                <td>
+                    <input type="radio" name="detected_install" value="download" />
+                    <input style="width: 95%" title="Download binares path" type="text" name="download_binares_path"
+                           value="<?php echo $this->view->install_path?>" />
+                </td>
+            </tr>
+       <?php else:?>
+            <tr style="border-bottom: 1px solid #f3f3f3;">
+                <th><label>Download Manticore binaries to</label></th>
+                <td>
+                    <input type="radio" name="detected_install" value="download" />
+                    <input style="width: 95%" title="Download binares path" type="text" name="download_binares_path"
+                           value="<?php echo $this->view->install_path?>" />
+                </td>
+            </tr>
+        <?php endif; ?>
+            <?php } ?>
+            </table>
+        
+        <p class="submit">
+            <input class="button-secondary cancel" type="button"
+                onClick="return wizard_skip('detection');" value="Skip step" />
+             <input class="button-primary" type="button" onClick="return wizard_next();"
+                       name="use_detected_sphinx" value="Save &amp; Continue" />
+              <input class="button-secondary cancel alignright" type="button"
+                       onClick="return wizard_cancel();" value="Cancel Wizard" />
+            </p>
+
+    </form>
+        
+    </div>
+</div>

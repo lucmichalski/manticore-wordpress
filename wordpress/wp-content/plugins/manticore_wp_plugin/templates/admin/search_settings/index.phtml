@@ -1,0 +1,531 @@
+<div class="meta-box-sortabless">
+    <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
+
+        <div class="postbox">
+            <h3 class="hndle">Autocomplete:</h3>
+            <div class="inside">
+                <fieldset class="options">
+                    <table class="form-table" border="0">
+                        <tbody>
+                        <tr valign="top">
+                            <th>
+                                <label for="autocomplete_enable">Enable autocomplete:</label>
+                            </th>
+                            <td>
+                                <input type="checkbox" id="autocomplete_enable" name="autocomplete_enable"
+                                       value="true"
+									<?php if ( $this->view->devOptions['autocomplete_enable'] == "true" ) {
+										_e( 'checked="checked"', "ManticoreSearch" );
+									} ?>/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+
+        <div class="postbox">
+            <h3 class="hndle">Clear autocomplete cache:</h3>
+            <div class="inside">
+                <fieldset class="options">
+                    <table class="form-table" border="0">
+                        <tbody>
+                        <tr valign="top">
+                            <th>
+                                <label for="autocomplete_cache_clear">On any post add/update/delete:</label>
+                            </th>
+                            <td>
+                                <input type="radio" id="autocomplete_cache_clear_update" name="autocomplete_cache_clear"
+                                       value="update"
+									<?php if ( $this->view->devOptions['autocomplete_cache_clear'] == "update" ) {
+										_e( 'checked="checked"', "ManticoreSearch" );
+									} ?>/>
+                            </td>
+                        </tr>
+                        <tr valign="top">
+                            <th>
+                                <label for="autocomplete_cache_clear_day">In a day</label>
+                            </th>
+                            <td>
+                                <input type="radio" id="autocomplete_cache_clear_week" name="autocomplete_cache_clear"
+                                       value="day"
+									<?php if ( $this->view->devOptions['autocomplete_cache_clear'] == "day" ) {
+										_e( 'checked="checked"', "ManticoreSearch" );
+									} ?>/>
+                            </td>
+                        </tr>
+                        <tr valign="top">
+                            <th>
+                                <label for="autocomplete_cache_clear">In a week</label>
+                            </th>
+                            <td>
+                                <input type="radio" id="autocomplete_cache_clear" name="autocomplete_cache_clear"
+                                       value="week"
+									<?php if ( $this->view->devOptions['autocomplete_cache_clear'] == "week" ) {
+										_e( 'checked="checked"', "ManticoreSearch" );
+									} ?>/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="postbox">
+            <h3 class="hndle">Search friendly URLs:</h3>
+            <div class="inside">
+                <fieldset class="options">
+
+                    <table class="form-table" border="0">
+                        <tbody>
+						<?php if ( get_option( 'permalink_structure' ) == '' ): ?>
+                            <tr valign="top">
+                                <th colspan="2">Before enabling Search friendly URLs, switch on non-default <a
+                                            href="<?php echo get_bloginfo( 'url' ); ?>/wp-admin/options-permalink.php">Permalink
+                                        structure</a> <img class="j-hover-popup"
+                                                           title="Friendly URL is considered an important technique for literate SEO optimization.
+                                                                                        Due to the correctly constructed address of the page, it rises in search results.
+                                                                                        This is because the <b>Friendly URL includes keywords that reflect the content of the content.</b>"
+                                                           src="<?php echo plugins_url( '../assets/img/question.png', __DIR__ ); ?>">
+                                </th>
+                            </tr>
+						<?php else: ?>
+                            <tr valign="top">
+                                <th><label for="seo_url_all">Enable friendly URLs: <img class="j-hover-popup"
+                                                                                        title="Friendly URL is considered an important technique for literate SEO optimization.
+                                                                                        Due to the correctly constructed address of the page, it rises in search results.
+                                                                                        This is because the <b>Friendly URL includes keywords that reflect the content of the content.</b>"
+                                                                                        src="<?php echo plugins_url( '../assets/img/question.png', __DIR__ ); ?>">
+                                        <p
+                                                class="option-title">Search
+                                            Search URLs will be <?= $this->view->host ?>search/keyword/</p></label></th>
+                                <td>
+                                    <input type="checkbox" id="seo_url_all" name="seo_url_all" value="true"
+										<?php if ( $this->view->devOptions['seo_url_all'] == "true" ) {
+											_e( 'checked="checked"', "SphinxSearch" );
+										} ?>/>
+                                </td>
+                            </tr>
+						<?php endif; ?>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="postbox">
+            <h3 class="hndle">Select what to include in the search:</h3>
+            <div class="inside">
+                <fieldset class="options">
+
+                    <table class="form-table" border="0">
+                        <tbody>
+
+						<?php foreach (
+							array(
+								'search_comments' => 'Comments',
+								'search_posts'    => 'Posts',
+								'search_pages'    => 'Pages',
+								//'search_tags'     => 'Tags'
+							)
+							as $option => $title
+						) { ?>
+                            <tr valign="top">
+                                <th><label for="<?php echo $option ?>"><?php echo $title ?></label></th>
+                                <td>
+                                    <input type="checkbox" id="<?php echo $option ?>" name="<?php echo $option ?>"
+                                           value="true"
+										<?php if ( $this->view->devOptions[ $option ] == "true" ) {
+											_e( 'checked="checked"', "SphinxSearch" );
+										} ?>/>
+                                </td>
+                            </tr>
+						<?php } ?>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="postbox">
+            <h3 class="hndle">Fields weight: <img class="j-hover-popup"
+                                                  title="It's can help you to getting most relevant results. Add more weight to important fields like 'title'"
+                                                  src="<?php echo plugins_url( '../assets/img/question.png', __DIR__ ); ?>">
+            </h3>
+            <div class="inside">
+                <fieldset class="options">
+
+                    <table class="form-table" border="0">
+                        <tbody>
+
+						<?php foreach ( $this->view->devOptions['weight_fields'] as $option => $title ) { ?>
+                            <tr valign="top">
+                                <th><label for="<?php echo 'weight_fields_' . $option ?>"><?php echo $option ?></label>
+                                </th>
+                                <td>
+                                    <input type="number" class="admin-slider-input"
+                                           id="<?php echo 'weight_fields_' . $option ?>" min="1"
+                                           name="<?php echo 'weight_fields_' . $option ?>"
+                                           value="<?php echo $title ?>" readonly/>
+
+                                    <br>
+                                    <div id="slider-passages-<?php echo $option; ?>"
+                                         data-view-id="weight_fields_<?php echo $option; ?>"
+                                         class="admin-slider weight-sliders"></div>
+                                </td>
+                            </tr>
+						<?php } ?>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="postbox">
+            <h3 class="hndle">Select search sorting</h3>
+            <div class="inside">
+                <fieldset class="options">
+
+                    <table class="form-table" border="0">
+                        <tbody>
+
+						<?php foreach (
+							[
+								'Let user choose'       => 'user_defined',
+								'Freshness & Relevance' => 'date_relevance',
+								'Relevance'             => 'relevance',
+								'Freshness'             => 'date',
+							]
+							as $title => $option
+						) { ?>
+                            <tr valign="top">
+                                <th><label for="<?php echo $option ?>"><?php echo $title ?></label></th>
+                                <td>
+                                    <input type="radio" id="<?php echo $option ?>" name="search_sorting"
+                                           value="<?php echo $option ?>"
+										<?php if ( $this->view->devOptions['search_sorting'] == $option ) {
+											_e( 'checked="checked"', "SphinxSearch" );
+										} ?>/>
+                                </td>
+                            </tr>
+						<?php } ?>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="two-cols">
+            <div class="one-column">
+                <div class="postbox">
+                    <h3 class="hndle">Snippet settings</h3>
+                    <span class="hidden" id='admin-url' data-url="<?php echo admin_url(); ?>"></span>
+                    <div class="inside">
+                        <fieldset class="options">
+
+                            <table class="form-table">
+                                <tbody>
+                                <tr>
+                                    <th><label for="highlighting-title">Title highlighting</label></th>
+                                    <td>
+                                        <select id="highlighting-title" name="highlighting_title_type"
+                                                data-type="title">
+											<?php
+											foreach ( $this->view->highlightingTypes as $name => $text ) {
+												?>
+                                                <option value="<?php echo $name; ?>" <?php
+												if ( $this->view->devOptions['highlighting_title_type'] == $name ) {
+													echo 'selected';
+												}
+												?>><?php echo $text; ?></option>
+												<?php
+											}
+											?>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><label for="highlighting-content">Text highlighting</label></th>
+                                    <td>
+                                        <select name="highlighting_text_type" id="highlighting-content"
+                                                data-type="text">
+											<?php
+											foreach ( $this->view->highlightingTypes as $name => $text ) {
+												?>
+                                                <option value="<?php echo $name; ?>" <?php
+												if ( $this->view->devOptions['highlighting_text_type'] == $name ) {
+													echo 'selected';
+												}
+												?>><?php echo $text; ?></option>
+												<?php
+											}
+											?>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr style="display: none" valign="top">
+                                    <th scope="row">
+                                        <label for="before_title_match">
+                                        <span style="display: none" class="j-label-title j-label-title-custom">Before keyword in title</span>
+                                        <span style="display: none" class="j-label-title j-label-title-text_color">Text color in title</span>
+                                        <span style="display: none"
+                                              class="j-label-title j-label-title-background_color">Background color in title</span>
+                                        <span style="display: none"
+                                              class="j-label-title j-label-title-style">Title CSS style</span>
+                                        <span style="display: none"
+                                              class="j-label-title j-label-title-class">Title CSS class</span>
+                                        </label>
+                                    </th>
+                                    <td style="display: none">
+                                        <input style="display: none" type="text" id='color-picker-title' value=""/>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="before_title_match" name="before_title_match"
+                                               value="<?php echo stripslashes( htmlspecialchars( $this->view->devOptions['before_title_match'] ) ); ?>"/>
+                                    </td>
+                                </tr>
+                                <tr style="display: none" valign="top">
+                                    <th scope="row"><label for="after_title_match">After keyword in title</label></th>
+                                    <td><input type="text" id="after_title_match" name="after_title_match"
+                                               value="<?php echo stripslashes( htmlspecialchars( $this->view->devOptions['after_title_match'] ) ); ?>"/>
+                                    </td>
+                                </tr>
+                                <tr style="display: none" valign="top">
+                                    <th scope="row">
+                                        <label for="before_text_match">
+                                            <span style="display: none" class="j-label-text j-label-text-custom">Before keyword in text</span>
+                                            <span style="display: none" class="j-label-text j-label-text-text_color">Text color in text</span>
+                                            <span style="display: none" class="j-label-text j-label-text-background_color">Background color in text</span>
+                                            <span style="display: none"
+                                                  class="j-label-text j-label-text-style">Text CSS style</span>
+                                            <span style="display: none"
+                                                  class="j-label-text j-label-text-class">Text CSS class</span></label>
+
+                                    </th>
+                                    <td style="display: none">
+                                        <input style="display: none" type="text" id='color-picker-text' value=""/>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="before_text_match" name="before_text_match"
+                                               value="<?php echo stripslashes( htmlspecialchars( $this->view->devOptions['before_text_match'] ) ); ?>"/>
+                                    </td>
+                                </tr>
+                                <tr style="display: none" valign="top">
+                                    <th scope="row"><label for="after_text_match">After keyword in text</label></th>
+                                    <td><input type="text" id="after_text_match" name="after_text_match"
+                                               value="<?php echo stripslashes( htmlspecialchars( $this->view->devOptions['after_text_match'] ) ); ?>"/>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <th scope="row"><label for="excerpt_chunk_separator">Snippet separator</label></th>
+                                    <td>
+                                        <input type="text" id="excerpt_chunk_separator" name="excerpt_chunk_separator"
+                                               value="<?php echo stripslashes( htmlspecialchars( $this->view->devOptions['excerpt_chunk_separator'] ) ); ?>"/>
+                                    </td>
+                                </tr>
+                                <tr valign="top"
+                                    class="<?= ( $this->view->devOptions['excerpt_dynamic_around'] == 'true' ) ? 'hidden' : '' ?>">
+                                    <th scope="row">
+                                        <label for="excerpt_limit">Snippet max chars count</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" id="amount-max-chars-count" class="admin-slider-input"
+                                               value="<?php echo $this->view->devOptions['excerpt_limit']; ?>"
+                                               name="excerpt_limit">
+                                        <br>
+                                        <div id="slider-max-chars-count" class="admin-slider"></div>
+                                    </td>
+                                </tr>
+
+                                <tr valign="top"
+                                    class="<?= ( $this->view->devOptions['excerpt_dynamic_around'] == 'true' ) ? '' : 'hidden' ?>">
+                                    <th style="position: relative;" scope="row">
+                                        <label for="amount-range-chars-count">Snippet range chars count</label>
+                                        <div class="img-interconnected_rows"></div>
+                                    </th>
+                                    <td>
+                                        <input type="text" id="amount-range-chars-count" class="admin-slider-input"
+                                               data-values="[<?php echo str_replace( '-', ',', $this->view->devOptions['excerpt_range_limit'] ) ?>]"
+                                               value="<?php echo $this->view->devOptions['excerpt_range_limit']; ?>"
+                                               name="excerpt_range_limit">
+                                        <br>
+                                        <div id="slider-range-chars-count" class="admin-slider"></div>
+                                    </td>
+                                </tr>
+
+
+                                <tr valign="top">
+                                    <th scope="row"><label for="excerpt_dynamic_around">Dynamically change the number of words around keyword</label></th>
+                                    <td><input type="checkbox" id="excerpt_dynamic_around"
+                                               name="excerpt_dynamic_around" value="true"
+											<?php if ( $this->view->devOptions['excerpt_dynamic_around'] == 'true' ) {
+												_e( 'checked="checked"', "SphinxSearch" );
+											} ?>/>
+                                    </td>
+                                </tr>
+
+                                <tr valign="top">
+                                    <th scope="row">
+                                        <label for="amount-passages">Number of passages</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" id="amount-passages" class="admin-slider-input"
+                                               name="passages-limit"
+                                               value="<?php echo $this->view->devOptions['passages-limit']; ?>"
+                                               readonly>
+                                        <br>
+                                        <div id="slider-passages" class="admin-slider"></div>
+                                    </td>
+                                </tr>
+
+                                <tr valign="top"
+                                    class="<?= ( $this->view->devOptions['excerpt_dynamic_around'] == 'true' ) ? '' : 'hidden' ?>">
+                                    <th scope="row">
+                                        <label for="amount-range-words">Number of words around keyword</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" id="amount-range-words" class="admin-slider-input"
+                                               data-values="[<?php echo str_replace( '-', ',', $this->view->devOptions['excerpt_range'] ) ?>]"
+                                               value="<?php echo $this->view->devOptions['excerpt_range'] ?>"
+                                               name="excerpt_range"
+                                               readonly>
+                                        <br>
+                                        <div id="slider-range-words" class="admin-slider"></div>
+                                    </td>
+                                </tr>
+                                <tr valign="top"
+                                    class="<?= ( $this->view->devOptions['excerpt_dynamic_around'] == 'true' ) ? 'hidden' : '' ?>">
+                                    <th scope="row">
+                                        <label for="amount-single-words">Number of words around keyword</label>
+                                    </th>
+                                    <td>
+                                        <input type="text" id="amount-single-words" class="admin-slider-input"
+                                               value="<?php echo $this->view->devOptions['excerpt_around']; ?>"
+                                               name="excerpt_around" readonly>
+                                        <br>
+                                        <div id="slider-single-words" class="admin-slider"></div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+                <div class="postbox">
+                    <h3 class="hndle">Search results settings</h3>
+                    <div class="inside">
+                        <fieldset class="options">
+                            <table class="form-table">
+                                <tbody>
+                                <tr valign="top">
+                                    <th scope="row">Prefix before Comment title</th>
+                                    <td><input type="text" id="before_comment" name="before_comment"
+                                               value="<?php echo stripslashes( htmlspecialchars( $this->view->devOptions['before_comment'] ) ); ?>"/>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <th scope="row">Prefix before Page title</th>
+                                    <td><input type="text" id="before_page" name="before_page"
+                                               value="<?php echo stripslashes( htmlspecialchars( $this->view->devOptions['before_page'] ) ); ?>"/>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <th scope="row">Prefix before Post title</th>
+                                    <td><input type="text" id="before_post" name="before_post"
+                                               value="<?php echo stripslashes( htmlspecialchars( $this->view->devOptions['before_post'] ) ); ?>"/>
+                                    </td>
+                                </tr>
+                                <!--<tr valign="top">
+                            <th scope="row">Phrase filter (list of phrases to exclude from posts content)</th>
+                            <td><textarea id="strip_tags" name="strip_tags" rows="10"
+                                          cols="25"><?php echo $this->view->devOptions['strip_tags']; ?></textarea></td>
+                        </tr>-->
+                                </tbody>
+                            </table>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="one-column">
+                <div class="postbox">
+                    <h3 class="hndle">How your search results will look</h3>
+                    <div class="inside">
+
+                        <table width="100%">
+                            <tr>
+                                <td width="20%"><p style="font-weight: bold; padding: 0 0 11px 0;">Results count:</p></td>
+                                <td><input type="hidden" id="count-results" class="admin-slider-input"
+                                           value="<?php echo ceil( get_option( 'posts_per_page' ) / 2 ); ?>"
+                                           data-max-val="<?php echo get_option( 'posts_per_page' ); ?>"
+                                           readonly>
+                                    <div id="slider-count-results" class="admin-slider"></div></td>
+                            </tr>
+                        </table>
+
+
+
+
+                        <div id="live-example-snippet">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
+		<?php if ( ManticoreSearch::is_network() == 'true' ) { ?>
+            <div class="postbox">
+                <h3 class="hndle">Search in blogs:</h3>
+                <div class="inside">
+                    <fieldset class="options">
+
+                        <table class="form-table" border="0">
+                            <tbody>
+                            <tr valign="top">
+                                <th>
+                                    <label for="search_in_blogs">Select blogs for searching<img
+                                                class="j-hover-popup"
+                                                title="Select blog what will included to search on this site"
+                                                src="<?php echo plugins_url( '../assets/img/question.png', __DIR__ ); ?>">:</label>
+                                </th>
+                                <td>
+                                    <select name="search_in_blogs[]" multiple="multiple" size="15"
+                                            id="search_in_blogs">
+										<?php
+										foreach ( $this->view->blog_list as $k => $url ) {
+											?>
+                                            <option name="<?php echo $url; ?>"
+												<?php if ( $k == $this->view->current_blog || in_array( $k, $this->view->devOptions['search_in_blogs'] ) ) {
+													_e( 'selected="selected"', "ManticoreSearch" );
+												} ?>><?php echo $url; ?></option>
+											<?php
+										}
+										?>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </div>
+            </div>
+		<?php } ?>
+
+        <div class="postbox">
+            <div class="inside">
+                <p class="submit">
+                    <input type="submit" name="update_search_settings" class="button-primary"
+                           value="<?php _e( 'Save Settings', 'ManticoreSearch' ) ?>"/>
+                </p>
+            </div>
+        </div>
+
+    </form>
+</div>
+</div>
+</div>

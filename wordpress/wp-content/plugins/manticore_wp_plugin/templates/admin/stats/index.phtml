@@ -1,0 +1,94 @@
+
+<form id="comments-form" action="<?php echo $_SERVER["REQUEST_URI"]; ?>" method="post">
+<input type="hidden" name="menu" value="stats" />
+
+<div class="tablenav">
+<div class="alignleft actions">
+
+<select name='period'>
+    <option <?php echo $this->view->period == 7 ? 'selected="selected"': ''?> value='7'>7 days</option>
+    <option <?php echo $this->view->period == 14 ? 'selected="selected"': ''?> value='14'>2 weeks</option>
+    <option <?php echo $this->view->period == 30 ? 'selected="selected"': ''?> value='30'>month</option>
+    <option <?php echo $this->view->period == 90 ? 'selected="selected"': ''?> value='90'>3 months</option>
+    <option <?php echo $this->view->period == 180 ? 'selected="selected"': ''?> value='180'>6 months</option>
+    <option <?php echo $this->view->period == 365 ? 'selected="selected"': ''?> value='365'>year</option>
+    <option <?php echo $this->view->period == -1 ? 'selected="selected"': ''?> value='-1'>Show all dates</option>
+</select>
+
+<input type="submit" id="post-query-submit" value="Filter" class="button-secondary" />
+
+
+</div>
+<br class="clear" />
+</div>
+
+<div class="clear"></div>
+
+
+<table class="widefat comments fixed" cellspacing="0">
+    <thead>
+        <tr>
+            <th scope="col" id="keyword" class="manage-column column-name" style="">
+                Search term
+            </th>
+            <th scope="col" id="action" class="manage-column column-date" style="width: 120px;">
+                Last search
+                <a href="<?php echo $this->view->plugin_url?>&menu=stats&tab=<?php echo $this->view->tab?>&period=<?php echo $this->view->period?>&sort_by=date&sort_order=asc">
+                    <img src="<?php echo plugins_url('img/arrow_asc_small.gif', dirname(__FILE__)); ?>" />
+                </a>
+                <a href="<?php echo $this->view->plugin_url?>&menu=stats&tab=<?php echo $this->view->tab?>&period=<?php echo $this->view->period?>&sort_by=date&sort_order=desc">
+                    <img src="<?php echo plugins_url('img/arrow_desc_small.gif', dirname(__FILE__)); ?>" />
+                </a>
+            </th>
+            <th scope="col" id="action" class="manage-column column-posts num" style="width: 120px;">
+                Search count
+                <a href="<?php echo $this->view->plugin_url?>&menu=stats&tab=<?php echo $this->view->tab?>&period=<?php echo $this->view->period?>&sort_by=cnt&sort_order=asc">
+                    <img src="<?php echo plugins_url('img/arrow_asc_small.gif', dirname(__FILE__)); ?>" />
+                </a>
+                <a href="<?php echo $this->view->plugin_url?>&menu=stats&tab=<?php echo $this->view->tab?>&period=<?php echo $this->view->period?>&sort_by=cnt&sort_order=desc">
+                    <img src="<?php echo plugins_url('img/arrow_desc_small.gif', dirname(__FILE__)); ?>" />
+                </a>
+            </th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th scope="col" class="manage-column column-name" style="">Search term</th>
+            <th scope="col" id="action" class="manage-column column-date" style="">Last search</th>
+            <th scope="col" class="manage-column column-posts num" style="">Search count</th>
+        </tr>
+    </tfoot>
+
+    <tbody id="the-list" class="list:tags">
+    <?php foreach($this->view->keywords as $keyword):?>
+            <tr id="tag-1" class="alternate">
+                <td class="name column-name"><?php echo $keyword->keywords?></td>
+                <td class="name column-date"><?php echo date("Y-m-d H:i",strtotime($keyword->date_added))?></td>
+                <td class="posts column-posts num"><?php echo $keyword->cnt?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+
+<div class="tablenav">
+
+<?php if ( $this->view->page_links ) : ?>
+<div class="tablenav-pages"><?php $page_links_text = sprintf( '<span class="displaying-num">' . __( 'Displaying %s&#8211;%s of %s' ) . '</span>%s',
+        number_format_i18n( $this->view->start + 1 ),
+        number_format_i18n( min( $this->view->page * $this->view->keywords_per_page, $this->view->total ) ),
+        '<span class="total-type-count">' . number_format_i18n( $this->view->total ) . '</span>',
+        $this->view->page_links
+); echo $page_links_text; ?></div>
+<input type="hidden" name="apage" value="<?php echo esc_attr($this->view->page); ?>" />
+<?php endif; ?>
+
+
+<br class="clear" />
+
+</div>
+
+<br class="clear" />
+</form>
+
+
+

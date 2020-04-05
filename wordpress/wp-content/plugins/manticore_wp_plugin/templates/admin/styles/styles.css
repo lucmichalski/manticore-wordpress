@@ -1,0 +1,73 @@
+/* 
+    Document   : style
+    Created on : Dec 24, 2010, 6:14:53 PM
+    Author     : yaroslav
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+.postbox {
+    background-color: #FFFFFF;
+}
+.postbox{
+    border-color: #DFDFDF;
+}
+.postbox{
+    -moz-border-radius: 6px 6px 6px 6px;
+    border-style: solid;
+    border-width: 1px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.postbox {
+    min-width: 255px;
+    position: relative;
+    width: 99.5%;
+}
+
+fieldset.options {
+    margin-left: 8px;
+}
+
+a.sm_button {
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+    border: medium none;
+    display: block;
+    padding: 4px 4px 4px 25px;
+    text-decoration: none;
+}
+
+a.sm_pluginHome {
+    background-image: url("../img/icon-arne.gif");
+}
+a.sm_pluginSupport {
+    background-image: url("../img/icon-wordpress.gif");
+}
+a.sm_pluginCommercial {
+    background-image: url("../../assets/img/logo-manticore-mini.png");
+    background-size: 18px 18px;
+}
+
+table.form-table {
+    clear: none;
+}
+
+h2#post-body-content-tabs{
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 29px;
+    margin-top: 1px;    
+}
+
+h2 .nav-tab {
+    font: italic 14px/20px Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+}
+
+#comments-form {
+    float: left; width: 100%;
+}
+
+body.wp-admin {
+ min-width: 1050px;
+}

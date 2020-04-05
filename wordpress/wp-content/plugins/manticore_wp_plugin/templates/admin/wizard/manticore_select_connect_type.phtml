@@ -1,0 +1,33 @@
+<?php echo $this->render( 'admin/messagebox.phtml' ); ?>
+<div class="postbox">
+    <h3 class="hndle">Select manticore connection type</h3>
+    <div class="inside">
+        <form action="<?php echo $_SERVER["REQUEST_URI"]; ?>" method="post" id="wizard_form">
+            <input type="hidden" name="action" value="select_connection_type"/>
+            <table style="text-align: left; margin-bottom: 10px;">
+                <!--<tr>
+                    <th><label for="connect_cluster">Use Remote Cluster</label></th>
+                    <td><input id="connect_cluster" type="radio" name="connect_type"
+                               value="cluster" <?= ( $this->view->connect_to == 'cluster' ? 'checked="checked"' : '' ) ?> />
+                    </td>
+                </tr>-->
+                <tr>
+                    <th><label for="connect_sockets">Use UNIX socket</label></th>
+                    <td><input id="connect_sockets" type="radio" name="connect_type"
+                               value="socket" <?= ( $this->view->connect_to == 'socket' ? 'checked="checked"' : '' ) ?>/>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="connect_port">Use port</label></th>
+                    <td><input id="connect_port" type="radio" name="connect_type"
+                               value="port" <?= ( $this->view->connect_to == 'port' ? 'checked="checked"' : '' ) ?>/>
+                    </td>
+                </tr>
+            </table>
+            <input class="button-primary" type="button" name="next"
+                   onClick="return wizard_next();" value="Next"/>
+            <input class="button-secondary cancel alignright" type="button"
+                   onClick="return wizard_cancel();" value="Cancel Wizard"/>
+        </form>
+    </div>
+</div>

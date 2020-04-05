@@ -1,0 +1,148 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Thata\n"
+"POT-Creation-Date: 2017-11-18 17:35+0800\n"
+"PO-Revision-Date: 2017-11-18 17:35+0800\n"
+"Last-Translator: \n"
+"Language-Team: CooThemes.com <support@coothemes.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;esc_html_e;"
+"esc_html__\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:13
+msgid "404 Page!"
+msgstr ""
+
+#: 404.php:15
+msgid "404 not found!"
+msgstr ""
+
+#: 404.php:15
+msgid "Please, return to homepage!"
+msgstr ""
+
+#: comments.php:25
+#, php-format
+msgctxt "comments theta"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:46
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:47
+msgid "&lt; Older Comments"
+msgstr ""
+
+#: comments.php:48
+msgid "Newer Comments &gt;"
+msgstr ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:7
+#, php-format
+msgid ""
+"Powered by <a href=\"%1$s\">WordPress</a>. Theta theme by <a href=\"%2$s"
+"\">CooThemes.com</a>."
+msgstr ""
+
+#: functions.php:42
+msgid "Header Menu"
+msgstr ""
+
+#: functions.php:43
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:112
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\"> on </span>"
+msgstr ""
+
+#: functions.php:113
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:113
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:119
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:144
+msgid "Sidebar"
+msgstr ""
+
+#: inc/breadcrumb-trail.php:244
+msgid "Browse:"
+msgstr ""
+
+#: inc/breadcrumb-trail.php:246
+msgid "Home"
+msgstr ""
+
+#: inc/breadcrumb-trail.php:247
+msgid "404 Not Found"
+msgstr ""
+
+#: inc/breadcrumb-trail.php:248
+msgid "Archives"
+msgstr ""
+
+#: inc/breadcrumb-trail.php:250
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
+#: inc/breadcrumb-trail.php:252
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/breadcrumb-trail.php:254
+#, php-format
+msgid "Minute %s"
+msgstr ""
+
+#: inc/breadcrumb-trail.php:256
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: page.php:34 single.php:33
+msgid "Pages:"
+msgstr ""
+
+#: page.php:40 single.php:39
+msgid "Next page"
+msgstr ""
+
+#: page.php:41 single.php:40
+msgid "Previous page"
+msgstr ""
+
+#: page.php:57 single.php:56
+msgid "Tags:"
+msgstr ""
+
+#: page.php:57 single.php:56
+msgctxt "tags separator"
+msgid " , "
+msgstr ""

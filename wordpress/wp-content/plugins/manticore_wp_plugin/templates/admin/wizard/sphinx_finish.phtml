@@ -1,0 +1,14 @@
+<?php echo $this->render('admin/messagebox.phtml'); ?>
+<div class="postbox">
+    <h3 class="hndle">Manticore configuration finished</h3>
+    <div class="inside">
+        <p>
+            You’ve successfully configured Manticore. Now it’s time to add the Manticore widget to your site. You can do it <a href="<?php echo get_admin_url('','widgets.php')?>">here</a>
+        </p>
+        <form  action="options-general.php?page=manticoresearch.php" method="post"  id="wizard_form">
+            <p class="submit">
+                <input type="submit" value="Finish" class="button-primary" />
+            </p>
+        </form>
+    </div>
+</div>

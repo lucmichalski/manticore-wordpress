@@ -1,0 +1,11 @@
+/*add css to admin*/
+
+#customize-controls img {
+    margin: 0 2px;
+}
+
+#customize-controls .control-section-theta a.button-secondary,
+#customize-controls .control-section-theta a.button-secondary:hover, 
+#customize-controls .control-section-theta a.button-secondary:focus {
+    text-shadow: none;
+}

@@ -1,0 +1,342 @@
+<div class="meta-box-sortabless">
+    <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
+        <input type="hidden" id="need_reindex" name="need_reindex" value="false">
+        <input type="hidden" name="update_indexing_options" value="екгу">
+		<?php add_thickbox(); ?>
+        <div id="confirm-action" style="display:none;">
+            <div>
+                <h3>Index will be rebuilt after saving.</h3>
+                <input type="button" id="save_settings" class="button-primary"
+                       value="<?php _e( 'OK', 'ManticoreSearch' ) ?>"/>
+                <input style="float: right;" type="button" onclick="tb_remove();" class="button"
+                       value="<?php _e( 'Cancel', 'ManticoreSearch' ) ?>"/>
+            </div>
+
+        </div>
+
+        <div class="postbox">
+            <h3 class="hndle">Post types for indexing:</h3>
+            <div class="inside">
+                <fieldset class="options">
+
+                    <table class="form-table" border="0">
+                        <tbody>
+                        <tr valign="top">
+                            <th>
+                                <label for="post_types_for_indexing">Select post types for indexing <img
+                                            class="j-hover-popup"
+                                            title="You can read more on post types <a href='https://codex.wordpress.org/Post_Types'>here</a>"
+                                            src="<?php echo plugins_url( '../assets/img/question.png', __DIR__ ); ?>">:</label>
+                            </th>
+                            <td>
+                                <select name="post_types_for_indexing[]" multiple="multiple" size="15"
+                                        id="post_types_for_indexing">
+									<?php
+									foreach ( $this->view->post_types as $post_type ) {
+										?>
+                                        <option name="<?php echo $post_type; ?>"
+											<?php if ( in_array( $post_type, $this->view->devOptions['post_types_for_indexing'] ) ) {
+												_e( 'selected="selected"', "ManticoreSearch" );
+											} ?>><?php echo $post_type; ?></option>
+										<?php
+									}
+									?>
+                                </select>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+
+        <div class="postbox">
+            <h3 class="hndle">Index taxonomies:</h3>
+            <div class="inside">
+                <fieldset class="options">
+                    <table class="form-table" border="0">
+                        <tbody>
+                        <tr valign="top">
+                            <th>
+                                <label for="taxonomy_indexing">Enable taxonomy indexing:</label>
+                            </th>
+                            <td>
+                                <input type="checkbox" id="taxonomy_indexing" name="taxonomy_indexing" value="true"
+									<?php if ( $this->view->devOptions['taxonomy_indexing'] == "true" ) {
+										_e( 'checked="checked"', "ManticoreSearch" );
+									} ?>/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+        <div id="taxonomy_indexing_fields" class="postbox"
+		     <?php if ( $this->view->devOptions['taxonomy_indexing'] == "false" ) {
+		     ?>style="display: none" <?php
+		} ?>>
+            <h3 class="hndle">Taxonomies for indexing:</h3>
+            <div class="inside">
+                <fieldset class="options">
+
+
+                    <table class="form-table" border="0">
+                        <tbody>
+                        <tr valign="top">
+                            <th>
+                                <label for="taxonomy_for_indexing">Select taxonomies for indexing:</label>
+                            </th>
+                            <td>
+                                <select name="taxonomy_for_indexing[]" multiple="multiple" size="15"
+                                        id="taxonomy_for_indexing">
+									<?php
+									foreach ( $this->view->all_taxonomies as $taxonomy ) {
+										if ( in_array( $taxonomy, $this->view->system_taxonomies ) ) {
+											/* Don't indexing system taxonomies */
+											continue;
+										}
+										?>
+                                        <option name="<?php echo $taxonomy; ?>"
+											<?php
+
+											if ( $this->view->devOptions['taxonomy_indexing'] == "true"
+											     && in_array( $taxonomy, $this->view->devOptions['taxonomy_indexing_fields'] ) ) {
+												_e( 'selected="selected"', "ManticoreSearch" );
+											} ?>><?php echo $taxonomy; ?></option>
+										<?php
+									}
+									?>
+                                </select>
+
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="postbox">
+            <h3 class="hndle">Index custom fields:</h3>
+            <div class="inside">
+                <fieldset class="options">
+                    <table class="form-table" border="0">
+                        <tbody>
+                        <tr valign="top">
+                            <th>
+                                <label for="custom_fields_indexing">Enable custom fields indexing:</label>
+                            </th>
+                            <td>
+                                <input type="checkbox" id="custom_fields_indexing" name="custom_fields_indexing"
+                                       value="true"
+									<?php if ( $this->view->devOptions['custom_fields_indexing'] == "true" ) {
+										_e( 'checked="checked"', "ManticoreSearch" );
+									} ?>/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+        <div id="custom_fields_to_indexing_div" class="postbox"
+		     <?php if ( $this->view->devOptions['custom_fields_indexing'] == "false" ) {
+		     ?>style="display: none" <?php
+		} ?>>
+            <h3 class="hndle">Custom fields for indexing:</h3>
+            <div class="inside">
+                <fieldset class="options">
+
+                    <table class="form-table" border="0">
+                        <tbody>
+                        <tr valign="top">
+                            <th>
+                                <label for="custom_fields_for_indexing">Select custom fields for indexing:</label>
+                                <br>
+                                <button data-indexing="all" class="button">All</button>
+                                <button data-indexing="user_fields" class="button">User fields</button>
+                            </th>
+                            <td>
+                                <select name="custom_fields_for_indexing[]" multiple="multiple" size="15"
+                                        id="custom_fields_for_indexing">
+									<?php
+									foreach ( $this->view->all_custom_fields as $custom_fields ) {
+										?>
+                                        <option name="<?php echo $custom_fields['meta_key']; ?>"
+											<?php if ( $this->view->devOptions['custom_fields_indexing'] == "true"
+											           && in_array( $custom_fields['meta_key'], $this->view->devOptions['custom_fields_for_indexing'] ) ) {
+												_e( 'selected="selected"', "ManticoreSearch" );
+											} ?>><?php echo $custom_fields['meta_key']; ?></option>
+										<?php
+									}
+									?>
+                                </select>
+
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="postbox">
+            <h3 class="hndle">Attachment indexing:</h3>
+            <div class="inside">
+                <fieldset class="options">
+                    <table class="form-table" border="0">
+                        <tbody>
+                        <tr valign="top">
+                            <th>
+                                <label for="attachments_indexing">Enable attachments<br> indexing <img
+                                            class="j-hover-popup"
+                                            title="Text about attachment indexing and searching. About attachment indexing types too"
+                                            src="<?php echo plugins_url( '../assets/img/question.png', __DIR__ ); ?>">:</label>
+                            </th>
+                            <td>
+                                <input type="checkbox" id="attachments_indexing" name="attachments_indexing"
+                                       value="true"
+									<?php if ( $this->view->devOptions['attachments_indexing'] == "true" ) {
+										_e( 'checked="checked"', "ManticoreSearch" );
+									} ?>/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+
+        <div id="attachments_type_for_skip_indexing_div" class="postbox"
+		     <?php if ( $this->view->devOptions['attachments_indexing'] == "false" ) {
+		     ?>style="display: none" <?php
+		} ?>>
+            <h3 class="hndle">Attachment types for indexing:</h3>
+            <div class="inside">
+                <fieldset class="options">
+
+                    <table class="form-table" border="0">
+                        <tbody>
+                        <tr valign="top">
+                            <th>
+                                <label for="attachments_type_for_skip_indexing">Select Attachment types for indexing <img
+                                            class="j-hover-popup"
+                                            title="Select mime type  for indexing, from the found among the attachments"
+                                            src="<?php echo plugins_url( '../assets/img/question.png', __DIR__ ); ?>">:</label>
+                            </th>
+                            <td>
+                                <select name="attachments_type_for_skip_indexing[]" multiple="multiple" size="15"
+                                        id="attachments_type_for_skip_indexing">
+									<?php
+									foreach ( $this->view->mime_types as $mime_type ) {
+										?>
+                                        <option name="<?php echo $mime_type['post_mime_type']; ?>"
+											<?php if ( empty( $this->view->devOptions['attachments_type_for_skip_indexing'] ) ||
+                                                       $this->view->devOptions['attachments_indexing'] == "true" &&
+                                                       !in_array( $mime_type['post_mime_type'], $this->view->devOptions['attachments_type_for_skip_indexing'] ) ) {
+
+												_e( 'selected="selected"', "ManticoreSearch" );
+											} ?>><?php echo $mime_type['post_mime_type']; ?></option>
+										<?php
+									}
+									?>
+                                </select>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="postbox">
+            <h3 class="hndle">Save index settings:</h3>
+            <div class="inside">
+                <p class="submit">
+                    <input onclick="checkSelected(selected)" type="button"
+                           name="update_indexing_options" class="button-primary"
+                           value="<?php _e( 'Save Settings', 'ManticoreSearch' ) ?>"/>
+                </p>
+            </div>
+        </div>
+    </form>
+    <script>
+
+        var selected = [];
+        jQuery("select option:selected").each(function () {
+            selected.push(jQuery(this).text());
+        });
+
+        jQuery("#taxonomy_indexing, #custom_fields_indexing, #attachments_indexing").each(function () {
+            if (jQuery(this).attr('checked')) {
+                selected.push(jQuery(this).attr('name'));
+            }
+        });
+
+        function checkSelected(selectedOnLoad) {
+
+            // Warn if overriding existing method
+            if (Array.prototype.equals)
+                console.warn("Overriding existing Array.prototype.equals. Possible causes: New API defines the method, there's a framework conflict or you've got double inclusions in your code.");
+            // attach the .equals method to Array's prototype to call it on any array
+            Array.prototype.equals = function (array) {
+                // if the other array is a falsy value, return
+                if (!array)
+                    return false;
+
+                // compare lengths - can save a lot of time
+                if (this.length != array.length)
+                    return false;
+
+                for (var i = 0, l = this.length; i < l; i++) {
+                    // Check if we have nested arrays
+                    if (this[i] instanceof Array && array[i] instanceof Array) {
+                        // recurse into the nested arrays
+                        if (!this[i].equals(array[i]))
+                            return false;
+                    }
+                    else if (this[i] != array[i]) {
+                        // Warning - two different object instances will never be equal: {x:20} != {x:20}
+                        return false;
+                    }
+                }
+                return true;
+            }
+            // Hide method from for-in loops
+            Object.defineProperty(Array.prototype, "equals", {enumerable: false});
+
+
+            var new_selected = [];
+            jQuery("select option:selected").each(function () {
+                new_selected.push(jQuery(this).text());
+            });
+
+            jQuery("#taxonomy_indexing, #custom_fields_indexing, #attachments_indexing").each(function () {
+                if (jQuery(this).attr('checked')) {
+                    new_selected.push(jQuery(this).attr('name'));
+                }
+            });
+
+
+            if (!new_selected.equals(selectedOnLoad)) {
+                tb_show('Notice', '/?TB_inline&inlineId=confirm-action&width=300&height=100');
+            } else {
+                jQuery('form').submit();
+            }
+        }
+
+        jQuery('#save_settings').click(function () {
+            jQuery('#need_reindex').val('true');
+            jQuery('form').submit();
+        });
+    </script>
+</div>
+</div>
+</div>

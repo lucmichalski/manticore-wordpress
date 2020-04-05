@@ -1,0 +1,35 @@
+<?php echo $this->render('admin/messagebox.phtml'); ?>
+<div class="postbox">
+    <h3 class="hndle">Manticore autocomplete configuration file</h3>
+    <div class="inside">
+        <table class="form-table">
+            <tr>
+                <td>Autocomplete config are <?php if(!empty($this->view->error_message)){ echo 'not '; }?> saved</td>
+            </tr>
+        </table>
+        <form  action="<?php echo $_SERVER["REQUEST_URI"]; ?>" method="post"  id="wizard_form">
+	        <?php if(!empty($this->view->error_message)){
+	            ?>
+                <input type="hidden" name="action" value="configure_autocomplete" />
+                <p class="submit">
+                    <input type="button"  onClick="return wizard_next();"
+                           value="Retry" class="button-primary" />
+                    <input class="button-secondary cancel alignright" type="button"
+                           onClick="return wizard_skip('configure_autocomplete');" value="Skip step" />
+                </p>
+                <?php
+            } else {
+	            ?>
+                <input type="hidden" name="action" value="indexing" />
+                <p class="submit">
+                    <input type="button"  onClick="return wizard_next();"
+                           value="Next" class="button-primary" />
+                    <input class="button-secondary cancel alignright" type="button"
+                           onClick="return wizard_cancel();" value="Cancel Wizard" />
+                </p>
+                <?php
+	        }?>
+
+        </form>
+    </div>
+</div>

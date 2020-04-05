@@ -1,0 +1,9 @@
+<?php
+if ( !empty($this->view->error_message) ): ?>
+	<div class="error"><p><strong><?php echo $this->view->error_message;?></strong></p></div>
+<?php elseif ( !empty($this->view->success_message) ): ?>
+	<div class="updated"><p><strong><?php echo $this->view->success_message;?></strong></p></div>
+<?php elseif ( !empty($this->view->notice_message) ): ?>
+    <div class="notice notice-warning"><p><strong><?php echo $this->view->notice_message;?></strong></p></div>
+<?php endif; ?>
+  

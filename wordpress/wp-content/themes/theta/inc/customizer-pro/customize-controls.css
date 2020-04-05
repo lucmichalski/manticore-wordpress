@@ -1,0 +1,44 @@
+#customize-controls .control-section-theta .accordion-section-title{ padding-top: 15px;
+    padding-bottom: 15px;}
+
+#customize-controls .control-section-theta .accordion-section-title:hover,
+#customize-controls .control-section-theta .accordion-section-title:focus {
+	background-color: #fff;
+}
+
+#customize-controls .control-section-theta a.button-secondary{
+	
+	background: none #449d44;
+	border-color: #398439;
+	box-shadow: none;
+	color: #fff;
+}
+
+#customize-controls .control-section-theta a.button-secondary:hover,
+#customize-controls .control-section-theta a.button-secondary:focus {
+	background: none #5cb85c;
+	border-color: #4cae4c;
+	box-shadow: none;
+	color: #fff;
+
+}
+
+
+.control-section-theta .accordion-section-title .button-secondary {
+	margin-top:  -6px;
+	font-weight: 400;
+	margin-left: 8px;
+	font-size:16px;
+    padding-top: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+	height:35px;
+}
+
+.rtl .control-section-theta .accordion-section-title .button-secondary {
+		margin-left:  0;
+		margin-right: 8px;
+}
+	
+	

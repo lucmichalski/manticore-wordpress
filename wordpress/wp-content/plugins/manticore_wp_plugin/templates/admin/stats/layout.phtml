@@ -1,0 +1,14 @@
+
+
+        <ul class="subsubsub">
+            <?php if($this->view->tab == 'stats'):?>
+                <li class='approved'><a href='?page=manticoresearch.php&menu=stats&tab=stats' class="current">Statistics</a> </li>
+            <?php else:?>
+                <li class='approved'><a href='?page=manticoresearch.php&menu=stats&tab=stats'>Statistics</a> </li>
+            <?php endif; ?>
+        </ul>
+
+
+    <?php echo $this->render('admin/stats/index.phtml'); ?>
+    </div>
+</div>

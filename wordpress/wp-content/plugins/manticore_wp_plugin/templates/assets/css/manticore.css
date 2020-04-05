@@ -1,0 +1,39 @@
+
+/*
+Styles for search form on the sidebar
+*/
+#searchbar ul li,
+#searchbar ul li:hover{
+    background-image: none;
+}
+
+#searchbar #searchform {
+    width: 100%;
+}
+
+#searchbar #submit {
+    float: right;
+    padding: 3px 2px 4px 4px;
+}
+
+/*
+Styles for search form on the top of search page
+*/
+
+#searchpanel ul li,
+#searchpanel ul li:hover{
+    background-image: none;
+}
+
+ul.page-numbers li
+{
+display: inline;
+list-style-type: none;
+padding-right: 5px;
+}
+
+.test-highlighting{
+    font-weight: bold;
+    color: #4c4c4c;
+}
+

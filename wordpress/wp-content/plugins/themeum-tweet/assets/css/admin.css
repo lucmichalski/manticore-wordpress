@@ -1,0 +1,24 @@
+/*
+* Plugin Name: Themeum Tweet
+* Plugin URI: http://www.themeum.com/item/themeum-tweet
+* Author: Themeum
+* Author URI: http://www.themeum.com
+* License - GNU/GPL V2 or Later
+* Description: Themeum Tweet is a Twitter feed display/slider plugin.
+* Version: 1.1
+*/
+
+#themeum-tweet-options .form-group{
+	margin-bottom: 10px;
+}
+
+#themeum-tweet-options .form-group label{
+	width: 150px;
+	display: inline-block;
+}
+
+#themeum-tweet-options .form-group input[type="text"]{
+	padding: 5px 10px;
+	width: 450px;
+	max-width: 100%;
+}

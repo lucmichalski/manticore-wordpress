@@ -1,0 +1,14 @@
+/*
+ Theme Name:   Moview Child
+ Theme URI:    http://demo.themeum.com/wordpress/moview
+ Description:  Moview Child Theme
+ Author:       Themeum
+ Author URI:   http://themeum.com/
+ Template:     moview
+ Version:      1.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  moview-child
+*/
+
+
+@import url("../moview/style.css");

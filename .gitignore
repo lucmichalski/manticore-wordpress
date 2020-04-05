@@ -1,0 +1,12 @@
+.env*
+.htpasswd
+.idea/
+certs/
+certs-data/
+logs/
+nginx/
+mysql/
+# wordpress/
+wordpress/wp-config.php
+!.env_example
+!nginx/default*

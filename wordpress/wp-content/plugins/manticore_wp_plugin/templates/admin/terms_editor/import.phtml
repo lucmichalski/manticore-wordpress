@@ -1,0 +1,21 @@
+<form id="comments-form" action="<?php echo $_SERVER["REQUEST_URI"]; ?>" method="post">
+<input type="hidden" name="menu" value="<?php echo $this->view->tab?>" />
+<input type="hidden" name="doaction" value="import" />
+<input type="hidden" name="action" value="import" />
+<fieldset class="options">
+    <table class="form-table" border="0">
+    <tbody>
+    <tr valign="top" >
+        <th scope="row">Import custom search terms. (one search term per line)</th>
+        <td >
+            <textarea id="censor_words" name="import_keywords" rows="10" cols="45"></textarea>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+</fieldset>
+<p class="submit">
+<input type="submit" class="button-primary"
+    value="<?php _e('Import search terms', 'ManticoreSearch' ) ?>" />
+</p>
+</form>

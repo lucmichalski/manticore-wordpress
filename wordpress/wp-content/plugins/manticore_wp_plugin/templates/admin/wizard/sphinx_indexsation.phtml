@@ -1,0 +1,47 @@
+<?php echo $this->render( 'admin/messagebox.phtml' ); ?>
+<div class="postbox">
+    <h3 class="hndle">Manticore data indexing</h3>
+    <div class="inside">
+
+        <form action="<?php echo $_SERVER["REQUEST_URI"]; ?>" method="post" id="wizard_form">
+            <input type="hidden" name="process_indexing" value="1"/>
+            <input type="hidden" name="action" value="indexing"/>
+            <span class="hidden" id='admin-url' data-url="<?php echo admin_url(); ?>"></span>
+
+			<?php
+			if ( empty( $this->view->entered_key ) ) {
+				?>
+                <h2>Access key don't entered. You can only skip this step and run indexing from main plugin page
+                    later</h2>
+				<?php
+			}
+			?>
+
+            <div>Indexed <span
+                        class="indexing-info <?php if ( $this->view->indexing_data['indexed'] < $this->view->indexing_data['all_count'] ) {
+							echo "red";
+						} ?>" id="indexed_count"><?php echo $this->view->indexing_data['indexed'] ?></span>/<span
+                        class="indexing-info"
+                        id="index_all_count"><?php echo $this->view->indexing_data['all_count'] ?></span> documents <span id="indexing_blog"></span>
+            </div>
+            <div id="indexing-log" class="indexing-log"></div>
+
+            <div id="indexing_progressbar">
+                <div class="progress-label"></div>
+            </div>
+
+            <p class="submit">
+                <input id="wizard-indexing-skip" class="button-secondary cancel" type="button"
+                       onClick="return wizard_skip('indexsation');" value="Skip step"/>
+
+				<?php if ( ! empty( $this->view->entered_key ) ) { ?>
+                    <input id="wizard-indexing" type="button" class="button-primary"
+                           value="Run indexing &amp; Continue"/>
+				<?php } ?>
+
+                <input class="button-secondary cancel alignright" type="button"
+                       onClick="return wizard_cancel();" value="Cancel Wizard"/>
+            </p>
+        </form>
+    </div>
+</div>

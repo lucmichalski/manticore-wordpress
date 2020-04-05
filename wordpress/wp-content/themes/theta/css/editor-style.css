@@ -1,0 +1,27 @@
+/*
+Theme Name: Texas
+Description: Used to style the TinyMCE editor.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-weight: 700;
+}
+
+
+b,
+strong {
+	font-weight: 700;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}

@@ -1,0 +1,14 @@
+[Sun Apr  5 04:51:24.978 2020] [23620] watchdog: main process 23621 forked ok
+[Sun Apr  5 04:51:24.980 2020] [23621] listening on 127.0.0.1:9312
+[Sun Apr  5 04:51:24.982 2020] [23621] WARNING: index 'main_blog_1': dict=keywords and prefixes and morphology enabled, forcing index_exact_words=1
+[Sun Apr  5 04:51:24.984 2020] [23621] WARNING: index 'autocomplete_blog_1': dict=keywords and prefixes and morphology enabled, forcing index_exact_words=1
+[Sun Apr  5 04:51:24.988 2020] [23623] prereading 3 indexes
+[Sun Apr  5 04:51:24.988 2020] [23623] prereaded 3 indexes in 0.000 sec
+[Sun Apr  5 04:51:24.988 2020] [23621] accepting connections
+[Sun Apr  5 04:51:50.103 2020] [23623] rt: index main_blog_1: optimized (progressive) chunk(s) 0 ( of 0 ) in 0.000 sec
+[Sun Apr  5 04:51:55.664 2020] [23623] rt: index main_blog_1: optimized (progressive) chunk(s) 0 ( of 0 ) in 0.000 sec
+[Sun Apr  5 05:29:47.321 2020] [4886] rt: index main_blog_1: optimized (progressive) chunk(s) 0 ( of 0 ) in 0.000 sec
+[Sun Apr  5 05:50:46.938 2020] [8737] rt: index main_blog_1: optimized (progressive) chunk(s) 0 ( of 0 ) in 0.000 sec
+[Sun Apr  5 05:50:50.504 2020] [8737] rt: index main_blog_1: optimized (progressive) chunk(s) 0 ( of 0 ) in 0.000 sec
+[Sun Apr  5 05:51:41.364 2020] [8737] rt: index main_blog_1: optimized (progressive) chunk(s) 0 ( of 0 ) in 0.000 sec
+[Sun Apr  5 05:51:50.562 2020] [8737] rt: index stats_blog_1: optimized (progressive) chunk(s) 0 ( of 0 ) in 0.000 sec

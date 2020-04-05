@@ -1,0 +1,68 @@
+<div class="meta-box-sortabless">
+    <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
+
+		<?php
+		if ( $this->view->is_network == 'true' ) {
+			if ( $this->view->is_main_blog == 'true') {
+				if ( ! empty( $this->view->blog_list ) ) { ?>
+                    <div class="postbox">
+                        <h3 class="hndle">Select network sites where plugin are available:</h3>
+                        <div class="inside">
+                            <fieldset class="options">
+                                <table class="form-table" border="0">
+                                    <tbody>
+                                    <tr valign="top">
+                                        <th>
+                                            <label for="exclude_blogs_from_search">Select network sites where plugin are
+                                                available:</label>
+                                        </th>
+                                        <td>
+                                            <select name="exclude_blogs_from_search[]" multiple="multiple" size="15"
+                                                    id="exclude_blogs_from_search">
+												<?php
+												foreach ( $this->view->blog_list as $blog_id=>$blog_url ) {
+													?>
+                                                    <option name="<?php echo $blog_id; ?>"
+														<?php
+														if ( !in_array( $blog_id, $this->view->devOptions['exclude_blogs_from_search'] ) ) {
+															_e( 'selected="selected"', "ManticoreSearch" );
+														} ?>><?php echo $blog_url; ?></option>
+													<?php
+												}
+												?>
+                                            </select>
+
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <p class="submit">
+                                    <input type="submit" name="update_network_settings" class="button-primary"
+                                           value="<?php _e( 'Save Settings', 'ManticoreSearch' ) ?>"/>
+                                </p>
+                            </fieldset>
+                        </div>
+                    </div>
+				<?php } else { ?>
+                    <div class="postbox">
+                        <h3 class="hndle">No network sites aviable:</h3>
+                    </div>
+				<?php }
+			} else { ?>
+
+                <div class="postbox">
+                    <h3 class="hndle">You don't have access for this page!</h3>
+                </div>
+			<?php }
+		} else { ?>
+            <div class="postbox">
+                <h3 class="hndle">Network are disabled. How you get this page? </h3>
+            </div>
+
+		<?php } ?>
+
+
+    </form>
+</div>
+</div>
+</div>

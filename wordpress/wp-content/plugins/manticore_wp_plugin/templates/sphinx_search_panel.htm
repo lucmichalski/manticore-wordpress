@@ -1,0 +1,66 @@
+		
+<?php if ( is_search() ): ?>
+<script type="text/javascript" >
+function toggle(){
+	style = document.getElementById('searchform_advanced').style.display;
+	if (style == 'block') 
+	{
+		document.getElementById('searchform_advanced').style.display = 'none';
+		document.getElementById('searchform_advanced').innerHTML = '';
+	}
+	else 
+	{
+		document.getElementById('searchform_advanced').style.display = 'block';
+		document.getElementById('searchform_advanced').innerHTML = document.getElementById('searchform_advanced_options').innerHTML;
+	}
+}
+</script>
+
+<div id="searchpanel" align="center">
+		<form id="searchform" method="get" action="<?php echo get_bloginfo('url') ?>">
+			<div>
+				<nobr>
+				<input type="text" name="s" id="s" size="35" value="<?php echo $defaultObjectSphinxSearch->get_search_string();?>" />
+				<input type="submit" id="submit" value="<?php _e('Search'); ?>" /> 
+				<a href="javascript:void(0);" onclick="toggle();" style="font-size:10px;">Advanced</a>
+				<span style="font-size:12px;">Total found: 
+					<?php echo $defaultObjectSphinxSearch->found_posts(); ?>
+					
+				</span>
+				</nobr>
+			</div>		
+			<?php if (true == $defaultObjectSphinxSearch->frontend->used_match_any):?>
+						 <div style="width:100%; text-align:left;font-size:12px;">
+						 	No full matches found. Partial matches are displayed.</div>
+					<?php endif; ?>			
+			
+			<div style="width:100%; text-align:left;font-size:12px;">
+			<a href="/?s=<?php echo urlencode($defaultObjectSphinxSearch->get_search_string());?>&search_posts=true">Posts (<?php echo sphinx_get_type_count('posts') ?>)</a>
+			<a href="/?s=<?php echo urlencode($defaultObjectSphinxSearch->get_search_string());?>&search_pages=true">Pages (<?php echo sphinx_get_type_count('pages') ?>)</a>
+			<a href="/?s=<?php echo urlencode($defaultObjectSphinxSearch->get_search_string());?>&search_comments=true">Comments (<?php echo sphinx_get_type_count('comments') ?>)</a>
+			</div>
+		<div id="searchform_advanced" style="display:none;"></div>	
+	</form>
+		
+</div>
+
+		<div id="searchform_advanced_options" style="display:none;"> 
+				Search in: 
+					<input type="checkbox" id="search_pan_posts" name="search_posts" value="true"
+						<?php echo $search_posts ?> /><label for="search_pan_posts">posts</label>
+					<input type="checkbox" id="search_pan_pages" name="search_pages" value="true" 
+						<?php echo $search_pages; ?> /><label for="search_pan_pages">pages</label>
+					<input type="checkbox" id="search_pan_comments" name="search_comments" value="true"
+						<?php echo $search_comments; ?> /><label for="search_pan_comments">comments</label>
+				<br/>
+			<?php if($search_sorting == 'user_defined') { ?>
+				Sort by:
+                                        <input type="radio" id="search_sortby_date_relevance" name="search_sortby" value="date_relevance"
+                                                <?php echo $search_sortby_date_relevance; ?> /><label for="search_sortby_date_relevance">Freshness &amp; Relevance</label>
+					<input type="radio" id="search_pan_sortby_rel" name="search_sortby" value="relevance"
+						<?php echo $search_sortby_relevance; ?> /><label for="search_pan_sortby_rel">Relevance</label> / 
+					<input type="radio" id="search_pan_sortby_date" name="search_sortby" value="date"
+						<?php echo $search_sortby_date; ?> /><label for="search_pan_sortby_date">Freshness</label>
+			<?php } ?>
+			</div>	
+<?php endif; ?>

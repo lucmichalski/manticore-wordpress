@@ -1,0 +1,2570 @@
+WordPress is a free and open-source content management system (CMS) based on PHP and MySQL. To function, WordPress has to be installed on a web server, which would either be part of an Internet hosting service or a network host in its own right. An example of the first scenario may be a service like WordPress.com, and the second case could be a computer running the software package WordPress.org. A local computer may be used for single-user testing and learning purposes. Features include a plugin architecture and a template system. WordPress is used by 30.6% of the top 10 million websites as of April 2018. As such, WordPress is the most popular website management or blogging system in use on the Web, supporting more than 60 million websites. WordPress has also been used for other application domains such as pervasive display systems (PDS).
+
+WordPress was released on May 27, 2003, by its founders, Matt Mullenweg and Mike Little, as a fork of b2/cafelog. WordPress is released under the GPLv2 (or later) license.
+
+<h1>Overview</h1>
+WordPress has a web template system using a template processor. Its architecture is a front controller, routing all requests for non-static URIs to a single PHP file which parses the URI and identifies the target page. This allows support for more human-readable permalinks.
+
+<h1>Themes</h1>
+WordPress users may install and switch among different themes. Themes allow users to change the look and functionality of a WordPress website without altering the core code or site content. Every WordPress website requires at least one theme to be present and every theme should be designed using WordPress standards with structured PHP, valid HTML (HyperText Markup Language), and Cascading Style Sheets (CSS). Themes may be directly installed using the WordPress "Appearance" administration tool in the dashboard, or theme folders may be copied directly into the themes directory, for example via FTP. The PHP, HTML and CSS found in themes can be directly modified to alter theme behavior, or a theme can be a "child" theme which inherits settings from another theme and selectively overrides features. WordPress themes are generally classified into two categories: free and premium. Many free themes are listed in the WordPress theme directory, and premium themes are available for purchase from marketplaces and individual WordPress developers. WordPress users may also create and develop their own custom themes. The free theme Underscores created by the WordPress developers has become a popular basis for new themes.
+
+<h1>Plugns</h1>
+WordPress" plugin architecture allows users to extend the features and functionality of a website or blog. WordPress has over 50,316 plugins available, each of which offers custom functions and features enabling users to tailor their sites to their specific needs. These customizations range from search engine optimization, to client portals used to display private information to logged in users, to content management systems, to content displaying features, such as the addition of widgets and navigation bars. Not all available plugins are always abreast with the upgrades and as a result they may not function properly or may not function at all. Most plugins are available through WordPress themselves, either via downloading them and installing the files manually via FTP or through the WordPress dashboard. However, many third parties offer plugins through their own websites, many of which are paid packages.
+
+Web developers who wish to develop plugins need to learn WordPress" hook system which consists of over 300 hooks divided into two categories: action hooks and filter hooks.
+
+<h1>Mobiles</h1>
+Native applications exist for WebOS, Android, iOS (iPhone, iPod Touch, iPad), Windows Phone, and BlackBerry. These applications, designed by Automattic, have options such as adding new blog posts and pages, commenting, moderating comments, replying to comments in addition to the ability to view the stats.
+
+<h2>Other features</h2>
+WordPress also features integrated link management; a search engine–friendly, clean permalink structure; the ability to assign multiple categories to posts; and support for tagging of posts. Automatic filters are also included, providing standardized formatting and styling of text in posts (for example, converting regular quotes to smart quotes). WordPress also supports the Trackback and Pingback standards for displaying links to other sites that have themselves linked to a post or an article. WordPress posts can be edited in HTML, using the visual editor, or using one of a number of plugins that allow for a variety of customized editing features.
+
+Multi-user and multi-blogging
+Prior to version 3, WordPress supported one blog per installation, although multiple concurrent copies may be run from different directories if configured to use separate database tables. WordPress Multisites (previously referred to as WordPress Multi-User, WordPress MU, or WPMU) was a fork of WordPress created to allow multiple blogs to exist within one installation but is able to be administered by a centralized maintainer. WordPress MU makes it possible for those with websites to host their own blogging communities, as well as control and moderate all the blogs from a single dashboard. WordPress MS adds eight new data tables for each blog.
+
+As of the release of WordPress 3, WordPress MU has merged with WordPress.
+
+History
+b2/cafelog, more commonly known as b2 or cafelog, was the precursor to WordPress. b2/cafelog was estimated to have been installed on approximately 2,000 blogs as of May 2003. It was written in PHP for use with MySQL by Michel Valdrighi, who is now a contributing developer to WordPress. Although WordPress is the official successor, another project, b2evolution, is also in active development.
+
+WordPress first appeared in 2003 as a joint effort between Matt Mullenweg and Mike Little to create a fork of b2. Christine Selleck Tremoulet, a friend of Mullenweg, suggested the name WordPress.
+
+In 2004 the licensing terms for the competing Movable Type package were changed by Six Apart, resulting in many of its most influential users migrating to WordPress. By October 2009 the Open Source CMS MarketShare Report concluded that WordPress enjoyed the greatest brand strength of any open-source content management system.
+
+As of February 2017, WordPress is used by 58.7% of all the websites whose content management system is known. This is 27.5% of the top 10 million websites.
+
+Awards and recognition
+Winner of Infoworld"s "Best of open source software awards: Collaboration", awarded in 2008.
+
+Winner of Open Source CMS Awards"s "Overall Best Open Source CMS", awarded in 2009.
+
+Winner of digitalsynergy"s "Hall of Fame CMS category in the 2010 Open Source", awarded in 2010.
+
+Winner of Infoworld"s "Bossie award for Best Open Source Software", awarded in 2011.
+
+Winner of CMS Critic Award"s "Best CMS for Personal Websites", awarded in 2015.
+
+Release history
+Main releases of WordPress are codenamed after well-known jazz musicians, starting after version 1.0./--+--/Note: this article is about displaying the WordPress Administrative "back-end" in your language. If you are looking for information on how to localize your "front-end" website, or customize your theme to be localizable, refer to i18n for WordPress Developers (and optionally Internationalization and Localization for theme developers. If you are interested in how to build a multilingual (e.g.: French / English) WordPress site, you can start your journey here.
+
+Although WordPress displays in U.S. English by default, it has the built-in capability to be used in any language. The WordPress community has already translated WordPress into many languages, and there are Themes, translation files, and support available in many other languages (see WordPress in Your Language).
+
+Contents
+1 Installing Language Files from the Admin Dashboard
+2 Manually Installing Language Files
+3 Use a plugin to install Language Files
+4 Setting the language for your site
+4.1 Single-Site Installations
+4.1.1 WordPress v4.0 and above
+4.1.2 WordPress v3.9.2 and below
+4.2 Multi-Site Installations
+4.3 Adding Translation
+Installing Language Files from the Admin Dashboard
+As of version 4.0, you can have WordPress automatically install the language of your choice during the installation process.
+
+For WordPress 4.1 or later, you can install language packs directly from the Admin back-end at any time. WordPress will download them and switch the admin back-end to that language. Navigate to Settings > General > Site Language and select from the list of available languages. For Multisite Super Admins, you can set the default language using the Network Administration Settings pane.
+
+Manually Installing Language Files
+Here are the steps you will need to follow to install an international version of WordPress.
+
+Note: If you make an error in the steps or you do not specify the correct language, WordPress will default back to English. For more help Installing WordPress, see Installing WordPress and FAQ Installation.
+
+Download the .mo language file for your language. You can get the .mo files from here or export from a specific WordPress translation project. For example, you want to export a Tagalog .mo file, you need to go to that specific Tagalog translation project (example link), go the the bottom, choose the Machine Object Message Catalog (.mo) from the dropdown and hit export. The naming convention of the .mo files is based on the ISO-639 language code (e.g. pt for Portuguese) followed by the ISO-3166 country code (e.g. _PT for Portugal or _BR for Brazil). So, the Brazilian Portuguese file would be called pt_BR.mo, and a non-specific Portuges file would be called pt.mo. Complete lists of codes can be found at (country codes) and (language codes).
+On your site server, create a new folder in your /wp-content directory called /languages.
+Upload the .mo file to the languages folder you just created.
+Use a plugin to install Language Files
+You can use the plugin wp-native-dashboard to automatically download language files stored in the wordpress svn repository. However, as of the time of this writing, the plugin is 2 years out of date and only supports a very small selection of languages.
+
+Setting the language for your site
+Single-Site Installations
+WordPress v4.0 and above
+Change the language in the admin settings screen. Settings > General > Site Language.
+Note: In any case that the language that you need is not available in the above option, please refer to installing the language files manually.
+
+WordPress v3.9.2 and below
+Open your wp-config.php file in a text editor and search for:
+define ("WPLANG", "");
+Edit this line according to the .mo file you"ve just downloaded, e.g. for the Portuguese spoken in Brazil you must add:
+define ("WPLANG", "pt_BR");
+Note that if the .mo and .po files don"t exist for a language code called for in wp-config.php then there is no error message, but the code is still used in language_attributes(). This is useful for those of us whose language is similar enough to en_US not to require translation, but who don"t want en-US as the language tag in the blog, instead wanting some other variant of English. For example:
+define ("WPLANG", "en_GB");
+Once you"ve added your language code, save the file.
+Upload the modified wp-config.php file into the WordPress root directory.
+Open your browser and go to your WordPress site. It should now display in the newly-installed language.
+Multi-Site Installations
+If you have a site network (WordPress multisite), the language is set on a per-blog basis through the "Site language" option in the Settings > General subpanel.
+
+You can set the default language for the entire network under the Network Admin > Settings screen ("Default Language").
+
+Adding Translation
+If you want to add translations for terms that are still displaying in English after installation, visit translate.wordpress.org and select your language. To get started, refer this page in the Translator"s Handbook.
+
+Categories:
+Translating WordPress
+Advanced Topics
+WordPress Development
+/--+--/"Blog" is an abbreviated version of "weblog," which is a term used to describe websites that maintain an ongoing chronicle of information. A blog features diary-type commentary and links to articles on other websites, usually presented as a list of entries in reverse chronological order. Blogs range from the personal to the political, and can focus on one narrow subject or a whole range of subjects.
+
+Many blogs focus on a particular topic, such as web design, home staging, sports, or mobile technology. Some are more eclectic, presenting links to all types of other sites. And others are more like personal journals, presenting the author"s daily life and thoughts.
+
+Generally speaking (although there are exceptions), blogs tend to have a few things in common:
+
+
+diagram
+A main content area with articles listed chronologically, newest on top. Often, the articles are organized into categories.
+An archive of older articles.
+A way for people to leave comments about the articles.
+A list of links to other related sites, sometimes called a "blogroll".
+One or more "feeds" like RSS, Atom or RDF files.
+Some blogs may have additional features beyond these. Watch this short video for a simple explanation for what a blog is.
+
+Here are some professional bloggers" point of view on what is a blog.
+
+What is a "blogger"?
+A blogger is a person who owns or runs a blog or a person who maintains the blog. That is, posting articles or new posts, information, sharing the most up-to-date news, opinions and case studies to name but a few. Such entries are known as blog posts.
+
+The Blog Content
+Content is the raison d"être for any website. Retail sites feature a catalog of products. University sites contain information about their campuses, curriculum, and faculty. News sites show the latest news stories. For a personal blog, you might have a bunch of observations, or reviews. Without some sort of updated content, there is little reason to visit a website more than once.
+
+On a blog, the content consists of articles (also sometimes called "posts" or "entries") that the author(s) writes. Yes, some blogs have multiple authors, each writing his/her own articles. Typically, blog authors compose their articles in a web-based interface, built into the blogging system itself. Some blogging systems also support the ability to use stand-alone "weblog client" software, which allows authors to write articles offline and upload them at a later time.
+
+Comments
+Want an interactive website? Wouldn"t it be nice if the readers of a website could leave comments, tips or impressions about the site or a specific article? With blogs, they can! Posting comments is one of the most exciting features of blogs.
+
+Most blogs have a method to allow visitors to leave comments. There are also nifty ways for authors of other blogs to leave comments without even visiting the blog! Called "pingbacks" or "trackbacks", they can inform other bloggers whenever they cite an article from another site in their own articles. All this ensures that online conversations can be maintained painlessly among various site users and websites.
+
+The Difference Between a Blog and CMS?
+Software that provides a method of managing your website is commonly called a CMS or "Content Management System". Many blogging software programs are considered a specific type of CMS. They provide the features required to create and maintain a blog, and can make publishing on the internet as simple as writing an article, giving it a title, and organizing it under (one or more) categories. While some CMS programs offer vast and sophisticated features, a basic blogging tool provides an interface where you can work in an easy and, to some degree, intuitive manner while it handles the logistics involved in making your composition presentable and publicly available. In other words, you get to focus on what you want to write, and the blogging tool takes care of the rest of the site management.
+
+WordPress is one such advanced blogging tool and it provides a rich set of features. Through its Administration Screen, you can set options for the behavior and presentation of your weblog. Via these Administration Screen, you can easily compose a blog post, push a button, and be published on the internet, instantly! WordPress goes to great pains to see that your blog posts look good, the text looks beautiful, and the html code it generates conforms to web standards.
+
+If you"re just starting out, read Getting Started with WordPress, which contains information on how to get WordPress set up quickly and effectively, as well as information on performing basic tasks within WordPress, like creating new posts or editing existing ones.
+
+Things Bloggers Need to Know
+In addition to understanding how your specific blogging software works, such as WordPress, there are some terms and concepts you need to know.
+
+Archives
+A blog is also a good way to keep track of articles on a site. A lot of blogs feature an archive based on dates (like a monthly or yearly archive). The front page of a blog may feature a calendar of dates linked to daily archives. Archives can also be based on categories featuring all the articles related to a specific category.
+
+It does not stop there; you can also archive your posts by author or alphabetically. The possibilities are endless. This ability to organize and present articles in a composed fashion is much of what makes blogging a popular personal publishing tool.
+
+Feeds
+A Feed is a function of special software that allows "Feedreaders" to access a site automatically looking for new content and then post updates about that new content to another site. This provides a way for users to keep up with the latest and hottest information posted on different blogging sites. Some Feeds include RSS (alternately defined as "Rich Site Summary" or "Really Simple Syndication"), Atom or RDF files. Dave Shea, author of the web design weblog Mezzoblue has written a comprehensive summary of feeds.
+
+Syndication
+A feed is a machine readable (usually XML) content publication that is updated regularly. Many weblogs publish a feed (usually RSS, but also possibly Atom and RDF and so on, as described above). There are tools out there that call themselves "feedreaders". What they do is they keep checking specified blogs to see if they have been updated, and when the blogs are updated, they display the new post, and a link to it, with an excerpt (or the whole contents) of the post. Each feed contains items that are published over time. When checking a feed, the feedreader is actually looking for new items. New items are automatically discovered and downloaded for you to read, so you don"t have to visit all the blogs you are interested in. All you have to do with these feedreaders is to add the link to the RSS feed of all the blogs you are interested in. The feedreader will then inform you when any of the blogs have new posts in them. Most blogs have these "Syndication" feeds available for the readers to use.
+
+Managing Comments
+One of the most exciting features of blogging tools are the comments. This highly interactive feature allows users to comment upon article posts, link to your posts, and comment on and recommend them. These are known as trackbacks and pingbacks. We"ll also discuss how to moderate and manage comments and how to deal with the annoying trend in "comment spam", when unwanted comments are posted to your blog.
+/--+--/You’ve just completed the 5 Minute Installation of WordPress or one-click install from your web host. Now what?
+
+Let’s take a step-by-step tour through your WordPress site and see how the different functions work and how to make your new site your own. During the first part of this tutorial, please don’t change anything within the program unless it is part of the tutorial. After following these steps, you’ll soon be changing everything.
+
+Log In
+
+View Log In Form
+Begin by logging into the “administration area” or the back end of your website. Visit your site’s login page by placing “wp-admin” after your domain name (e.g. http://example.com/wp-admin). You can also place “login” after your domain as of WordPress 3.4. Some themes provide a “login” link or form on the front end as well. Now log into WordPress using your username and password.
+
+Start at the Top
+
+View Site Link
+After logging in you are on the main Administration Screen called the Dashboard. This is the brain behind your website, the place where you can let your creativity explode, writing brilliant prose and designing the best and most lovely website possible. This is where the organization of your site begins – and this is just the start.
+At the top of the screen is the area called the “toolbar.” Click on the link that is your site name. This will take you to a view of your new WordPress site. Like it? Don’t like it? Doesn’t matter, just look at it. This is where you are going to be spending a lot of time!
+
+Test Drive Your WordPress Site
+twentytwelvedefault1.png
+Take time to look at the site before you get into the changing of things and figuring out how all of this works; it’s important to see how the WordPress Twenty Seventeen theme is laid out and how it works. Consider this the test drive before you start adding on all the special features.
+
+The layout you are looking at is called a WordPress Theme. It is the appearance of your website, styling the look of the site and the framing of the content. The WordPress Twenty Seventeen theme features a “header” at the top with the title and tagline for your site. Below this is your Menu. Along the side you will see some titles and links. This comprises Widgets. Within the main middle section of the page is the content area. At the bottom of the page is the footer.
+
+Let’s look at the post for a moment. There is a “title,” and below the title is the date the post was written, then the body of the post, and finally some information about the post. This is called the post meta data and contains information about the post such as the category assigned to that post.
+
+Scroll down the page and notice the bar at the end of the page. This is called the “footer.” It says “Proudly powered by WordPress.”
+
+Back to the sidebar, you will see different sections with information. Among these you may find a list of Recent Posts, Recent Comments, Archives, Categories, and links to the Administration Screens, Log Out, and RSS feeds. This is part of the menu or navigation Screen that people will use to move around your site, visiting posts from different categories or time periods.
+
+It’s All in the Details
+Take time to notice the smaller details of this web page layout and design. Move your mouse over the title of the article post. Notice how it changes color. This is called a hover. Most Themes feature a distinctive color or underline when you move your mouse over a link. Move your mouse over any of the links in the sidebar. Do they change? Is the change the same? You can change your link hovers to look different in different sections of your page. Also look at the color of the links. How are they colored or underlined to stand out from the rest of the text?
+
+Observe the small design details and where they are placed within the page. In the near future, you may want to change some of these details, such as the color of the title in the white box at the top of the page. If you remember that it is called the header, then you will know to look within the header section of your style sheet (the file that controls the look of your web page), when you want to make changes to it.
+
+Take a Quick Trip Around
+For now you only have one post. It is residing within a page that is laid out as your home page or the front page. If you click on the title of the post, it will take you to the specific page for that post. The first page or home page of your site features the most recent posts on your site. Each post title will link to the actual page of the post. Some Theme designers design their single post pages to look different from the home page. By clicking on the title, you are taken to another web page that looks different from the home page.
+
+Again, in the single post, pay attention to the layout and notice what is now different about the design elements. Is the header different? Smaller, larger, or a different color? Is there a sidebar?
+
+Posts are usually stored in Categories and/or Tags so you can keep related topics together. Right now you only have one category, but will soon want more. Click on the single category that appears in the sidebar of the home page. You are now in a page that has been generated to display only the posts within that category. Again, take a look at the layout and see how it may be different from the home page and the single post.
+
+Do the same with the Archives. You may only have one post, but look at how the page is laid out.
+
+All of these changes are created from only a few files called template files and you can learn more about how they work in Stepping Into Templates. For now, however, let’s get on with how the rest of WordPress works.
+
+Test Drive the WordPress Administration Screens
+
+WordPress Admin Dashboard
+Now that you have an idea of how your site looks and what the different layout sections are called, it’s time to test drive the WordPress Administration. This is like familiarizing yourself with the backend of your new website. In fact, the first page you see after logging in is called the Dashboard, a collection of information and data about the activities and actions on your WordPress site.
+
+The Dashboard helps to keep you up to date on new and interesting bits of information from the many WordPress resources. In the corner, it also features a list of the most recent activity you’ve accomplished on your site.
+
+On the left side of the screen is the main navigation menu detailing each of the administrative functions you can perform. Move your mouse down the list and the sub-menus will “fly out” for you to move your mouse to and click. Once you choose a “parent” navigation section, it will open up to reveal the options within that section.
+
+The various menu items are as follows:
+/--+--/The links in the above list will take you to a series of articles that will guide you step-by-step through every aspect of the Admin Screens. You are anxious to get started, so for now, let"s start with the Users Screen.
+
+
+User Profile Screen
+Click on the Users tab. The screen will change and you will see the Screen called All Users that shows a list of all your users; from here you can add or change existing users and authors accounts. In the navigation menu, click on the Your Profile menu choice. This is where you will enter information about you, the author and administrator of the site. Fill in the information and click Update Profile when done.
+Now, let’s look at some other powerful features of the WordPress Admin.
+
+Quick Changing the Look
+
+The Appearance Screen
+The Appearance, Themes Screen allows you to change the look of your site using different Themes. Themes are presentation styles that completely change the look of your site. Designed by WordPress developers and users, there are hundreds of themes available for you to choose from. In your Appearance Screen, you will see a list of currently installed themes, including the WordPress Twenty Seventeen theme. To quickly change the theme, simply click on the Activate button under one of the themes listed, then click on your site name in the top toolbar to see how it looks. Wow, you have another look and nothing else on the site has changed. It"s that easy.
+
+Go back to the Appearance > Theme Screen and click the Activate button under the WordPress Twenty Seventeen theme to bring the design back to what you had. To see it again, click your site name in the toolbar, and there it is.
+
+Writing and Managing Posts
+
+Add New Post Screen
+Back at the Administration Screen, take a look at the Posts Screen. You can use the tabs under the Posts Menu to write and manage your posts. Let’s start by making your first test post in the Add New tab.
+If the screen looks a little intimidating, the Codex article on Writing a Post will take you step-by-step through the process of writing a post. Take a moment to read through the article and post your first entry and then return to this article and we’ll take you onto the next step.
+
+If you are in a hurry, then simply fill in the blanks, one by one, in the post beginning with the title and then write a little test message in the post window. This is just for a test, so you can write anything you want. When you are done, click the Publish button that is to the right of the post entry window and it is done. You will then see a blank Write a Post screen and you"re ready to write another post. Go ahead. But do only three to four entries. There’s more exciting work ahead!
+
+Now that you’ve gotten a feel for writing posts, you can view your posts by clicking your site name in the toolbar on top of the screen. Now it’s time to get down to the real work.
+
+Planning Session
+If you want to create a good and solid website, you need a good and solid plan. I know it’s hard to do, and I know you want to keep playing with your new website, but it"s time to take a break away from your computer and turn to pen and paper.
+
+On a piece of paper, describe your site. Take five to twenty minutes to come up with a purpose for your site, or better yet, call it your Mission Statement.
+
+Answer the following questions:
+
+What am I going to do with this?
+Who is going to read this?
+What kinds of information will I be posting?
+Why am I doing this?
+Who am I doing this for?
+How often am I going to be posting and adding information?
+Now, compile this information into a paragraph so it looks like this:
+
+This website will be dedicated to X, Y, and Z,
+
+and cover the topics of A, B, and C. The audience will
+
+be __________ ________________ _______. I will be adding 
+
+posts every _____________ about ________ _______ ______________. 
+
+I am doing this because _____________ _____________ __________________.
+
+Using the Information
+From this exercise, we’ve gathered a lot of information. We’ve uncovered information on how you might layout and design your site. If you know your audience is mostly made up of young people under the age of 25, you will probably want a fashionable look ranging from wild colors and crazy graphics to dark foreboding tones. If you are providing factual information about a serious subject, then you will probably want a more conservative look where the information is more important than a lot of pop and flash.
+
+You may already have a design idea in mind, or perhaps you will be copying over from your previous site, but take a moment to use this information to reconsider your design, and to see how what you want will work with the WordPress options.
+
+You have also uncovered the possible categories for your site. The topics and subjects you will be covering are listed in your purpose statement. Let’s say your purpose statement said,
+
+“The website will be dedicated to providing news and information on computers, web pages, and the internet and cover the topics of computer tips, web page design, and internet news.”
+Your topics are your categories. Write your categories down below your purpose paragraph and notes about your web page design.
+
+Now, what subcategories might be under these topics? Under Computer Tips, you might want to segregate them by Windows, Linux, and Mac. Or maybe Software and Hardware. You can have sub-sub-categories, but let’s stop with subcategories for right now. Write these down.
+
+Remember the question about why you are doing this? Is it because you have valuable and timely information or knowledge to share, because you want to talk about a subject that interests you, or maybe because you just think it will be fun to do.
+
+Understanding the timeliness of the information you want to present on your site helps you organize the information on your website. Your website is organized by several different methods. If the date of when you posted the information is critical to the success of the page, then having links to your posts referenced by date is important. If the information itself is more important and timeless, then having your posts referenced by category is the best choice.
+
+Have you noticed that you are starting to lay out your website? If you remember our earlier test drive of your new WordPress website, we examined the sidebar menu. This is the area where your past posts are organized. If you take another look, you will see the sidebar is laid out in a list, including Archives by date and Categories by category. It may even feature a calendar.
+
+As you lay out your website on paper, consider whether you want both categories and dates, or just one of them in your sidebar. What information you have and how you want to help the user find the information is critical to your website design.
+
+What Information Do You Want to Share
+As you think about what information the user will need to know, you have to consider what information you are willing to share with them. That information may include how to contact you, what the purpose of the site is, who you are, and what your expertise is.
+
+A WordPress feature called Pages makes the process of presenting this information easier. Pages, similar to posts, are most commonly used to present unchanging information such as About Us, Contact Us, Sign Up for Our Mailing List, and other static information. Before creating your individual Pages, you need to think about what information you would like the Page to hold. Write down the possible Page titles and describe the information you want to share on each Page.
+
+Comments
+Part of the fun of WordPress is the ability to have viewers leave comments on your site. It creates a dynamic interchange between you and the viewer. Do you want comments on your posts? Comments on posts come in a variety of forms, from pats on the back (Good job! Like the post!) to extensive conversations and commentary about the posts. Or maybe you are seeking comments that add to the information you’ve posted.
+
+Responding to comments and moderating them can also take up a lot of time. If they are critical to your site, then include them and consider how you want them presented. Go back to your test site; the first post created at the time of installation included a sample comment. You can even make a few comments yourself on the posts you created. Take a look at how they are laid out and consider how you might want them to look to fit into the design and layout of your site.
+
+When you have reached your decision about how you want to handle comments, take time to read through the article on comments and WordPress discussion options to help you set those features.
+
+With this basic information, you are ready to return to your computer and start setting up your site.
+
+Setting Up Your Site
+You may want to install plugins such as Jetpack by WordPress.com to supercharge your website, and don’t forget to activate the Akismet WordPress Plugin that is available with all WordPress sites to help protect it from comment spam.
+
+But now, let"s start with making those categories you wrote down before.
+
+Create Categories
+In the Posts > Categories tab, in the Add New Category area, fill in the information about your category. Continue to add your parent categories, going down the list. Hold off on entering subcategories until all the main categories are entered.
+
+NOTE: You can add any new categories at any time, but make a note of the fact that categories can be sorted in WordPress in two ways: by name (alphabetically) or by ID number. As you enter the categories, they are assigned an ID number. It is difficult to change this, so if you don’t want your categories sorted alphabetically, enter them in the order you want to see them presented on the screen.
+
+WordPress Admin Categories
+When you have the parent categories entered, enter your subcategories. In the pull down menu for Parent Category, you can select the parent to the subcategory you are adding. When you view your categories in the Manage > Categories Screen, you will see the categories listed like this:
+
+Computer Tips
+- Windows
+- Linux
+- Mac
+Internet News
+Web Page Design
+- Web Standards
+- WordPress
+- - Plugins
+- - Themes
+Put Posts into Categories
+Let’s put some of your test posts into categories so you can see how this works.
+
+
+WordPress Admin Posts
+From the Posts > Category Screen, click on the tab for All Posts. You should see the test posts you entered here. When you hover your mouse over each post title, under the title, you should see the Edit | Quick Edit | Trash | View links. Click on Edit to edit one of the posts. On the right side of the Edit Post screen you will now see your Categories. Choose one of them by clicking in the box next to it. Then in the Publish module above, click the Update button. Repeat this for your other test posts, putting each one in a different category.
+Now view your page by clicking on your site name in the toolbar at the top of your Administration Screen. Do you see the categories listed in the sidebar now? Great. If you are missing a category, that usually means that there are no posts in it. This is the default function of WordPress, so not to worry. When you add a post to the “missing” category, it will appear on your web pages. Click on one of the categories and you will be taken to a page for just that category. You should see the posts that went into that category. This is a generated Category page.
+
+Now, click on the Archives for the month showing. Now you are visiting a generated page of your posts listed in chronological order for this month - well, specifically for today only. Two methods of finding the same information.
+
+Preventing Spam
+There is more to think about when it comes to having comments on your site. Unfortunately we live in a world where spam is a fact of life. It is recommended that you begin battling the comment spammers with the helpful article, Introduction to Dealing with Comment Spam.
+
+What Is Next
+You’ve now done all the basics for your new WordPress website. You know how to write a post, create a category, and how to view your site’s information by category and archive. You can start the customization process, and when you are done, don’t forget to delete your test posts! Then start writing some wonderful information to share with your new-found public!
+
+Customizing Your WordPress Site
+Once you are familiar with how WordPress works, it"s time to get creative and start customizing. The tutorial now splits into different subjects that require no order. From here on you can do whatever you want, adding and subtracting, perfecting and scrambling your site at will. The amount of effort you put into the site is now up to you. You can work with the two WordPress Themes that came with the installation, or seek out another Theme that better meets your needs. Or you can create your own Child Theme. You can totally customize all the links and information, or get serious and completely re-design the entire site to do whatever you want. You have the basics, the rest is up to your imagination.
+
+Finding a WordPress Theme
+Look for one that better suits the look you desire on your site.
+Customizing the Look
+When you are ready to plunge into the code, you can customize the look and layout of your site through CSS and modifying the Themes (or create your own). If your customizing goals are not seriously extensive, a good bet would be to develop your own Child Theme. A minimal Child Theme is a fairly simple project if you have a little coding experience.
+Enhance Your Site with Plugins
+Plugins add function and sometimes fun to your site. There are hundreds of different plugins for adding custom links like related articles to your sidebar to adding weather reports. Just like Child Themes are an easy way to customize the look of your site, with a bit of coding experience, your own minimal Plugin is an easy way to change how your site works.
+WordPress Themes
+There are hundreds of WordPress Themes to choose from. All do basically the same thing but graphically present the information in a myriad of ways. Choose a few that look interesting to you, and meet your audience"s needs and your desires, and then test drive them following the test drive instructions above. Click through the whole site, the categories and archives as well as the individual posts to see how the Theme handles each one. The look may be nice on the front page, but if it handles things in a way you don"t like in the single post, then you will have to dig into the code and make changes. Not ready for that, try another theme.
+
+If you run into problems, check out the Codex"s Troubleshooting Themes article.
+
+Customizing The Look
+If you are familiar with CSS, HTML, and even PHP and MySQL, consider either customizing the Theme to your own needs, or creating your own Child Theme. This is not for the timid, this is for the informed and experienced. That said, a Child Theme is an easy, safe way to tinker under the hood/bonnet of WordPress. If things go badly with your customizations, simply activate an approved, unmodified theme and your site is up and running and looking perfectly again. If you want to expand your website design and development skills, the Codex can help:
+
+WordPress Theme Directory
+Using Themes
+Theme Development
+Child Themes
+Stepping Into Templates
+Templates Files
+Blog Design and Layout
+CSS Overview, Tips, Techniques, and Resources
+FAQ - WordPress Layout
+Stepping Into Template Tags
+Template Tags
+CSS Troubleshooting
+CSS Fixing Browser Bugs
+WordPress Plugins
+
+Plugin Screen
+WordPress Plugins are also known as add-ons or extensions. They are software scripts that add functions and events to your website. They cover the gamut from up-to-date weather reports to simple organization of your posts and categories. Plugins are designed by volunteer contributors and enthusiasts who like challenges and problem solving. They are usually fairly simple to install through the WordPress Admin Plugin Screen, just follow the instructions provided by the plugin author. Remember, these are free and non-essential. If you have any problems with plugins, contact the plugin author"s website or plugin source first, then search the Internet for help with that specific plugin, and if you haven"t found a solution, then visit the WordPress forums for more help.
+WordPress Plugin Directory
+Managing Plugins
+Plugins
+Customizing How It Works
+If you are familiar with PHP, HTML, and maybe even MySQL, you may be able to customize WordPress to work the way you want. Again this is not for the timid, this is for the informed and experienced. And again, a simple basic Plugin is an easy, safe way to tinker under the hood of WordPress. If things go badly with your customizations, simply deactivate your balky Plugin and your site is up and running perfectly again. If you want to expand your website development skills, the Codex can help:
+
+Writing a Plugin
+Plugin API
+Plugin Resources
+Above and Beyond the Basics
+The exciting thing about WordPress is that there are few limits. Thousands of people are using WordPress for blogging and for running their websites. For example, look at some of the entries under the WordPress.org Theme Showcase. All have a different look and different functions on their sites.
+
+What you do from here is up to you, but here are a few places to take that first step beyond the basics:
+
+WordPress Features
+Working with WordPress
+WordPress Semantics
+Using Pages
+Understanding the WordPress Loop
+Troubleshooting
+Using Permalinks
+Press It - Post to your site from the web instantly!
+/--+--/"Blog" is an abbreviated version of "weblog," which is a term used to describe websites that maintain an ongoing chronicle of information. A blog features diary-type commentary and links to articles on other websites, usually presented as a list of entries in reverse chronological order. Blogs range from the personal to the political, and can focus on one narrow subject or a whole range of subjects.
+
+Many blogs focus on a particular topic, such as web design, home staging, sports, or mobile technology. Some are more eclectic, presenting links to all types of other sites. And others are more like personal journals, presenting the author"s daily life and thoughts.
+
+Generally speaking (although there are exceptions), blogs tend to have a few things in common:
+
+
+diagram
+A main content area with articles listed chronologically, newest on top. Often, the articles are organized into categories.
+An archive of older articles.
+A way for people to leave comments about the articles.
+A list of links to other related sites, sometimes called a "blogroll".
+One or more "feeds" like RSS, Atom or RDF files.
+Some blogs may have additional features beyond these. Watch this short video for a simple explanation for what a blog is.
+
+Here are some professional bloggers" point of view on what is a blog.
+
+What is a "blogger"?
+A blogger is a person who owns or runs a blog or a person who maintains the blog. That is, posting articles or new posts, information, sharing the most up-to-date news, opinions and case studies to name but a few. Such entries are known as blog posts.
+
+The Blog Content
+Content is the raison d"être for any website. Retail sites feature a catalog of products. University sites contain information about their campuses, curriculum, and faculty. News sites show the latest news stories. For a personal blog, you might have a bunch of observations, or reviews. Without some sort of updated content, there is little reason to visit a website more than once.
+
+On a blog, the content consists of articles (also sometimes called "posts" or "entries") that the author(s) writes. Yes, some blogs have multiple authors, each writing his/her own articles. Typically, blog authors compose their articles in a web-based interface, built into the blogging system itself. Some blogging systems also support the ability to use stand-alone "weblog client" software, which allows authors to write articles offline and upload them at a later time.
+
+Comments
+Want an interactive website? Wouldn"t it be nice if the readers of a website could leave comments, tips or impressions about the site or a specific article? With blogs, they can! Posting comments is one of the most exciting features of blogs.
+
+Most blogs have a method to allow visitors to leave comments. There are also nifty ways for authors of other blogs to leave comments without even visiting the blog! Called "pingbacks" or "trackbacks", they can inform other bloggers whenever they cite an article from another site in their own articles. All this ensures that online conversations can be maintained painlessly among various site users and websites.
+
+The Difference Between a Blog and CMS?
+Software that provides a method of managing your website is commonly called a CMS or "Content Management System". Many blogging software programs are considered a specific type of CMS. They provide the features required to create and maintain a blog, and can make publishing on the internet as simple as writing an article, giving it a title, and organizing it under (one or more) categories. While some CMS programs offer vast and sophisticated features, a basic blogging tool provides an interface where you can work in an easy and, to some degree, intuitive manner while it handles the logistics involved in making your composition presentable and publicly available. In other words, you get to focus on what you want to write, and the blogging tool takes care of the rest of the site management.
+
+WordPress is one such advanced blogging tool and it provides a rich set of features. Through its Administration Screen, you can set options for the behavior and presentation of your weblog. Via these Administration Screen, you can easily compose a blog post, push a button, and be published on the internet, instantly! WordPress goes to great pains to see that your blog posts look good, the text looks beautiful, and the html code it generates conforms to web standards.
+
+If you"re just starting out, read Getting Started with WordPress, which contains information on how to get WordPress set up quickly and effectively, as well as information on performing basic tasks within WordPress, like creating new posts or editing existing ones.
+
+Things Bloggers Need to Know
+In addition to understanding how your specific blogging software works, such as WordPress, there are some terms and concepts you need to know.
+
+Archives
+A blog is also a good way to keep track of articles on a site. A lot of blogs feature an archive based on dates (like a monthly or yearly archive). The front page of a blog may feature a calendar of dates linked to daily archives. Archives can also be based on categories featuring all the articles related to a specific category.
+
+It does not stop there; you can also archive your posts by author or alphabetically. The possibilities are endless. This ability to organize and present articles in a composed fashion is much of what makes blogging a popular personal publishing tool.
+
+Feeds
+A Feed is a function of special software that allows "Feedreaders" to access a site automatically looking for new content and then post updates about that new content to another site. This provides a way for users to keep up with the latest and hottest information posted on different blogging sites. Some Feeds include RSS (alternately defined as "Rich Site Summary" or "Really Simple Syndication"), Atom or RDF files. Dave Shea, author of the web design weblog Mezzoblue has written a comprehensive summary of feeds.
+
+Syndication
+A feed is a machine readable (usually XML) content publication that is updated regularly. Many weblogs publish a feed (usually RSS, but also possibly Atom and RDF and so on, as described above). There are tools out there that call themselves "feedreaders". What they do is they keep checking specified blogs to see if they have been updated, and when the blogs are updated, they display the new post, and a link to it, with an excerpt (or the whole contents) of the post. Each feed contains items that are published over time. When checking a feed, the feedreader is actually looking for new items. New items are automatically discovered and downloaded for you to read, so you don"t have to visit all the blogs you are interested in. All you have to do with these feedreaders is to add the link to the RSS feed of all the blogs you are interested in. The feedreader will then inform you when any of the blogs have new posts in them. Most blogs have these "Syndication" feeds available for the readers to use.
+
+Managing Comments
+One of the most exciting features of blogging tools are the comments. This highly interactive feature allows users to comment upon article posts, link to your posts, and comment on and recommend them. These are known as trackbacks and pingbacks. We"ll also discuss how to moderate and manage comments and how to deal with the annoying trend in "comment spam", when unwanted comments are posted to your blog.
+/--+--/If you are new to WordPress, here is a step-by-step plan for getting started. If you need help along the way, plenty of options for assistance are listed in this article. Welcome to the exciting world of WordPress!
+
+Contents
+1 Step One - Read
+2 Step Two - Make a Plan
+3 Step Three - Install WordPress
+4 Step Four - Set Up WordPress
+4.1 Appearance and Themes
+4.2 Adding WordPress Plugins
+5 Advanced Use of WordPress
+6 Need More Help
+7 Giving Back to WordPress
+Step One - Read
+
+flowchart
+
+WordPress is a great product. It"s easy-to-use, powerful, and flexible. Creating a website, and maintaining a website, is a science and art that has quickly evolved. In order to fully appreciate this it is important to be well read on the subject. One major thing to keep in mind is your investment of time. Being knowledgeable will without a doubt save you much time in the long run. With that in mind, before you invest your valuable time and energy into installing WordPress, there are some documents you need to read to help you get started.
+
+Suggested reading includes,
+
+About Weblogs - What is Blogging all about?
+What is WordPress?
+WordPress Features
+Before You Install WordPress
+Step Two - Make a Plan
+Based upon the information you"ve just read, including instructions on installing WordPress, you should have a list of the things you need and things to do. If not, make that list now. You"ll want to make sure it includes the following information:
+
+Website Host Requirements Checked and Verified
+Versions of PHP and MySQL Checked and Verified
+Web Host Compatibility with New Versions of WordPress
+Your Website Username and Password
+Text Editor Software
+An FTP Client Software
+Your Web Browser of Choice
+The following documents will help you understand more about how WordPress works and how to make a plan for your WordPress site:
+
+WordPress Semantics
+First Steps With WordPress
+WordPress Lessons
+It is important to make a plan about how you want to use WordPress on your site. Here are some questions to ask yourself:
+
+Will you install WordPress in the root directory, subdirectory, or you just want to make a test site to make sure you want to use it?
+Have you made a list of your site categories to organize your content by groups?
+Have you made a list of Pages you may want to add to your site, such as About, Contact, or Events?
+Have you thought about what you want in the header art of the site?
+Have you developed a content strategy and list of topics to help start blogging?
+Have you thought about how to integrate social media into your WordPress site and workflow?
+Step Three - Install WordPress
+With this information and your plan, it"s time to install WordPress.
+
+Before You Install WordPress
+Installing WordPress
+Hosting WordPress
+Editing the wp-config.php file
+Frequently Asked Questions About Installing WordPress
+Using FTP Clients and Software
+Changing File Permissions
+Upgrading WordPress
+Common Installation Problems
+Trouble: I Can"t Log In
+Step Four - Set Up WordPress
+With your installation complete, it"s time to set up WordPress so it will work the way you want it to work.
+
+To help you understand how all the various features and screens on the WordPress Administration Panels work, check out the Administration Screens guide for a detailed walkthrough.
+
+For help on creating your user profile information, of which some or all may appear on your WordPress Theme, see the Users > Your Profile pages for guidance.
+
+To set the site name and other information, go to Administration > Settings > General.
+
+After you"ve published a few posts, you can experiment with the full edit or quick edit features in the Administration > Posts > Posts panel.
+
+Add your "About," "Contact," and other information Pages by going to Administration > Pages > Add New.
+
+Want to change the look and feel of your WordPress site? Go to Administration > Appearance > Themes.
+
+Take time to explore the WordPress Codex site, the official documentation site for WordPress. You"ll find helpful information by reading WordPress Lessons, and these helpful documents:
+
+Learn WordPress for WordPress.com and beginning self-hosted WordPress tutorials and guides.
+Moderating Comments
+Introduction to Dealing with Comment Spam
+WordPress in Languages Other than English
+Appearance and Themes
+Changing the look of your WordPress website is easy with just a few clicks.
+
+Using WordPress Themes Introduction
+The WordPress Theme Directory features thousands of WordPress Themes
+WordPress Widgets can quickly add more information and content to your Theme.
+WordPress blog design and layout tutorials on the WordPress Codex
+At this point, there may be something about your chosen Theme that is bothering you, or, you really want to get your hands dirty understanding how your WordPress Theme works. These simple guides will help you learn about customizing your WordPress Theme:
+
+Lessons: Designing Your WordPress Site
+CSS Overview, Tips, Techniques, and Resources
+WordPress Widgets
+Custom Navigation Menus
+Stepping into WordPress Template files
+Lessons: Template Files
+Stepping Into Template Tags
+Lessons: Working With Template Tags
+WordPress Template Tags
+Understanding the WordPress Loop
+The WordPress Loop in Action
+Editing Files in WordPress
+Frequently Requested Design Help
+Frequently Asked Questions about Site Layout and Design
+If you want to create a new WordPress Theme from scratch, or do major renovations, or even design WordPress Themes for public release, you will need to be familiar with HTML, XHTML, and CSS. The following documents will get you started:
+
+Developing Your Own WordPress Theme
+Validating a Website
+Lessons: Website Development
+CSS Fixing Browser Bugs
+CSS Troubleshooting
+If you want a custom-made WordPress Theme created especially for you by expert web-designers, it is recommended you search for qualified web designers on the Internet, or look in your local community.
+
+Adding WordPress Plugins
+There are many "add-on" scripts and programs for WordPress called Plugins that add more capabilities, choices, and options to your WordPress site. WordPress Plugins do many things, including customizing the results of your site information, adding weather reports, adding spell check capability, and presenting custom lists of posts and acronyms. For more on how to work with Plugins and where to find WordPress Plugins for your site:
+
+Managing your WordPress Plugins
+WordPress Plugins
+The WordPress Plugin Directory
+Advanced Use of WordPress
+Now that you are familiar with the basic features and functions of how WordPress works, it might be time for you to plunge deeper into the power of WordPress. The links below will expand your familiarity with PHP, HTML, XHTML, and CSS:
+
+Lessons: WordPress Features and Functions
+Using Permalinks
+Photoblogs and Galleries
+WordPress Advanced Techniques
+Advanced Techniques for Plugins and Customization
+WordPress Server and Database Information
+Developer Documentation
+Need More Help
+As simple and easy as it is to use WordPress, if troubles arise, if something is confusing, if things aren"t working, don"t despair because help is available! Even though WordPress is free and open source, there are literally hundreds of volunteers eager to help you. Here are some helpful official resources for WordPress:
+
+WordPress Codex (where you are!)
+Getting More Help
+Using the Support Forums
+WordPress Forum
+IRC Freenode WordPress Support on channel #wordpress
+WordPress IRC Live Help
+FAQ
+Giving Back to WordPress
+Now that you"re a full fledged WordPress user, consider contributing to the WordPress Codex, Support Forum, Development, and other volunteer efforts that keep WordPress going. WordPress is free and totally supported by volunteers, and your help is needed.
+
+Categories:
+WordPress Lessons
+WordPress Help
+Getting Started
+Troubleshooting
+Home Page
+WordPress Lessons
+Getting Started
+Working with WordPress
+Design and Layout
+Advanced Topics
+Troubleshooting
+Developer Docs
+About WordPress
+Codex Resources
+Community portal
+Current events
+Recent changes
+Random page
+Help
+
+/--+--/Working with Images
+Contents
+1 Working with Images
+2 Adding Images Through Pages/Posts
+3 Adding Images Directly To The Media Library
+4 Adding Images By FTP
+5 Miscellaneous
+6 In Theme Design
+7 Special Contents Using Images
+8 Resources
+Adding images in WordPress is very easy. All of your images will be stored and can be managed in the Media Library, but you can take several different paths to get there.
+
+The most common path is adding an image directly to a post or page. This automatically saves the image in the Media Library and displays the image wherever you inserted it.
+
+You can also add images directly to the Media Library through the multi-file loader or the single-file loader. For advanced user, you can upload images directly using an FTP Client.
+
+Adding Images Through Pages/Posts
+When writing or editing a post, you can add an image using the Add Media button above the editor box. This opens a window that displays the multi-file uploader. From here you can drag and drop your picture or select it using the file selector.
+
+The images you add here will be automatically added to the Media Library.
+
+Adding Images Directly To The Media Library
+If you want to upload an image for a future post, from the dashboard go to Media --> Add New. From here you can bulk upload multiple images before you know which post you want them to go into.
+
+Adding Images By FTP
+If you know what an FTP program is, you can upload images directly to the /wp-content/uploads folder.
+
+For more information, see FTP Client.
+
+Miscellaneous
+WordPress can resize images and create thumbnails.
+
+Refer to the following for more information:
+
+Inserting Images into Posts and Pages
+Wrapping Text Around Images
+Styling Images in Posts and Pages
+Using Image and File Attachments
+In Theme Design
+header-img.jpg
+Theme featuring Image in Header.
+You can add images to your WordPress site through the use of template tags, Plugins, and in the stylesheet of your Theme as background images. It is really up to your imagination and web design skills on how you include images in WordPress.
+
+WordPress Design and Layout
+Lists
+Menus
+Categories
+Template Tags
+Graphics Symbols
+Header
+Headings
+Sidebar
+Special Contents Using Images
+post-avatar.jpg
+Gravatar in comments
+PhotoBlog or Gallery - Keep a online photo album with plugins, themes and tons of resources.
+How to Use Gravatars in WordPress - Display avatars in your comment stream.
+Graphics in Feeds- Display RSS Fed icons.
+Links and Blogrolls- Icons for your favorite links.
+Next and Previous Links- Customize your navigation links.
+Smilies - How to use smilies or emoticons on WordPress.
+Resources
+Image Size and Quality
+Image Compression on Wikipedia
+WordPress Inspiration - Showcase
+This article is marked as in need of editing. You can help Codex by editing it.
+Categories:
+Design and Layout
+WordPress Lessons
+Copyedit
+/--+--/Current versions of WordPress now have image alignment built-in. WordPress adds CSS classes to align the image to the right, left, and center of a paragraph, so the text will wrap around the image.
+
+Contents
+1 Important Theme Code
+2 Image Style
+2.1 Borders
+2.2 Padding and Image Width
+2.3 Image Left, Right, and Center
+2.3.1 Left, Right, and Centered Examples
+2.4 Alternative Text Size
+3 Captioning The Image
+4 Clear The Display
+5 Resources
+Important Theme Code
+In order to take advantage of these new CSS classes for image alignment and the text wrapping around the image, the WordPress Theme must include the following in the style.css found in the WordPress Theme directory.
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+When adding the image in your WordPress blog, select the image alignment as right, left, or center in the Image/Media Panel.
+
+The image will be embedded into your blog post with the selected style for alignment such as:
+
+<img src="http://example.com/images/leaf.jpg" 
+ alt="leaf graphic" 
+ title="leaf graphic" 
+class="alignright size-medium wp-image-3109" 
+height="25" width="30"/>
+Image Style
+leaf.gifThere are times when you want an image on your post to fill the screen, or sit in the middle of text with writing above and below it, but most of the time you want your image to sit on one side or the other of the text and have the text flow or wrap around the image. While the styles above will float the image left and right, you may want to add more design elements to your image.
+Let"s start from the beginning with a simple guide to using images in your WordPress blog.
+
+First, here is a look at a typical image tag in your post, without the instructions for wrapping the text around the image. Note that we"ve added both the title and alt attributes to the tag; alt is important for accessibility, title is for the image tooltip.
+
+<img src="http://example.com/images/leaf.jpg" 
+ alt="leaf graphic" 
+ title="leaf graphic" />
+To begin the process of setting your image up to be wrapped, there are a few changes that you may need to make to the style sheet that controls your WordPress site. CSS offers a great list of resources for creating and editing Cascading Style Sheets.
+
+From your WordPress Theme folder, open the style.css file in a text-editor. Important! Save a back up copy somewhere before you do any edits! Now, do a search for img. Hopefully, all your image selectors will be grouped together. If not, find them all and cut and paste them into one group to make this process easier.
+
+Borders
+You"ll need to decide if you want a border around your images and, if you do, what size, color, and type it should be. For no border, you would use the following:
+
+img {border:0}
+leaf.gif
+
+For 1 pixel solid red line border, add:
+
+img {border:solid red 1px}
+If you create a link around an image, some browsers will put a border around the image to let the visitor know it"s a link. If you don"t want that, use the following:
+
+a img {border:0}
+You can still add a hover around the image so when the visitor moves their mouse over the image, not only will the mouse pointer turn into a hand, the image will get a colorful border:
+
+a:hover img { border:solid red 1px; }
+Padding and Image Width
+Let"s clean up one more thing to make the image in your content work better with the rest of the styles we will use.
+
+We want to clear all the padding around the images within your content and make sure that the whole width of the image shows up rather than just a part of it. If it isn"t in your style sheet, add the following:
+
+p img { padding: 0; max-width: 100%; }
+Image Left, Right, and Center
+When an image sits on the sides of your text, it helps to have space between the text and the image so the words aren"t right up against the edge. As some browsers treat the margins and padding differently, the following styles will accommodate most browser"s "space requirements" so the image doesn"t overlap the text or any lists that appear inline with the image.
+
+img.alignright { padding: 4px; margin: 0 0 2px 7px; display: inline; }
+img.alignleft { padding: 4px; margin: 0 7px 2px 0; display: inline; }
+The declaration of display:inline keeps the image inline with the text that you placed it with.
+
+Now, it is time to add the float declaration to the images. BUT WAIT. Why should we waste our left and right floats on just images? Why not use them on anything that we want to sit on the right or left of the page and have the text float around it? You can do that, you know. But that"s for another tutorial. We"re not going to waste this, so if it isn"t there in your style sheet already, add the following:
+
+.alignright { float: right; }
+.alignleft { float: left; }
+Note: The Default/Kubrick Theme uses this technique but names the classes alignleft and alignright. Using alignleft and alignright seems easier to remember and use, but either name sets may be used to make this work.
+So what about centering the image? Yes, you can still do that too. The center tag isn"t valid any more, so you can create a style for centering things:
+
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+Left, Right, and Centered Examples
+This sounds like a lot of complicated stuff, but once this is done, you will never have to mess with it again. We hope. To use it, create the link to your image and add class="alignright", class="alignleft", or class="aligncenter" and the image will move to the right, left, or center and the text will wrap around it. It"s just that simple.
+
+<img src="/images/leaf.gif" class="alignright" alt="Red leaf" title="Red Leaf" />This is some text that will wrap around the image that sits on the right side of the text that you are writing about the leaf that is there. That is, if you are writing about leaves in the first place and you want to write about this specific leaf.
+leaf.gifThis is some text that will wrap around the image that sits on the right side of the text that you are writing about the leaf that is there. That is, if you are writing about leaves in the first place and you want to write about this specific leaf.
+<p>This is text that sits above the leaf image that you might be writing about in your post if you were to write about leaves. <img src="/images/leaf.gif" class="aligncenter" alt="Red leaf" title="Red Leaf" />This is some text that will sit below the text image and you can continue to write about the leaf that is there.</p>
+This is text that sits above the leaf image that you might be writing about in your post if you were to write about leaves.
+leaf.gif
+This is some text that will sit below the text image and you can continue to write about the leaf that is there.
+Alternative Text Size
+Some browsers will now allow you to control the size of the text created by the ALT tag. This is the text that appears when you hold your mouse over an image or when the the image fails to load. You can set it to any size, but something much smaller than your content"s font size would be a good idea.
+
+img {font-size:60%}
+Captioning The Image
+Images tend to just sit there, looking pretty. The alt and title properties say a little something about what the image looks like, but other than that, unless you add some text around it, it just sits there. So create a caption style that adds some "spice."
+
+.wp-caption { margin: 5px; padding: 5px; border: solid 1px #E5E5FF; background: #E5F2FF; font-size:90%; color: black }
+
+In the above example, we"ve added a border and a little hint of background color, but you can style it however you want. We recommend that you at least make the text a difference size and padding to the overall container so it is distinguished from the rest of the post"s content.
+
+<div class="wp-caption alignright">
+<img src="http://example.com/images/leaf.jpg" alt="leaf graphic" title="leaf graphic"> 
+Red Leaf</div>
+
+
+Red Leaf
+This is text that wraps around the leaf image that features a caption. You might want a caption under the picture of the leaf if you were writing about leaves in your post. The caption sits below the text and helps the user to understand what the picture is about.
+In the example above, we just added the alignright class to the container which will position it as a float to the right, allowing the text to flow around it. Using the alignleft class would float it to the left, and aligncenter would give you the text, image centered, text effect.
+
+Clear The Display
+In the event that the image is larger than the amount of text that would otherwise surround it, causing the image to hang like a flag over some element below it, then at some point in the text, you"ll want to clear the display. Note that there is no text inside this division. However, if you use the WYSIWYG editor, it"s necessary to put something inside the division (like a hard rule), otherwise the WYSIWYG editor will remove the div entirely (due to an idosyncracy/bug in TinyMCE editor that the WYSIWYG editor uses).
+
+<div style="clear:both;"><br /></div>
+
+To clear the display in a way that works for both the "Text" and "Visual" editors, add this while in the text tab:
+
+<br style="clear: both;" />
+/--+--/When it comes to colour, there is a lot to think about as you develop or design your WordPress Theme. It"s like painting a house. Which colour will cover the entire exterior? What colour do you want the door? Or the window trim? Accents and complementary colours or contrasting colours?
+
+The colours that go into a website are not limited to the colour of the background and text. You have to consider all the colours used together. For example the links on your site can have three colour choices:
+
+unvisited
+hover
+visited
+It"s important to make sure everything is in harmony. Your header or masthead may be filled with colour while the rest of the site may be less colourful. Titles, headings, and lists, all can be in colour. And don"t forget about the bullets on your lists - they are often coloured, too. With so many colour choices, finding a colour scheme or theme can be a challenge.
+
+To help you pick your website colours, here is a list of colour tools and resources to get you started.
+
+Contents
+1 Colour Schemes
+2 Colour Charts
+3 Colour Pickers
+4 Colour Blenders
+5 Colour Gradient Generators
+6 Colour Tools
+7 Related
+Colour Schemes
+Kuler - Flash application to create and select colour palettes - also includes an Adobe AIR application for desktop use
+Online Color Scheme Generator
+Wellstyled.com"s Color Scheme Generator 2
+Color Match - gets six matching web colors (MSIE only)
+Colour Lovers - Browse others" color palettes, latest web trend color schemes, download palettes for your application
+Web color palette the right way. Create consistent color schemes. Generate color shades, tones and tints values.
+Colour Charts
+Color Charts by HTML Color Codes
+Bob Stein"s Visibone Colour Charts
+Dynamic Color Chart Of HTML Color Codes
+Colour Pickers
+Free Application for Mac and Windows users for color picking and changing colors
+Colorzilla for Mozilla Firefox - Color Picker
+Colorhexa for Google Chrome
+Color Cop, multi-purpose color picker for web designers and programmers
+Iconico ColorPic - Great, simple and free
+Online HTML Color Codes Picker
+Colour Blenders
+Color Mixer
+Color Mixers
+Eric Meyer"s Color Blender
+Colour Gradient Generators
+ColorZilla Gradient Generator
+ColorHexa Gradient Generator
+CSS3Factory Gradient Generator
+CSSMatic Gradient Generator
+Colour Tools
+Color Hex Information and Conversion
+Redalt"s Color Tools - Enter a URL and reports colors used
+Manually Add Colors to Change the Layout
+Online HTML Color Codes Color Picker and Dynamic Color Chart
+SiTCE - Photoshop Script to Change Hue, Saturation And Lightness of WordPress Theme
+RGBHexCode ColourPicker - Generate RGB/Hex values and create shades, tint, complementary colours, etc.
+Related
+First Steps With WordPress • Stepping Into Template Tags • Lessons: Designing Your WordPress Site • Template Tag Lessons • Lessons on WordPress Features and Functions • Template Lessons • WordPress Tech Lessons • Website Development Lessons • Validating a Website • Know Your Sources • WordPress Housekeeping • WordPress Site Maintenance • More WordPress Lessons
+/--+--/WordPress Plugins are composed of PHP scripts that extend the functionality of WordPress. They offer new additions to your blog that either enhance features that were already available or add otherwise unavailable new features to your site.
+
+The majority of WordPress users don"t require Plugins, or only require a few, such as Plugins dealing with comment spam or customized post listings. Other users enjoy the varied options Plugins provide such as frequently updated weather reports, post word counts, rating systems, and more. WordPress Plugins are optional, based upon the needs of the user, and thus they are not incorporated into the core of WordPress.
+
+Plugins available via the WordPress Plugins Directory site are designed by volunteers and are usually free to the public. WordPress Plugins hosted in the WordPress Plugins Directory are considered thoroughly tested and "safe." Remember, WordPress Plugins are the responsibility of the author and the user, and they are typically works-in-progress as WordPress grows and expands.
+
+If you want to develop your own Plugins, there is a comprehensive list of resources at Plugin Resources.
+
+Finding Plugins
+You can find WordPress Plugins in the Administration Screens > Plugins > Add New screen, or directly via the WordPress Plugins Directory.
+
+Plugin Compatibility and Updates
+Check the WordPress Plugin listing on the Plugins List on your WordPress site, or on the WordPress Plugins Directory to determine compatibility and if updates are available.
+
+If a WordPress Plugin update is available, it will be shown on the Dashboard screen, an alert on the Plugin"s menu title, and on the Plugin List. Follow the instructions to update the Plugin.
+
+If a WordPress Plugin is not compatible or updated for the next release of WordPress, contact the Plugin author directly for information on the next update and compatibility issues.
+
+Installing Plugins
+Automatic Plugin Installation
+
+WordPress Plugins Screen
+To add a WordPress Plugin using the built-in plugin installer:
+Go to Plugins > Add New.
+Type in the name of the WordPress Plugin or descriptive keyword, author, or tag in Search Plugins box or click a tag link below the screen.
+Find the WordPress Plugin you wish to install.
+Click Details for more information about the Plugin and instructions you may wish to print or save to help setup the Plugin.
+Click Install Now to install the WordPress Plugin.
+The resulting installation screen will list the installation as successful or note any problems during the install.
+If successful, click Activate Plugin to activate it, or Return to Plugin Installer for further actions.
+Some WordPress Plugins require more steps to customize them. The Details ReadMe file should contain step-by-step instructions. After installation, this information is available on the Plugins Screen for each Plugin. If you are having problems with a WordPress Plugin, see the Troubleshooting section.
+
+For information on how to install a WordPress Plugin manually, see our manual installation guide below.
+
+Manual Plugin Installation
+There are a few cases when manually installing a WordPress Plugin is appropriate.
+
+If you wish to control the placement and the process of installing a WordPress Plugin.
+If your server does not permit automatic installation of a WordPress Plugin.
+The WordPress Plugin is not in the WordPress Plugins Directory.
+Installation of a WordPress Plugin manually requires FTP familiarity and the awareness that you may put your site at risk if you install a WordPress Plugin incompatible with the current version or from an unreliable source.
+
+Backup your site completely before proceeding.
+
+To install a WordPress Plugin manually:
+
+Download your WordPress Plugin to your desktop.
+If downloaded as a zip archive, extract the Plugin folder to your desktop.
+Read through the "readme" file thoroughly to ensure you follow the installation instructions.
+With your FTP program, upload the Plugin folder to the wp-content/plugins folder in your WordPress directory online.
+Go to Plugins screen and find the newly uploaded Plugin in the list.
+Click Activate to activate it.
+Check the Details readme file for customization and further instructions.
+
+Plugin Favorites
+The ability to favorite a plugin was added to the WordPress Plugins Directory in 2012. WordPress Version 3.5 introduced the ability to display and easily install a user"s favorite plugins from the Add New plugins page of the dashboard.
+
+WordPress Plugins Directory
+
+A favorite plugin in WordPress Plugins Directory
+To favorite a plugin:
+You must be logged in to the WordPress Plugins Directory
+While you are viewing a plugin"s page, click the Favorite link below the plugin"s download button.
+Once you have favorited a plugin, it will show up in your public profile, as well as your rating of the plugin, if applicable.
+
+Installing Favorite Plugins
+
+Viewing a user"s favorite plugins in the dashboard
+To install plugins from a user"s list of favorites within the WordPress dashboard:
+Go to Plugins > Add New.
+Under Favorites, type in the WordPress.org username of the user who"s favorites you would like to install and click Get Favorites.
+Follow the Installing Plugins above to install the plugins you would like.
+Troubleshooting
+Occasionally, a WordPress Plugin may not work as expected, or at all, or conflict with another WordPress Plugin.
+
+Check you"ve followed the instructions included with the WordPress Plugin exactly.
+Check that the Plugin has been activated in your Plugin Screen of your Administration Screens.
+Deactivate and re-activate the Plugin to see if this makes it work.
+Search the WordPress Support Forums for the name of the Plugin and keywords associated with the problem you are experiencing.
+Check the WordPress Plugins Directory for the notes on the Plugin and links to issues reported in the Forums.
+Go to the website of the Plugin author and check their blog and Plugin page for known issues or advice.
+Search the web with the name of the Plugin and keywords associated with the trouble.
+Post a question on the WordPress Support Forums with the name of the Plugin and specific problems in the title. For advice on how to improve your chances of getting help, see Finding WordPress Help.
+If the problem persists and you cannot seem to solve it, check to see if there are any similar WordPress Plugins that you can try instead.
+Try the following tips below for troubleshooting the problem yourself if you have no fear of going "under the hood."
+Advanced Troubleshootings
+If you are experiencing problems with a Plugin you installed or one that stopped working after upgrades, the following are the steps you need to take to troubleshoot the Plugin:
+
+If you manually installed the Plugin, use your FTP program to delete the Plugin folder/files and upload it again.
+If you made changes to the WordPress Theme template files to add the Plugin"s code or customization, make sure they are correct, spelled right (including letter case), and placed in the appropriate place, e.g., within the WordPress Loop or outside of it.
+Check that you uploaded the file to the Plugins folder under wp-content. If you are uploading a new version to replace the old, delete the old version prior to uploading the new one.
+If the Plugin does not appear in the Plugins List, view the Plugin"s main file in the Plugin Editor to ensure the Plugin"s header text exists and is properly formed.
+If you"re using a custom WordPress Theme, try using one of the default WordPress Themes to see if your issue is Theme related. If it is, contact the Theme developer for assistance.
+Deactivate all your Plugins to ensure they"re not causing the problem. Reactivate the problematic one. If it works, there may be a conflict. Activate the others one-by-one and test the site to see if the problem ceases or returns, which may indicate the conflicting plugin.
+Uninstalling Plugins
+To uninstall a WordPress Plugin:
+
+Go to Plugins screen.
+Find the Plugin you wish to deactivate and uninstall.
+Click Deactivate.
+The Plugin will initiate the deactivation.
+
+Most WordPress Plugins have an option to completely uninstall themselves, though not all. If you wish to remove a WordPress Plugin permanently:
+
+Check the WordPress Plugin instructions in the Details readme file on how to properly uninstall the Plugin.
+If the WordPress Plugin required the addition of code to the WordPress Theme, manually edit the Theme files to remove it.
+Deactivate the Plugin and remove it manually through your FTP program.
+Login to the site via your FTP Program.
+Go to the WordPress Plugins Directory and find where the Plugin is installed.
+Delete the WordPress Plugin folder and/or files from your server.
+WordPress Plugin Tips
+The following are WordPress Plugin tips and techniques for advanced users and developers.
+
+Plugin Management
+Plugins are managed from the Plugins Screen in the Administration Screens of your WordPress site. All Plugins listed on this screen are found in your wp-content/plugins directory. Each Plugin has a description in its header section of what it does, an author and website to refer to, and a version number. If you do not see the Plugin in the list of installed Plugins, most likely it is missing the "File Header":
+
+<?php
+/*
+Plugin Name: Magic Plugin
+Plugin URI: http://example.com/magic-plugin
+Description: Magic Plugin performs magic
+Version: 2.3
+Author: Mr. Magic
+Author URI: http://example.com/
+*/
+The header section defines:
+
+Plugin Name 
+Shows the Plugin"s name, and links to the Plugin"s website if one is provided. Plugins listed in bold are currently active.
+Version 
+The version number of the Plugin.
+Description 
+The author"s description of what the Plugin does and who authored the Plugin.
+Action 
+Allows you to activate, deactivate, or edit the Plugin.
+New version available 
+If a newer version of a Plugin is available in the WordPress Plugins Directory a message will display along with a link to the location to download that new version.
+Theme Changes
+Most WordPress Plugins no longer require direct modification to a WordPress Theme. If you are using a WordPress Plugin that does require direct modification, you need to know:
+
+Updates to the WordPress Theme may remove the Plugin modification code. Use a Child Theme or make notes to remind yourself to re-add the Plugin code to the updated Theme.
+If you change Themes, these changes will not carry over automatically to the new Theme. You will need to copy or add them manually to the new WordPress Theme, even if you use a Child Theme as the Child Theme is not associated with the new Theme.
+Upgrading WordPress may make changes to the code which could conflict with your WordPress Theme modifications. Use a Child Theme or manually check the Plugin"s code to ensure it is still active.
+Must-Use Plugins
+If you are using the Multisite version of WordPress, Must Use Plugins are special WordPress Plugins installed in a special directory next to the normal /plugins/ dir (/mu-plugins/). They are "must-use" because once their file is placed in the /mu-plugins/ directory they are instantly activated and cannot be de-activated using the Plugins Screen.
+
+Must-use Plugins are useful for installing WordPress Plugins on all sites in a Multisite installation to make WordPress Plugins" functionalities available across the entire blog network. They are loaded before normal Plugins by PHP, which means that code and hooked-functions registered in a must-use Plugin can be assumed available to all other Plugins.
+
+See Must Use Plugins and Create A Network for more details.
+
+Hiding Plugins When Deactivated
+When activated, some WordPress Plugins add tags to the template files. Upon such a Plugin"s deactivation, these tags may remain in place and can affect the look and/or functionality of the Theme, resulting in errors or even failures to load. It is therefore imperative to prevent the Plugin from being detected and used, if it is deactivated.
+
+To determine if such a condition exists, you can add some php code to the template file where the Plugin was used, and perform a simple function_exists() check. To do so, add the code in the example below and configure it for the function you"d like to check. Then upload the modified template to your WordPress Content folder.
+
+The if (function_exists()) checks for the Plugin, and if it exists (activated or not), it will use it. If it returns FALSE or "not found", it will ignore the Plugin tag and continue loading the page.
+
+<?php
+if (function_exists("FUNCTION NAME")) {
+ FUNCTION_NAME();
+}
+?>
+This example Plugin uses a function called alex_get_shoutbox() to print out its contents.
+
+<?php
+if (function_exists("alex_get_shoutbox")) {
+ alex_get_shoutbox();
+}
+?>
+Developing Plugins
+Once you start using WordPress Plugins, you sometimes wonder how you ever got along without them. If you have knowledge of PHP, you can develop your own Plugins, and there is a comprehensive list of resources at Plugin Resources to get you started.
+
+Categories:
+Getting Started
+Plugins
+Advanced Topics
+Troubleshooting
+UI Link
+Home Page
+WordPress Lessons
+Getting Started
+Working with WordPress
+Design and Layout
+Advanced Topics
+Troubleshooting
+Developer Docs
+About WordPress
+Codex Resources
+Community portal
+Current events
+Recent changes
+Random page
+Help
+
+/--+--/Templates are the files which control how your WordPress site will be displayed on the Web. These files draw information from your WordPress MySQL database and generate the HTML code which is sent to the web browser. Through its powerful Theme system, WordPress allows you to define as few or as many Templates as you like all under one Theme. Each of these Template files can be configured for use under specific situations. More information on creating Themes can be found at Theme Development.
+
+General Theme Articles
+Using Themes 
+Basic information about using and installing themes and templates
+Migrating Plugins and Themes 
+Content information how to upgrade a theme for compatibility with new versions of WordPress
+Theme Development 
+How to develop and build your own themes
+Theme Frameworks 
+Build a child theme on the foundation of a parent theme. You can start with a theme that you like and easily modify the parts you want to change. Do more in less time.
+Theme Review 
+How to prepare your Theme for public release and submission to Theme Directory
+I18n for WordPress Developers 
+Internationalization, including a section on how to internationalize your theme
+Theme Compatibility List 
+List of which Themes are compatible with various Versions WordPress
+Creating Admin Themes 
+How to create a plugin that modifies the look of the Admin section
+Integrating WordPress with Your Website 
+Using WordPress with your existing website
+Template File Articles
+General References
+Stepping Into Templates 
+Introduction to the building blocks of WordPress Themes, the template files. Explains how they work together to build a web page and how template files can be included in other template files.
+Template Hierarchy 
+Description of the order of preference of templates for the generation of various pages. Briefly lists the various templates that WordPress checks for in the process of generating a requested page on the weblog.
+The Loop 
+Description of the WordPress Loop, which is the part of a template file that generates the content
+The Loop in Action 
+More about the WordPress Loop
+WP Query 
+WP Query is a class that refers to the $wp_query object used in the WordPress Loop. There are times when you may have to interact with the WP Query, for instance when creating multiple Loops, or when dealing with Conditional_Tags.
+Header, Footer, Sidebar, and Content Sections
+Designing Headers 
+Customizing the header.php template file.
+Adding Post Feeds to the Header 
+How to add RSS feed links to your header template file
+Customizing Your Sidebar 
+Customizing the sidebar.php template file.
+Customizing the Read More 
+Customizing the look of Read More links on your excerpts
+Next and Previous Links 
+Customizing the look of next/previous post/page links
+Styling Page-Links 
+How to break up single posts into multiple pages, and customize their links
+Separating Categories 
+Putting custom separators in the category list for your posts
+Using Custom Fields 
+How to add custom meta-data to your blog posts, and how to display it
+Adding Asides 
+How to add side notes to your blog posts
+Enabling Popup Comments
+How to make comments come in a pop-up window
+Archives, Categories, and Special Pages
+Creating a Static Front Page 
+How to make a static home page, or splash page, for your blog
+Author Templates 
+Customizing the author.php template file which showcases information about the author and their posts.
+Category Templates 
+All about defining and customizing templates for the various category archives for your blog.
+Tag Templates 
+All about defining and customizing templates for the various tag archives for your blog.
+Alphabetizing Posts 
+How to make a category page use alphabetical rather than chronological order
+Creating an Archive Index 
+Customizing the archives.php template file which showcases posts by date.
+Pages 
+Describes WordPress Pages, and the relationship between Templates and Pages feature.
+Page Templates 
+Describes the Template Hierarchy for Pages and Custom Page Templates.
+Styling Theme Forms 
+Describes how to make forms in your templates for comments, search, etc.
+Creating a Search Page 
+Customizing the search.php template file.
+Creating an Error 404 Page 
+Creating a template file Page to feature a customized Error 404 Page.
+Displaying Posts Using a Custom Select Query
+Modifying which posts are displayed on a page
+External Resources
+Creating Multiple Single Posts for Different Categories
+Template Tags Articles
+Stepping Into Template Tags 
+Introduction to the use of template tags in template files.
+Template Tags 
+The core set of functions used to draw information from the database and display it on the web. For example, the Content of a Post is displayed with the Template Tag the_content().
+Anatomy of a Template Tag 
+Understanding the structure, usage, and parameters of template tags used in template files.
+Include Tags 
+A document describing the tags that are available to include and use WordPress" template files.
+Conditional Tags 
+These tags (always of the form is_*(), such as is_home()), report what sort of page is being displayed (e.g. the Main Page, a Category Archive, etc.) and can be used within a Template to control the Template"s output depending on what the tags report.
+Query Posts Template Tag 
+A description of the query_posts template tag, which is used to control which posts are displayed on a page. Query posts alters the main query that WordPress uses, and is therefore not recommended to display different posts than those that would normal show up at a specific URL. It is best to use pre_get_posts for any changes that need to be made to the main query.
+Get Posts Template Tag 
+A description of the get_posts tag, which is used to retrieve a list of posts matching criteria set through the tags parameters. This is the preferred method for quickly creating new criteria for your Loop, or to create a specific array of posts.
+CSS, Design, and Layout
+CSS 
+How to integrate CSS into WordPress, with list of other WordPress CSS references
+Blog Design and Layout 
+List of articles and resources for WordPress blog design, and layout
+Know Your Sources#CSS 
+List of general CSS references
+Tools, Testing and Validating
+CSS Fixing_Browser Bugs
+CSS Troubleshooting
+Validating a Website
+Plain Text Editors 
+A list of plain text editors for all platforms.
+Categories:
+Design and Layout
+Template Tags
+Templates
+/--+--/There are times when you will need to edit WordPress files, especially if you want to make changes in your WordPress Theme. WordPress features a built-in editor that allows you to edit files online, using any internet browser. You can also edit files copied or stored on your computer, and then upload them to your site using an FTP client.
+
+Before editing any of your WordPress files, be sure to do the following:
+
+Work from copies of backup files when possible, and make sure that you backup your information frequently--while you work, and whenever you make changes. Remember to keep your backups in a safe place!
+When working online, you need to set the appropriate file permissions, so that you can modify and save files. If you see a note at the bottom of the WordPress editor panel that says "If this file was writable you could edit it..." this means that you need to change the file permissions before you can make any changes.
+When making changes to files outside of the built-in plugin and theme editors, use a text editor. It is strongly advisable not to use a word processing program. Word processors change quote marks to characters, they sometimes convert specific characters, and they can also add in unwanted code. These changes can cause files to break. (For similar reasons, it is also inadvisable to use certain HTML generator programs.)
+Using the Theme Editor and Plugin Editor
+WordPress contains two built-in editors that allow you to edit theme files directly from your browser. They are called the theme editor and the plugin editor.
+
+(Please note that, depending on the level of user privileges that you have, you may or may not be able to access these features in the administrative panel of your blog. Please contact your blog or website administrator, in order to have your privileges adjusted.)
+
+Access the theme editor from the Administration > Appearance > Editor menu.
+
+The plugin editor is located at Administration > Plugins > Editor.
+
+You can view a file in either of these editors by accessing it from the right hand sidebar navigation.
+
+More information on editing themes is available at Theme Development and Using Themes. You can learn more about editing plugins at Writing a Plugin and Plugin Resources.
+
+Be aware that if the theme you edit is updated, your changes will be overwritten. To better organize your changes and protect them from updates, consider creating a Child Theme in which to keep all your changes.
+
+What Files Can Be Edited?
+The following file types (if writable) can be edited in the plugin editor that is built into the WordPress administrative panel:
+
+HTML
+PHP
+CSS
+TXT (and related text-like files such as RTF)
+In the theme editor, only writable PHP and CSS files can be edited.
+
+Things You Need to Know
+Instant Changes 
+The changes you make to files using the WordPress editors are instant. The changes happen online, in real-time. You and any visitors to your site will see the changes, immediately.
+Because of the immediate nature of the changes, it"s usually safer to edit copies of your files offline, test the file copies, and then upload your changes when they are verified.
+Always make sure you have a current backup before editing files.
+Editor Features 
+The built-in WordPress plugin and theme editors are very basic, allowing you to easily view and edit plugin and theme files on your website. Please note that there are no advanced editor features such as: search and replace, line numbers, syntax highlighting, or code completion.
+Hint: Use your browser"s internal search bar to help find code within the visual editors.
+File Permissions 
+To edit a file using the built-in WordPress plugin and theme editors, the permissions for that file must be set to writable (at least 604). You can change the permissions on files by using an FTP client program, a web-based file manager provided by your host, or from the command-line using SSH (secure shell). Your options depend on the type of access your host offers.
+Make a Mistake? Use Backup Files 
+Backup all files before editing. If you make a mistake that causes errors, causes a site crash, creates a blank screen, or blocks access to your WordPress Dashboard, delete the changed file and replace it with a good copy from your backup.
+No backup? Download a fresh copy of the file you edited from the original source, replace it, and start over. BACKUP FIRST.
+Security Warning 
+By default, any user that logs in with administrative permissions can access the WordPress plugin and theme editors, and change any theme or plugin file on your site in real-time.
+To combat accidents, errors, or even hacking, you may wish to disable the ability to edit files within the WordPress theme by adding the DISALLOW_FILE_EDIT function to your wp-config.php file.
+Editing Files Offline
+To edit files offline, you can use any of the recommended text editors to create and edit files, and an FTP client to upload them. Make sure to view the results in your browser, to see if the desired changes have taken effect.
+
+Note: It is not recommended to change WordPress core files other than wp-config.php. If you must change anything else, take notes about your changes, and store a copy of these notes in a text file in your WordPress root directory. You should also make a backup copy of your WordPress core files, for future reference and upgrades.
+
+Using Text Editors
+Editors to Avoid
+Note: If you use an external editor such as a word-processor to create and edit files, this can corrupt the file you are editing. See text editor in the glossary for a short explanation as to why you should avoid these editors.
+
+Editors to avoid include:
+
+Adobe Dreamweaver
+Adobe Illustrator
+Adobe Photoshop
+Apple iWork Pages
+Google Docs
+Microsoft Excel
+Microsoft Publisher
+Microsoft Word
+Microsoft Works
+OpenOffice/LibreOffice
+WordPerfect
+Any do-it-yourself instant web page software.
+To use Adobe Dreamweaver or Microsoft FrontPage, keep these guidelines in mind:
+
+Adobe Dreamweaver: To make sure your files work properly, delete Dreamweaver content, copy your content from the WordPress editor, and paste it into the Dreamweaver file.
+Microsoft FrontPage: Do not use built-in templates. Avoid Internet Explorer-specific code.
+Text Editors
+The following text editors are acceptable for file editing:
+
+Atom (Mac OS X, Windows, Linux, Open Source, Free)
+BBEdit (Mac OS X, $)
+Boxer Text Editor (Windows)
+Brackets(Open Source, Mac OS X, Windows, Linux)
+Coda (Mac OS X, Shareware)
+Crimson Editor (Windows, Free)
+EditPad (Windows)
+EditPlus (Windows)
+Editra (Mac OS X, Windows, Linux, Open Source, Free)
+emacs (Unices, Windows, Mac OS X, Open Source, Free)
+gedit (Unices)
+JEdit (Mac OS X, Windows, Linux)
+Kate (Unices)
+Komodo Edit (Mac OS X, Windows, Linux, Open Source, Free)
+Kwrite (Unices)
+Notepad++ (Windows, Open Source, Free)
+Notepad2 (Windows, Free)
+phpDesigner (Windows)
+pico (Unices)
+PSPad (Windows, Free)
+Smultron (Mac OS X, $)
+SubEthaEdit (Mac OS X, $)
+Sublime Text 3 (Windows, Linux, Mac OS X, $)
+TextEdit (included with Mac OS X)
+TextMate (Mac OS X, $)
+TextPad (Windows)
+TextWrangler (Mac OS X, Free)
+UltraEdit-32
+vim (Unices, Windows, Mac OS X, Open Source, Free)
+IDEs
+The following IDEs are acceptable for file editing:
+
+Aptana Studio (Mac OS X, Windows, Linux, Free)
+Codelobster (Windows, Free)
+Eclipse (Mac OS X, Windows, Linux, Free)
+NetBeans (Mac OS X, Windows, Linux, Free)
+Categories:
+Getting Started
+Design and Layout
+WordPress Lessons
+UI Link
+/--+--/JavaScript will work within WordPress. If used within the template files, most JavaScript will work fine. Here are a few tips to make your JavaScript work in WordPress.
+
+JavaScript in Template Files
+To use JavaScript repeatedly within your site, you can either set the call for the JavaScript, or the script itself, in the head of your header.php template file, between the meta tags and the style sheet link, no differently than you would if you were using JavaScript in any HTML page. To "load" the JavaScript file into your site, in the head, add something like this:
+
+<script type="text/javascript" src="/scripts/emailpage.js"></script>
+Be sure that you define the type correctly, as your site will not validate without it.
+
+In the spot where you wish to use the JavaScript, set the call for the JavaScript. For example, you are using a JavaScript that sets a link for users to "email this page" to a friend and you want it to be under the post title. It might look like this:
+
+<h3 class="storytitle">
+<a href="<?php the_permalink() ?>" rel="bookmark">
+<?php the_title(); ?></a></h3>
+<div class="emailpage">
+<script type="text/javascript">
+<!--
+emailpage();
+//--></script>
+</div>
+JavaScript in Posts
+To use JavaScript inside of posts in WordPress, you need to take a few more steps. Odds are that this usage is for one or only a few instances, so adding the script to the header would only add code you don"t need to your header.php template file.
+
+For the occassional or one time use of JavaScript, you need to put the script into a JavaScript file and then call it out from within the post. Make sure that each script is defined by its function name such as:
+
+function updatepage(){var m="Page updated "+document.lastMo.......}
+To include a JavaScript inside a post, you need to combine both the call to the script file with the call to the JavaScript itself.
+
+<script type="text/javascript" src="/scripts/updatepage.js"></script>
+<script type="text/javascript">
+<!--
+updatepage();
+//--></script>
+Creating a Multiple Script File
+You might have a collection of scripts that you call from time to time, like a scripts which calculate time zones or distance, or maybe scripts that create some effect or accent on your page. For reoccurring JavaScripts, consider grouping them together into one file.
+
+Let"s call our group JavaScripts file scriptfile.js (choose whatever you want) and say it contains the updatepage, emailpage, and caltimezone scripts. As you copy each JavaScript into the file, make sure it has a unique function name such as with this condensed version:
+
+function updatepage() {var m="Page updated "+document.lastMo.......}
+function emailpage() {mail_str = "mailto:?subject=....}
+function caltimezone() {var timerID ; function tzone(tz, os, ds, cl) {this.ct =......} 
+Place the script file of all the JavaScripts in the head of the header.php template file between the meta tags and the style sheet link. It will just sit there, loaded into the browser"s memory, waiting for one of the scripts inside to be called.
+
+<script type="text/javascript" src="/scripts/scriptfile.js"></script>
+In the spot in your post where you would like to use the JavaScript, call it as follows:
+
+<script type="text/javascript">
+<!--
+updatepage();
+//--></script>
+Troubleshooting JavaScript
+If you are having trouble with including JavaScripts inside a post, use the Text Control Plugin which allows you to control on a global or per post basis the ability to turn off WordPress"s automatic formatting features which can quickly turn a code into something readable instead of executable. Set the options on the post that you will be using the JavaScript on to have No Formatting or Markup or nl2br and No Character Formatting. You may have to experiment to get it to work. As a reminder, when using the Text Control Plugin, you must first Save and Continue Editing the post in order to see the Text Control Plugin options.
+
+If you choose No Formatting, your post"s text will all run together, so you will have to add paragraph tags and other HTML tags in order to format your page as WordPress normally does that for you.
+
+If your JavaScript doesn"t work, triple check that you haven"t made any errors during the cut and paste into a group or single file. Be sure you used a text editor and not a word processing program to create the JavaScript file. Check the name of the function in the script file as well as on your site. Not all JavaScripts may work, and could possibly conflict with your PHP commands, but this is very rare.
+
+If you are really having trouble with this, the WordPress Support Forum may be able to help.
+/--+--/What is Ajax?
+Ajax is a JavaScript based technology that allows a web page to fetch new information and present itself without refreshing the page. The idea behind Ajax is to make the web page more responsive and interactive from the user"s point of view.
+
+Normally, a web page must be refreshed to view new information. For example, when you fill out an online form such as a credit card purchase online, some sites need you to click next to let you know if you filled out something incorrectly. However, with Ajax, not only can the form let you know if you filled out something incorrectly, but it can also let you know if you"ve already made a previous purchase, or if your credit card was expired. Another example of useful Ajax is viewing online maps. Before Ajax, Google Maps required you to click the arrows to navigate their maps, and the page had to reload in order to see the new portion of the map you were interested in. However, Google Maps now utilizes the power of Ajax to fetch the new portions of the map and "redraw" the page where the map moves.
+
+If you already know about Ajax, and want to use it in a plugin you are developing, skip to AJAX in Plugins.
+
+How does Ajax work?
+Ajax technology is actually fairly simple to describe. Basically, the web programmer connects a link, button, or some other type of user interface element on the web page to a JavaScript program. When the user activates the interface (clicks on the link, drags the mouse, etc.), the JavaScript program sends some information or a request for data to a URL on the web server. Next, a program on the web server (probably also created by the web programmer) processes the request and sends back a response or some data. Typically the data is in XML format, but that is not actually required. When the data or response arrives in the browser, the JavaScript program receives an "asynchronous" notification, so that it can be processed or displayed appropriately.
+
+Today, Ajax is supported in some form by most visual web browsers (though only if the user has JavaScript turned on). Of course, like most complex JavaScript, there are differences between how browsers implement JavaScript. However, these are not too difficult to overcome. The only real restriction on Ajax is that the URL you send the information to has to be on the same website as the URL the JavaScript came from. Other than that, the uses for the technology are only limited to what you can figure out how to program.
+
+Ajax in WordPress
+Because of its responsiveness, Ajax technology is being adopted by all sorts of websites -- and WordPress is no exception. Currently, the core of WordPress uses Ajax only in the administration screens. For instance, Ajax is used for instant updates when you are doing comment moderation, and when you are adding and deleting items from lists such as categories, blogroll, and posts; Ajax is also the technology behind the auto-save functionality on post and page editing screens. Several themes and plugins also use Ajax; for instance, some post rating plugins use Ajax to store the visitor"s rating in the database and then display an updated average rating.
+
+Further Reading
+General Information
+Wikipedia Ajax article
+Developer Information
+Codex - Ajax in Plugins - WordPress-specific information on how to add Ajax to plugins
+WP_Ajax_Response Class Reference - Responding to Ajax requests
+Working Examples of Ajax
+Simplified Ajax - SAJAX
+Generally Speaking
+"Eleven Emerging Ideas for SOA Architects in 2007" from Hinchcliffe.org; "This allows widgets, Ajax applications, and mashups to be wired together so quickly it can almost be done in real-time with the latest tools."
+/--+--/WordPress Cookies
+Contents
+1 Users
+1.1 WordPress > 2.4
+1.2 WordPress > 2.8
+1.3 WordPress > 3.0
+1.4 Non-Version-Specific Data
+2 Commenters
+3 References
+WordPress uses cookies, or tiny pieces of information stored on your computer, to verify who you are. There are cookies for logged in users and for commenters.
+
+This page is a partial work in progress.
+
+Users
+Users are those people who have registered an account with the WordPress blog in question.
+
+
+WordPress > 2.4
+When you log into WordPress from http://example.com/wp-login.php, WordPress stores the following two cookies:
+
+Your user name
+A double-hashed copy of your password
+The cookies are set to expire two weeks from the time they are set.
+
+WordPress > 2.8
+Filter to change the expiration time.
+
+WordPress > 3.0
+On login, wordpress uses the wordpress_[hash] cookie to store your authentication details. Its use is limited to the admin console area, /wp-admin/
+
+After login, wordpress sets the wordpress_logged_in_[hash] cookie, which indicates when you"re logged in, and who you are, for most interface use.
+
+WordPress also sets a few wp-settings-{time}-[UID] cookies. The number on the end is your individual user ID from the users database table. This is used to customize your view of admin interface, and possibly also the main site interface.
+
+The cookies length can be adjusted with the "auth_cookie_expiration" hook (An example can be found at what"s the easiest way to stop wp from ever logging me out).
+
+Non-Version-Specific Data
+The actual cookies contain hashed data, so you don"t have to worry about someone gleaning your username and password by reading the cookie data. A hash is the result of a specific mathematical formula applied to some input data (in this case your user name and password, respectively). It"s quite hard to reverse a hash (bordering on practical infeasibility with today"s computers). This means it is very difficult to take a hash and "unhash" it to find the original input data.
+
+WordPress uses the two cookies to bypass the password entry portion of wp-login.php. If WordPress recognizes that you have valid, non-expired cookies, you go directly to the WordPress Administration interface. If you don"t have the cookies, or they"re expired, or in some other way invalid (like you edited them manually for some reason), WordPress will require you to log in again, in order to obtain new cookies.
+
+The functions to set and remove cookies are currently defined in /wp-includes/pluggable.php.
+
+wp_set_auth_cookie( $user_id, $remember, $secure ) 
+This function sets the cookie.
+wp_clear_auth_cookie() 
+This function will delete the cookie from the client browser. This happens when the user clicks on the Logout link in the Administration interface.
+auth_redirect() 
+This function also utilizes the cookies. Checks whether the cookie is present on the client browser. If it is not, the user is sent to the wp-login.php login screen. After logging in, the user is sent back to the page he or she attempted to access.
+Commenters
+When visitors comment on your blog, they too get cookies stored on their computer. This is purely a convenience, so that the visitor won"t need to re-type all their information again when they want to leave another comment. Three cookies are set for commenters:
+
+comment_author_{HASH}
+comment_author_email_{HASH}
+comment_author_url_{HASH}
+The commenter cookies are set to expire a little under one year from the time they"re set.
+/--+--/Whether you write plugins or hacks for WordPress, or you want to add bits and pieces of code about your own WordPress site or other programming code like HTML, CSS, PHP or JavaScript, putting code in your post that actually looks like code, but doesn"t behave like code, is a frequent challenge for bloggers.
+
+By default, the way a piece of code written or pasted to WordPress post editor is interpreted depends on whether you use visual or HTML post editor. Visual editor will consider the code to be an ordinary text, converting (encoding) the < and > characters into their &lt; and &gt; character entity equivalents, so that the code is not interpreted by a web browser. Quotes are converted too, but remember that by default, WordPress also applies auto-correction so that the text is quoted properly according to your language specifics. HTML editor does not convert any of these characters, so be aware that HTML and CSS markup you use in your code examples will be recognized by a web browser and you may end up with a funky looking text and a messed up layout.
+
+Note that this behavior may differ with respect to the WordPress version, post editor and other plugins used. In some older versions of WordPress, unrecognized uses of the < and > characters were converted into the &lt; and &gt; character entities, and when an HTML tag was found within the post, the tag was left as it was, allowing for its interpretation in a web browser.
+
+In general, there are two uses of code within a web page. There is code found within a paragraph to make a point about the code that is being discussed, and then there is code that is highlighted…
+
+…in such a way as to look 
+like a block of code.
+Code Within Paragraphs
+There are two HTML tags which will turn text into a monospaced font. They are <code> and <tt>. The latter is rarely used today, replaced by the more useful and semantically correct <code>, which distinguishes text that is computer code from natural language.
+
+This is an example which mentions code within a paragraph,
+namely the functions <code>wp_title()</code>, 
+<code>wp_content()</code> and <code>wp_footer()</code>, 
+which are very useful in WordPress.
+This is great for making a piece of non-HTML text look like code, but what about HTML tags that you want to showcase?
+
+In the header.php template file, 
+look for the <code><div class="header"></code> 
+section to change the <code><h1></code> heading.
+Using the <code> tag doesn"t tell WordPress to encode HTML markup within the tag or strip it from the post. WordPress thinks that you are using this markup for formatting, leaving it untouched. A web browser then sees a <code> tag followed by a <div> tag and so it responds by creating a new container in your web page. Similarly afterwards, it sees the start of an <h1> tag which will screw up your entire web page layout and design, like this:
+
+In the header.php template file, look for the
+
+leaf.gifsection to change the heading.
+To avoid this behavior, use character entities or extended characters to represent the left and right arrow characters in a way that is not recognized as the beginning and end of an HTML tag by a web browser, like this:
+
+In the header.php template file, 
+look for the <code>&lt;div class="header"&gt;</code> 
+section to change the <code>&lt;h1&gt;</code> heading.
+URLs Within Paragraphs
+By default, WordPress will turn any phrase that begins with http: into a link. If you are giving an example of how to link to a specific post within a WordPress site, instead of using the link with http://example.com/index.php?p=453 and having it turn into a link, you can use extended characters for the slashes, so WordPress won"t "see" the link.
+
+...link to a specific WordPress post using 
+<code>http:&#47;&#47;example.com&#47;index.php?p=453</code>
+in your post....
+List of Related Character Entities
+Here is a list of some HTML character entities related to the topic of this article:
+
+< = &lt; or &#60;
+> = &gt; or &#62;
+/ = &#47;  	
+] = &#93;
+[ = &#91;
+" = &quot; or &#34;
+" = &#39;
+“ = &ldquo; or &#8220;
+” = &rdquo; or &#8220;
+‘ = &lsquo; or &#8216;
+’ = &rsquo; or &#8217;
+& = &amp; or &#38;
+There is a list of resources below which will help you turn HTML tags into character entities automatically, so you don"t have to memorize these character codes.
+
+Using the <pre> tag
+To set your code aside so that it looks like a box of code which may be copied and pasted within other code or template file, you can use the <pre> HTML tag.
+
+The <pre> tag instructs the browser to use a monospaced font, but to exactly reproduce whatever is inside of the <pre> tags. Every space, line break, every bit of code is exactly reproduced.
+
+<h3>Section Three Title</h3>
+<p>This is the start of a 
+<a title="article on relationships" href="goodtalk.php">
+good relationship</a> between you and me....
+Using the <pre> tag isn"t very "pretty" but it does the job. Examples of how to style it can be found in the next section. Still, it showcases the code exactly.
+
+By exactly, we mean EXACTLY. If you have a long line of code, it will run off the page because there are no instructions which tell the code to wrap. It won"t. Here is an example:
+
+<h3>Section Three Title</h3><p>This is the start of a <a title="article on relationships" href="goodtalk.php">good relationship</a> between you and I and I think you should read it because it is important that we have these little <a title="article on communication" href="communication.php">conversations</a> once in a while to let each other know how we feel....
+Not pretty, is it. To avoid this screen run-off, put in line breaks. Unfortunately, deciding where to put those line breaks in when you are showcasing code that will be copied makes it a difficult decision.
+
+If you are familiar with programming language, you will know when a line break won"t mess up a line of code, so choose there. If you are unfamiliar with where to put line breaks, experiment. Put the code in, make the line breaks, and then test the code. If it works, then use the line break there. If not, change the line break position.
+
+If you have long lines of code, consider showcasing only excerpts and providing a link to the full code placed on your site in a text or PHP file, or using one of the many online pastebins which are available for temporarily showcasing code.
+
+Troubleshooting Codes
+Writing code within a WordPress post can be a challenge, maybe forcing you to override the WordPress default styles and to use filters which "fix" what we write. If you are having trouble with writing code within your WordPress post, this section might help.
+
+Quotes Auto-correction
+A frequent problem when using codes within your post is the quotes auto-correction feature of WordPress, mostly known from word processing software. By default, when serving a web page, WordPress converts the "straight" quotes into the opening and closing “curly” quotation marks according to your WordPress installation language set in the wp-config.php file. Note that the auto-correction (also called smart quotes) feature is applied regardless of whether you have written the quotes in visual or HTML post editor.
+
+In HTML post editor, you can avoid this problem by wrapping the quotes with the <code>, <tt> or <pre> tags. Other solution is replacing quotes with their respective character entities, e.g. using:
+
+<code>&lt;p class=&#34;red&#34;&gt;</code>
+instead of:
+
+<p class="red">
+Note that in some older versions of WordPress, if you edited a page again after publishing it, the HTML editor replaced all these entities with their literal equivalents. For example, if you carefully used &#34; for your quotes, they would have come back as ", and if saved, the auto-correction feature would have an effect on them.
+
+Styling Your Code Tags
+By default, using the <code>, <tt> and <pre> tags will put the text in a monospaced font and use the font-size from the <body> tag. What if you want the font-size to be different, and the look of these tags to also have a different color or style to them?
+
+Add styles for these two tags to your style.css stylesheet file located in your current WordPress theme directory. You can use these styles:
+
+pre, code{
+	direction: ltr;
+	text-align: left;
+}
+pre {border: solid 1px blue;
+	font-size: 1.3 em; 
+ 	color: blue; 
+	margin: 10px; 
+	padding:10px; 
+	background: #FFFFB3}
+code {font-size:1.2em; 
+	color: #008099}
+Using the <code> tag would then look like this and the <pre> tag would look like this:
+
+pre, code{
+     direction: ltr;
+     text-align: left;
+}
+pre {border: solid 1px blue;
+     font-size: 1.3 em; 
+     color: blue; 
+     margin: 10px; 
+     padding:10px; 
+     background: #FFFFB3}
+code {font-size:1.2em; 
+     color: #008099}
+Resources
+Fun Character Entities
+WordPress Resource Tools Encode
+Frequent Code User
+If you consistently use a lot of formulas, functions, and programming code in your posts, consider using a plugin or PHP tool to make the entire process easier. If you tend to post a LOT of code blocks, consider pasting the code in a Paste Bin and linking to it on your site.
+
+FigureRender - LaTeX rendering plugin
+9 Syntax Highlighter Plugins and Services for Embedding Code Snippets in WordPress - Following are list of best WordPress plugins or 3rd-party services to highlight code snippets within your blog that I have personally tried in 2013.
+Coffee2code"s Preserve Code Formatting WordPress Plugin
+QuickCode WordPress Plugin - Hides/unhides formatted blocks of code.
+Using ASCIIMath
+LaTex - A document preparation system
+Using LaTeX in WordPress
+Display mathematical equations within your posts using the phpmathpublisher library
+How to Build Dean Lee"s Plugin - A plugin for GeSHi - Generic Syntax Highlighter
+Visual Code Editor Plugin - Modifies WordPress"s behavior so that code format is preserved when using the visual editor. It will work with any syntax highlighter that accepts encoded/escaped syntax.
+SyntaxHighlighter Evolved - allows you to easily post syntax-highlighted code to your site without having to escape the code. Uses the SyntaxHighlighter JavaScript package by Alex Gorbatchev to do the highlighting and supports all of the package’s parameters via shortcode.
+Paste Tools
+Pastebin.com
+GitHub:Gist
+Pastie
+Categories:
+WordPress Lessons
+Design and Layout
+Advanced Topics
+/--+--/Introduction to Feeds
+A feed is a function of special software that allows feedreaders to access a site, automatically looking for new content and then posting the information about new content and updates to another site. This provides a way for users to keep up with the latest and hottest information posted on different blogging sites.
+
+There are several different kinds of feeds, read by different feedreaders. Some feeds include RSS (alternately defined as "Rich Site Summary" or "Really Simple Syndication"), Atom or RDF files.
+
+WordPress Built-in Feeds
+By default, WordPress comes with various feeds. They are generated by template tag for bloginfo() for each type of feed and are typically listed in the sidebar and/or footer of most WordPress Themes. They look like this:
+
+URL for RDF/RSS 1.0 feed 
+<?php bloginfo("rdf_url"); ?>
+URL for RSS 0.92 feed 
+<?php bloginfo("rss_url"); ?>
+URL for RSS 2.0 feed 
+<?php bloginfo("rss2_url"); ?>
+URL for Atom feed 
+<?php bloginfo("atom_url"); ?>
+URL for comments RSS 2.0 feed 
+<?php bloginfo("comments_rss2_url"); ?>
+The first four feeds display recent updates and changes to your site"s content for the different feedreaders. Of these, the RSS feeds are the most well known. The last feed example is used by RSS 2.0 feedreaders and does not show your site"s content. It only shows the comments made on your site.
+
+To track the comments on a specific post, the post_comments_feed_link() template tag is used on single post pages like this:
+
+<?php post_comments_feed_link("RSS 2.0"); ?>
+There are ways to modify these feeds, and these are covered in the article on Customizing Feeds.
+
+Finding Your Feed URL
+There are times when you want to tell someone your site"s feed address or URL, or you need it to submit it to search engines and directories, many of which now accept feed URL submissions. There are four possible URLs for each of your feeds. Any of these will work.
+
+http://example.com/?feed=rss
+http://example.com/?feed=rss2
+http://example.com/?feed=rdf
+http://example.com/?feed=atom
+If you are using custom permalinks, you should be able to reach them through this usage:
+
+http://example.com/feed/
+http://example.com/feed/rss/
+http://example.com/feed/rss2/
+http://example.com/feed/rdf/
+http://example.com/feed/atom/
+Comments
+Your site has feeds for all comments on the site, and each post has its own comment feed.
+
+Site comment feed
+Permalink format:
+
+http://example.com/comments/feed/
+Default format:
+
+http://example.com/?feed=comments-rss2
+Post-specific comment feed
+Permalink format:
+
+http://example.com/post-name/feed/
+Default format:
+
+http://example.com/?p=33&feed=rss2
+Categories and Tags
+You can also provide feeds to only specific categories or tags on your site by adding the following to the end of the link:
+
+http://www.example.com/?cat=42&feed=rss2
+or
+
+http://www.example.com/?tag=tagname&feed=rss2
+or
+
+http://www.example.com/category/categoryname/feed
+or
+
+http://www.example.com/tag/tagname/feed
+You can include posts from one of multiple categories or tags in a feed by comma-separating their values. For example:
+
+http://www.example.com/?cat=42,43&feed=rss2
+or
+
+http://www.example.com/?tag=tag1,tag2&feed=rss2
+or
+
+http://www.example.com/category/cat1,cat2/feed
+You can include posts from all of multiple categories or tags in a feed by adding to the end of the link. For example:
+
+http://www.example.com/category/cat1/category/cat2/feed
+or
+
+http://www.example.com/tag/tag1/tag/tag2/feed
+You can exclude categories from the feed by using something like this:
+
+http://www.example.com/?cat=-123&feed=rss2
+Older versions of WordPress used a format such as but this has been deprecated in newer versions.
+
+http://example.com/wp-rss2.php?cat=42
+Authors
+Every author has an RSS feed for their posts. Here is the format:
+
+http://example.com/author/authorname/feed/
+Search
+Search results can also have their own feed. Here is the format:
+
+http://example.com/?s=searchterm&feed=rss2
+Adding Feeds
+Not all WordPress Themes feature all of the RSS Feed types that are available through WordPress. To add a feed to your site, find the location of where the other feeds are, typically in your sidebar.php or footer.php template files of your Theme. Then add one of the tags listed above to the list, like this example:
+
+<ul class="feeds">
+    <li><a href="<?php bloginfo("rss2_url"); ?>" title="<?php _e("Syndicate this site using RSS"); ?>"><?php _e("<abbr title="Really Simple Syndication">RSS</abbr>"); ?></a></li>
+    <li><a href="<?php bloginfo("atom_url"); ?>" title="<?php _e("Syndicate this site using Atom"); ?>"><?php _e("Atom"); ?></a></li>
+    <li><a href="<?php bloginfo("comments_rss2_url"); ?>" title="<?php _e("The latest comments to all posts in RSS"); ?>"><?php _e("Comments <abbr title="Really Simple Syndication">RSS</abbr>"); ?></a></li>
+</ul>
+Adding Graphics to Feed Links
+Many people like to have a graphic representing the feed instead of words. There are now standards for these graphics or "buttons", but you can make your own to match the look and colors on your site. rssfeed.gif
+
+To add a graphic to your feed link, simply wrap the link around the graphic such as:
+
+<a href="<?php bloginfo("rss2_url"); ?>" title="<?php _e("Syndicate this site using RSS"); ?>"><img src="http://www.mozilla.org/images/feed-icon-14x14.png" alt="RSS Feed" title="RSS Feed" /></a>
+Changing Addresses
+If you are currently using other webblog software and are changing to WordPress, or are moving your weblog to a new location, you can "forward" RSS readers to your new RSS feeds using file rewrites and redirects in your .htaccess file.
+
+Edit the .htaccess file in your root folder; if no file exists, create one.
+
+Here is an example for a b2 feed:
+
+RewriteRule ^b2rss2.php(.*)? /wordpress/?feed=rss2 [QSA]
+Here is an example for MovableType Users:
+
+RewriteRule ^index.xml(.*)? /wordpress/?feed=rss2 [QSA]
+Feed Director provides rewrite rules for common feed filenames used by other blogging platforms, such as index.xml, index.rdf, rss.xml, rss2.xml, atom.xml, *.xml, via an easy-to-use "install it and forget it" plugin.
+
+RSS feed time and date format
+WordPress adheres to the RSS specifications. This means that the time and date format will NOT use your blog time/date format as set in your settings, instead it uses the time and date format from the RFC822 specification. This looks for example like this: Sun, 06 Sep 2009 16:10:34 +0000
+
+Note: The time/date format of feed should NOT be localized since the the current RSS specifications are referring to RFC822 specification which specifies English as a default. This implies that every RSS consumer should take care of translating time/date according to its locale.
+
+Feed Errors in Browsers
+A feed is a stream of data meant to be interpreted by a feed reader, like NewsBlur or RSSOwl. Not all browsers have the capability to interpret feeds, and one of the most popular browsers lacking this feature is Google Chrome.
+
+Users of Chrome and other similar browsers will notice a "This XML file does not appear to have any style information associated with it. The document tree is shown below." error followed by the raw feed. This is normal, as Chrome was not built to interpret feeds. Instead, subscribe to the feed in a real feed reader, or install Google"s RSS Subscription Extension.
+
+More Information and Resources
+Feed error - How to - hints and tips to solve common feed errors (ex. white spaces before xml declaration)
+Customizing Feeds
+Styling your RSS feeds
+How to setup and create category RSS feeds
+Complete reference for determining your various WordPress feed URLs
+How to add an image to your RSS feed in WordPress 2.0 and above
+Work with RSS in WordPress site
+(Pre 2.0) How to add an image to your RSS 2.0 feed
+How to add images to RSS and Atom feeds
+Add RSS feed link icons to WordPress categories
+Mezzoblue"s What is RSS/XML/Atom/Syndication?
+NewsForge: Save time with syndication
+Using FeedBurner with WordPress
+Changing feed url with .htaccess
+Redirect WordPress Feeds to Feedburner without a plugin
+Subscribe Me allows you to easily add various subscription buttons to your sidebar
+Add to any Subscribe Button plugin lets your visitors add your feed to any feed reader
+Feed Icons provides official RSS icons in many formats (AI, EPS, SVG, PSD, PDF, PNG, JPG, GIF).
+WP RSS Aggregator an RSS aggregator/import plugin for WordPress
+Wikipedia - RSS an overview on RSS
+Categories:
+WordPress Lessons
+Feeds
+/--+--/Permalinks, .htaccess, and MS Frontpage
+A note about Microsoft Frontpage: many servers (shared and dedicated) maintained and built by various hosting companies come with mod_frontpage compiled with the apache build, and in many cases with the Frontpage Server Extensions installed, on each virtual server. This is more common than not, many/most binary distributions used in the server build process at most hosting companies these days include both mod_fronpage and the server extensions. Even if you"re not using Frontpage, because of the way that the extensions interact with apache (and the httpd.conf file) you"ll likely get something like a 500 error or blank white page when trying to view your WP install (although the admin panel may operate correctly) simply because extensions/mod_frontpage exist on your server.
+
+WordPress will operate correctly with the Frontpage Extensions installed, however permalinks will not function at all and ANY change to the permalinks section from the WordPress admin interface will cause corruption of the Frontpage server extensions due to the addition of the mod_rewrite rules to the .htaccess file. There is however now a fix for this situation.
+
+Quick Fixes, Frontpage or Permalinks
+Frontpage Extensions Fix: If you don"t care about permalinks and just want to make the MS Frontpage server extensions work again, simply edit your .htaccess file and remove the WordPress section with the rewrite rules.
+
+To Use Permalinks: If you don"t care about Frontpage(but your hosting company has the extensions installed)
+
+You will need to remove (or have your hosting company do so) the MS Frontpage server extensions, or simply edit the .htaccess file to removed all of the Frontpage Lines, leaving only the WordPress mod_rewrite code.
+
+Using FrontPage AND Permalinks Together
+Finally, A solution.
+
+There have been a number of threads on this issue in the support forums, and until now, no solution to the problem.
+
+Normally, on a Unix server with the Microsoft FrontPage Server extensions installed WordPress works just fine and you are able to edit and publish pages (with Microsoft FrontPage) — until — you make a change to the permalinks (for example to the date based kind that I like /2005/04/etc). I often suggest that type of URI to folks asking about permalinks etc, as that is the method recommended by the w3c (see http://www.w3.org/Provider/Style/URI ).
+
+Now, the problem is that FrontPage uses the .htaccess file (which the WordPress mod_rewrite rules must access) for its "publishing" and "web authoring" configuration. As soon as the WordPress mod_rewrite code is added to the file, two things happen — the permalinks don"t work and the Frontpage Server extensions become corrupt.
+
+I have tried countless ways to get around this, including trying to use rewrite rules that "ignore" the %{HTTP_USERAGENT)% used by FrontPage, to using a second AccessFilename .wpaccess to the httpd.conf file, and a host of other things, and nothing worked to allow use of FrontPage and management and use of permalinks in WordPress at the same time.
+
+The solution is actually simple, and I figured it out by accident.
+
+If you are using, or wish to use FrontPage (or if your hosting package is pre-configured that way) along with WordPress, you"ll need to take the following simple steps on your server or have your hosting company do them for you.
+
+Microsoft FrontPage creates the following directory
+
+_vti_bin
+Nested within that it creates both
+_vti_adm
+and
+_vti_aut
+In addition to in your site (or WordPress) root folder in all of those directories you will find additional .htaccess files.
+
+In all three of these directories AND in the root directory, at the top of ALL of the .htaccess files you simply need to add one line:
+
+Options +FollowSymlinks
+There may or may not already be a line in each like
+
+Options None
+Edit and save each .htaccess file and you"re done. Now everything works perfectly, including FrontPage, AND the permalinks of your choosing.
+
+Long Permalinks
+When using extra long permalinks in email and posting in comments and chats, some long permalinks are "chopped off" or only the first section is actually recognized as a link and the end seen as text. Here is an example.
+
+http://yourdomain.example.com/2005/10/4/article-about-joe-fred-sally-and-bog
+Can result in:
+
+http://yourdomain.example.com/2005/10/4/article-about-joe-fred-sally-and-bog
+To click on the lower link, the user would get a 404 Page Not Found Error. If you have a tendency to use very long permalink post titles, take these steps to prevent this problem.
+
+1. Check that you are indeed using Permalinks.
+
+2. Edit your .htaccess file and add the following:
+
+ RewriteRule ^post/([0-9]+)?/?([0-9]+)?/?$ /index.php?p=$1&page=$2 [QSA]
+3. Test it. Find a post"s ID number and type the following (with your information) in your browser and you should be redirected to your post:
+
+http://yourdomain.example.com/post/(the ID #)
+It is also worth noting that most email software will not cut off URLs that have been delineated with angle-brackets (< and >), so when pasting URLs into emails, you should write them as so:
+
+Read my blog post at <http://yourdomain.example.com/2005/10/4/article-about-joe-fred-sally-and-bog>
+Additionally, some decent email clients offer a "preformat" option when composing plain-text emails. Using the "preformat" option when pasting links will force the email client not to insert linebreaks inside the links.
+
+Fixing Other Issues
+If your .htaccess file is being generated correctly, but Permalinks still do not function, the following might be a problem. If problems persist, post a note in the WordPress Forum"s How To section.
+
+AllowOverride Not Enabled 
+Your server may not have the AllowOverride directive enabled. If the AllowOverride directive is set to None in your Apache httpd.config file, then .htaccess files are completely ignored. In this case, the server will not even attempt to read .htaccess files in the filesystem. When this directive is set to All, then any directive which has the .htaccess Context is allowed in .htaccess files. Example of enabled AllowOverride directive in httpd.config:
+ <Directory />
+    Options FollowSymLinks
+    AllowOverride All
+ </Directory>
+You may also have to enable the AllowOverride directive in your DocumentRoot:
+
+ <Directory /var/www/html>
+    # ... other directives...
+    AllowOverride All
+ </Directory>
+You may also have to change the AllowOverride settings for the site. This is surely the case when using Mac OS X Server, but might be likewise with other systems. Usually you can find the site configuration files in /etc/httpd/sites/
+If you don"t want to set AllowOverride to all (as it is above) then your AllowOverride list must include the FileInfo directive. You must restart your Apache server for any httpd.config file changes to take effect. For more information on which overrides are allowed, read about Apache Core Features.
+Paged Navigation Doesn"t Work 
+Sometimes navigation to second (and subsequent) pages of posts does not work as expected. Your page may generate a link to a page with one of these URIs:
+ http://www.example.com/page/2/
+ http://www.example.name/category/categoryname/page/2/
+ http://www.example/year/month/day/page/2/
+ http://www.example/year/month/page/2/
+The result of clicking one of those links is that the page loads with all the surroundings (header, footer, sidebar), but instead of a page of posts, there is an error message: "Sorry, no posts match that criteria."
+This is due to a glitch in the .htaccess file that WordPress generates. To fix it, delete the contents of your .htaccess file and re-create it.
+In the Control Panel, go to Manage > Files (More Info on Editing Files)
+Click the link to your .htaccess file to edit its contents
+Copy the contents of the file and paste it to a text file in a text editor. This is a precaution in case your .htaccess file has manual entries for redirects, denials or other handy htaccess tricks
+Delete all contents from your .htaccess file and click the Update File button.
+In the Control Panel, go to Options > Permalinks.
+Click the Update Permalink Structure button to freshly generate new rewrite rules for your permalinks.
+Test the results using a link that had previously broken.
+Add any manual htaccess entries back in your file (Place manual htaccess entries before the # BEGIN WordPress or after # END WordPress lines.)
+You may also perform similar steps by deleting the .htaccess files from the server, creating a fresh empty .htaccess file, changing its permissions to 666, and then in Options > Permalinks generate a new set of htaccess rules by clicking the Update Permalinks Structure button.
+Sometimes, users define a single dot (.) as the category base in order to eliminate the category base altogether from the resulting URL. If that is the case with your setup, try replacing the dot with an actual word. "category", "read", "cat", "useful" are some nice suggestions.
+If that still doesn"t work, take a look at the WordPress support forums, specifically, this support post.
+Permalinks to pages don"t work 
+If you"ve tried to navigate to a newly created Page and encounter an error, you likely need to update your Permalink structure. Remember, each time you add a new static Page to WordPress, new rules must be generated and updated to .htaccess (WordPress 1.X) or to the internal rewrites array (WordPress 2.X).
+Permalinks to Ultimate Tag Warrior tag pages don"t work 
+If you get 404 errors on local tag URLs when using the UltimateTagWarrior plugin on WordPress 2.X, it"s because the internal rewrites generated by WordPress are being overly greedy and getting invoked before UTW"s rewrite rules have a chance. This usually occurs only when using a custom permalink structure (like /%postname%/). To fix it, either switch your Permalink structure to "Date and name based" or hack the UTW plugin to place the UTW rewrites at the top of the internal rewrites array.
+Permalinks work but no pages are returned 
+Some versions of PHP 4.4.x and 5.x have a bug that causes mod_rewrite to fail when used with some versions of Apache 2.x. More details at http://bugs.php.net/bug.php?id=35096 and http://bugs.php.net/bug.php?id=35059.
+More Help
+If these steps do not work, search for your problem in the Codex, Troubleshooting, or in the Support Forum. As a last resort, file a bug report.
+
+Tips and Tricks
+Avoiding interpretation as an archive link
+Note that even though one might never make more than one posting a day, and thus wishes to use e.g., %year%%monthnum%%day%, links so generated will however be interpreted as the archive of all posts for that day. One needs at least %year%%monthnum%%day%%hour% to target an individual post.
+
+Check for permalink structure
+A way to check if the blog has a permalink structure is:
+
+<?php if ( get_option("permalink_structure") ) { echo "permalinks enabled"; } ?>
+See Also
+User:Lazyking/Using Permalinks (Saetta Web Server)
+Linking Posts Pages and Categories for how to link from one article to another
+/--+--/Your WordPress installation checks sending referrers as a basic form of security to protect your admin area from unauthorized users; disabling it in your WP install would be a bad idea.
+
+
+Contents
+1 How Does It Work? WordPress 2.0.2-
+2 How do I Enable Sending Referrers?
+2.1 Internet Explorer 6
+2.2 Firefox 1.0+
+2.3 Opera
+2.4 K-Meleon
+2.5 Norton Internet Security
+2.6 Norton Personal
+2.7 Netbarrier
+2.8 Sygate Firewall
+2.9 Kerio Firewall 4
+2.10 Zone Alarm Pro
+2.11 Agnitum Outpost Firewall Pro 2008
+2.12 McAfee
+2.13 Privoxy
+3 Other Methods
+How Does It Work? WordPress 2.0.2-
+Whenever you want to write a new post, make changes to your blog"s layout, or perform any other administrative task, WordPress requires you to log in to a protected admin area. (You log in by submitting the user name and password given to you at the end of installation.) The log in acts as a basic security measure, protecting your blog"s admin options from being accessed by unauthorized users.
+
+Once WordPress has identified you as an authorized user with permission to make changes, you can access any of the protected admin options. All the pages within the admin area remain secure, without the nuisance of your having to log in to each page individually. Any additional admin page you choose can verify your status by checking to see which page you just came from.
+
+It does this by checking the referrer that the browser passes to it.
+
+As an example, let"s say you are on the main page at www.wordpress.org and you click the link to Get Firefox. Although you can"t see it, when you get to the Firefox page, the browser tells the new page which page you just came from. This information is called the "referrer." If you have any sort of statistics program or script that monitors traffic to your site, the information it reports to you has been compiled from the referrers.
+
+Those of us who use WordPress and are familiar with its structure know where the file post.php is most likely to be on other WordPress sites, yet we can"t go blogging freely across any WordPress site. Even though we know where to look for the page, if we try to access it we will be redirected. This happens because the referrer information the browser supplies to the page shows that you have not successfully logged in.
+
+How do I Enable Sending Referrers?
+Unfortunately, there may not be simple straight forward answer. Listed below are methods to enable this function, so please check both what is listed for your browser and also your firewall.
+
+If the program you use is not listed, study what is given for the others - the principle is the same throughout, it is just the method which differs between programs.
+
+I had the same problem, so I went into the cpanel of my server, then to phpMyAdmin, and brought up the WordPress tables, found and edited the wp-options to include the /wordpress/ folder in the url. That did the trick.
+
+Internet Explorer 6
+This can be done from the computer"s Control Panel > Internet Options, or from within the browser Tools > Internet Options.
+
+Click Security.
+Click Trusted Sites then Sites.
+Add your website address in the box provided and click Add.
+Uncheck the box that requires https verification.
+Click the Privacy tab (Medium is an acceptable setting on the slider, but click Sites and again enter your website address)/
+Now click Allow.
+Click Apply.
+This has only altered settings for your website and this does not otherwise affect your browsing.
+
+Firefox 1.0+
+RefControl
+
+Use the RefControl extention for Firefox: https://addons.mozilla.org/firefox/953/
+
+Manually Setting
+
+Warning: this method may be considered as a privacy risk as all sites will receive referers.
+
+Type about:config in the URL address bar.
+A large collection of alphabetically listed information will appear in the browser window.
+Search for network.http.sendRefererHeader.
+By default, this should be set at 2.
+If it is set to 0 - which disables sending referrers - right click it, select Modify and enter 2 as the value.
+If that doesn"t work, try a value of 1
+See http://kb.mozillazine.org/Network.http.sendRefererHeader for more information.
+
+Opera
+Sending referrers is enabled by default.
+
+If you have disabled it, go to Tools > Preferences > Privacy and re-enable it.
+
+K-Meleon
+Sending referrers is enabled by default.
+
+If you have disabled it, go to Tools > Privacy > Block referrers (if already checked)
+
+Norton Internet Security
+Go to Privacy Control > Advanced > Add Site.
+
+Add your URL (ie. example.com) and make sure everything is permitted.
+
+Norton Personal
+Some web pages require referrer information before allowing you to view their page. If you want to allow referrer information to pass to a particular web page, you must create a rule for it.
+
+To Create a Rule
+
+Open Norton Internet Security or Norton Personal Firewall and choose one of the following:
+
+In Norton Internet Security/Norton Personal Firewall 2003
+
+Click Options > Internet Security or
+Personal Firewall (This step is not always needed) and click the Web Content tab
+In Norton Internet Security/Norton Personal Firewall 2004
+
+Double-click Privacy Control
+Click Advanced
+Click Add Site (A new site/domain box appears)
+Enter the name of the site that you want to receive the referrer information and click OK. In this example, it will be www.symantec.com. The site name appears in the left frame of the Options window.
+Click the name of the new site
+Click the Global Settings tab
+In the "Information about visited sites" section, clear "Use default settings"
+Click Permit
+Click OK to close the Options window
+Norton Support Reference
+
+Netbarrier
+Go to Privacy > Surf > Information Hiding, and uncheck the "Last Web site visited" box.
+
+Sygate Firewall
+The free version of this firewall does not block sending referrers.
+
+The Pro version:
+
+Click Tools > Options > Security
+
+Ensure that "enable stealth mode browsing" is unchecked.
+
+Kerio Firewall 4
+Turn ON the HTTP referrer under the privacy tab of web filtering.
+
+Zone Alarm Pro
+Under Privacy Button on Left, Click on Site List Tab.
+Right click on "Private Header" column where WordPress URL is located. Or click "Add" to add the URL.
+From the menu, choose Options
+On the first tab named "Cookies", remove checkmark on "third party cookies - remove private header information"
+Click OKAY
+Agnitum Outpost Firewall Pro 2008
+Click on Settings.
+Click on Web Control.
+In web control level, clic on customize and then change to allow referrers.
+McAfee
+Right-click the red M icon.
+Click Privacy Service.
+Click Options.
+The McAfee Privacy Service window appears. Click Cookies.
+Enter each website address from which you would like to allow cookies.
+Click Add.
+Once completed, close the window
+Privoxy
+This might apply to other local proxy servers and ad busters. There is a "+hide-referrer" option that defaults to "forge a url" in the referral header; either disable this option in default.action (-hide-referrer) or simply place your domain in the { fragile } section of user.action. Another option is to exclude your domain from being proxied in your web browser"s setings.
+
+Other Methods
+If the methods outlined above fail to resolve the problem, there are a few other possible solutions:
+
+Check CURL"s library is installed
+Delete your cookies.
+This is helpful if you"ve recently made any changes to your path structure or domain.
+WP 2.0 Only - Delete the wp-content/cache folder. This would be necessary if you just finished Moving WordPress, since the cache retains the previous URI/URL even if changed directly in your database.
+Rename the .htaccess file, if it exists.
+Under certain configurations, mod_rewrite can interfere with database access causing WordPress to have an incorrect siteurl setting.
+Verify the siteurl setting in the wp_options table of your database is set to the root folder of your WordPress installation.
+For example: you may have entered http://example.com as the URL which resolves correctly because of DNS but will fail as a referrer unless http://example.com is the siteurl in the database.
+Subdomains may also create problems.
+You may have created a subdomain blog.example.com, and installed WordPress into www.example.com/blog. Under Options, General look for the WordPress address (URI): field. Change it to read: http://www.example.com/blog. The Blog address (URI): field should still read http://blog.example.com
+/--+--/While the LAMP stack (Linux + Apache + MySQL + PHP) is very popular for powering WordPress, it is also possible to use Nginx. WordPress supports Nginx, and some large WordPress sites, such as WordPress.com, are powered by Nginx.
+
+When talking about Nginx, it is important to know that there are multiple ways to implement Nginx. It can be setup as a reverse-proxy in front of Apache, which is a very powerful setup that allows you to use all of the features and power of Apache, while benefitting from the speed of Nginx. Most websites that report using Nginx as the server (based on stats gathered from HTTP response headers), are actually Apache running with Nginx as the reverse proxy. (The HTTP response headers showing "Nginx" are being reported by the reverse-proxy, not the server itself.)
+
+This guide is referring to a standalone Nginx setup, where it is used as the primary server instead of Apache. It should be noted that Nginx is not a completely interchangeable substitute for Apache. There are a few key differences affecting WordPress implementation that you need to be aware of before you proceed:
+
+With Nginx there is no directory-level configuration file like Apache"s .htaccess or IIS"s web.config files. All configuration has to be done at the server level by an administrator, and WordPress cannot modify the configuration, like it can with Apache or IIS.
+Pretty Permalinks functionality is slightly different when running Nginx.
+Since Nginx does not have .htaccess-type capability and WordPress cannot automatically modify the server configuration for you, it cannot generate the rewrite rules for you.
+Without modifications to your install, "index.php" will be added to your Permalinks. (There are ways to mitigate this with plugins (see below) and/or adding custom code to your child theme"s functions.php.)
+However, if you do want to have some (limited) .htaccess capability, it is technically possible to do add by installing the htscanner PECL extension for PHP. (However, this is not a perfect solution so be sure to test and debug thoroughly before using on a live site.)
+This guide is not going to cover how to install and configure Nginx, so this assumes that you have already installed Nginx and have a basic understanding of how to work with and debug it.
+
+Contents
+1 Generic and Multi-Site Support
+1.1 Main (generic) startup file
+1.2 Per Site configuration
+1.3 Global restrictions file
+1.4 General WordPress rules
+1.5 WordPress Multisite Subdirectory rules
+1.6 WordPress Multisite subdomains rules
+1.7 HTTPS in Nginx
+1.8 WP Super Cache Rules
+1.9 W3 Total Cache Rules
+2 Nginx fastcgi_cache
+3 Better Performance for Static Files in Multisite
+3.1 Notes
+4 Notes
+5 Warning
+6 Resources
+6.1 Reference
+6.2 External Links
+6.3 Scripts & Tools
+6.4 Securing Nginx
+Generic and Multi-Site Support
+To make WordPress work with Nginx you have to configure the backend php-cgi. The options available are "fastcgi" or "php-fpm". Here, php-fpm is being used because it is included with PHP 5.3+, so installing it is straight forward.
+
+The Nginx configuration has been broken up into five distinct files and is heavily commented to make each option easier to understand. The author also made a best-effort attempting to follow "best practices" for nginx configurations.
+
+Main (generic) startup file
+This is equivalent to /etc/nginx/nginx.conf (or /etc/nginx/conf/nginx.conf if you"re using Arch Linux).
+
+# Generic startup file.
+user {user} {group};
+
+#usually equal to number of CPUs you have. run command "grep processor /proc/cpuinfo | wc -l" to find it
+worker_processes  2;
+
+error_log  /var/log/nginx/error.log;
+pid        /var/run/nginx.pid;
+
+# Keeps the logs free of messages about not being able to bind().
+#daemon     off;
+
+events {
+	worker_connections  1024;
+}
+
+http {
+#	rewrite_log on;
+
+	include mime.types;
+	default_type       application/octet-stream;
+	access_log         /var/log/nginx/access.log;
+	sendfile           on;
+#	tcp_nopush         on;
+	keepalive_timeout  3;
+#	tcp_nodelay        on;
+#	gzip               on;
+        #php max upload limit cannot be larger than this       
+	client_max_body_size 13m;
+	index              index.php index.html index.htm;
+
+	# Upstream to abstract backend connection(s) for PHP.
+	upstream php {
+                #this should match value of "listen" directive in php-fpm pool
+		server unix:/tmp/php-fpm.sock;
+#		server 127.0.0.1:9000;
+	}
+
+	include sites-enabled/*;
+}
+This is a bit different from standard nginx.conf files. This configuration follows the Ubuntu/Debian method of declaring enabled sites for maximum flexibility - using "sites-available" to store a config and then symlink to the config file from "sites-enabled".
+
+Per Site configuration
+# Redirect everything to the main site. We use a separate server statement and NOT an if statement - see http://wiki.nginx.org/IfIsEvil
+
+server {
+        server_name  _;
+        return 302 $scheme://example.com$request_uri;
+}
+
+server {
+	server_name example.com;
+	root /var/www/example.com;
+
+	index index.php;
+
+	include global/restrictions.conf;
+
+	# Additional rules go here.
+
+	# Only include one of the files below.
+	include global/wordpress.conf;
+#	include global/wordpress-ms-subdir.conf;
+#	include global/wordpress-ms-subdomain.conf;
+}
+Splitting sections of the configuration into multiple files allows the same logic to be reused over and over. A "global" subdirectory is used to add extra rules for general purpose use (either /etc/nginx/conf/global/ or /etc/nginx/global/ depending on how your nginx install is set up).
+
+Global restrictions file
+# Global restrictions configuration file.
+# Designed to be included in any server {} block.
+location = /favicon.ico {
+	log_not_found off;
+	access_log off;
+}
+
+location = /robots.txt {
+	allow all;
+	log_not_found off;
+	access_log off;
+}
+
+# Deny all attempts to access hidden files such as .htaccess, .htpasswd, .DS_Store (Mac).
+# Keep logging the requests to parse later (or to pass to firewall utilities such as fail2ban)
+location ~ /\. {
+	deny all;
+}
+
+# Deny access to any files with a .php extension in the uploads directory
+# Works in sub-directory installs and also in multisite network
+# Keep logging the requests to parse later (or to pass to firewall utilities such as fail2ban)
+location ~* /(?:uploads|files)/.*\.php$ {
+	deny all;
+}
+
+General WordPress rules
+For single site installations, here is the "global/wordpress.conf" file:
+
+# WordPress single site rules.
+# Designed to be included in any server {} block.
+# Upstream to abstract backend connection(s) for php
+upstream php {
+        server unix:/tmp/php-cgi.socket;
+        server 127.0.0.1:9000;
+}
+
+server {
+        ## Your website name goes here.
+        server_name domain.tld;
+        ## Your only path reference.
+        root /var/www/wordpress;
+        ## This should be in your http block and if it is, it"s not needed here.
+        index index.php;
+
+        location = /favicon.ico {
+                log_not_found off;
+                access_log off;
+        }
+
+        location = /robots.txt {
+                allow all;
+                log_not_found off;
+                access_log off;
+        }
+
+        location / {
+                # This is cool because no php is touched for static content.
+                # include the "?$args" part so non-default permalinks doesn"t break when using query string
+                try_files $uri $uri/ /index.php?$args;
+        }
+
+        location ~ \.php$ {
+                #NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
+                include fastcgi.conf;
+                fastcgi_intercept_errors on;
+                fastcgi_pass php;
+                fastcgi_buffers 16 16k;
+                fastcgi_buffer_size 32k;
+        }
+
+        location ~* \.(js|css|png|jpg|jpeg|gif|ico)$ {
+                expires max;
+                log_not_found off;
+        }
+}
+This is more uptodate example for nginx v .10 and ↑. Ref: https://www.nginx.com/resources/wiki/start/topics/recipes/wordpress/
+
+WordPress Multisite Subdirectory rules
+For multisite subdirectory installations, here is the "global/wordpress.conf" file:
+
+# WordPress multisite subdirectory rules.
+# Designed to be included in any server {} block.
+
+map $uri $blogname{
+    ~^(?P<blogpath>/[^/]+/)files/(.*)       $blogpath ;
+}
+
+map $blogname $blogid{
+    default -999;
+
+    #Ref: http://wordpress.org/extend/plugins/nginx-helper/
+    #include /var/www/wordpress/wp-content/plugins/nginx-helper/map.conf ;
+}
+
+server {
+    server_name example.com ;
+
+    root /var/www/example.com/htdocs;
+    index index.php;
+
+    location ~ ^(/[^/]+/)?files/(.+) {
+        try_files /wp-content/blogs.dir/$blogid/files/$2 /wp-includes/ms-files.php?file=$2 ;
+        access_log off;     log_not_found off; expires max;
+    }
+
+    #avoid php readfile()
+    location ^~ /blogs.dir {
+        internal;
+        alias /var/www/example.com/htdocs/wp-content/blogs.dir ;
+        access_log off;     log_not_found off; expires max;
+    }
+
+    if (!-e $request_filename) {
+        rewrite /wp-admin$ $scheme://$host$uri/ permanent;
+        rewrite ^(/[^/]+)?(/wp-.*) $2 last;
+        rewrite ^(/[^/]+)?(/.*\.php) $2 last;
+    }
+
+    location / {
+        try_files $uri $uri/ /index.php?$args ;
+    }
+
+    location ~ \.php$ {
+        try_files $uri =404;
+        include fastcgi_params;
+        fastcgi_pass php;
+    }
+
+    #add some rules for static content expiry-headers here
+}
+
+NGINX provides 2 special directive: X-Accel-Redirect <x-accel.redirect_> and map. Using these 2 directives, one can eliminate performance hit for static-file serving on WordPress multisite network.
+
+Note: WordPress Network installs no longer need the `blogs.dir` rules when creating a network, however may still be needed when migrating older installations.
+/--+--/Email spammers often use programs, known as email harvesters, that scan pages on the Internet for email addresses to collect and send unsolicited email. If your email address is publicly available through your WordPress installation, it may be vulnerable to these kinds of programs. Below are a few simple ways you can protect yourself from spam while still providing an email address to your readers.
+
+Contents
+1 Substitute Email Address
+2 Disguising Your Email
+3 Use Images Instead of Plain Text Email
+4 Use Anti-Spam Plugins
+Substitute Email Address
+A popular solution to email harvesting is to create a "throwaway" email address at free services such as GMail or Yahoo Mail. Set this as your email address in your profile. WordPress makes it easy to display the address on your blog by providing the function the_author_meta("user_email"). Within The Loop portion of your templates, just add the tag:
+
+<?php the_author_meta("user_email"); ?>
+You will be able to check email that is specifically sent from your readers. If spam becomes too much of a problem, simply delete this account, create a new one, and change the email address in your profile to the new address. Your site will be immediately updated without having to change any template files.
+
+Disguising Your Email
+To "fool" email harvesters, a simple method is to convert the symbols in an email address to words (typically parenthesized). For example, steve@mac.com becomes steve (at) mac (dot) com. Since this is not recognized as a valid email format, harvesters tend to ignore it.
+
+A slightly more complicated approach is to transform or encode characters in an address to their HTML character entity, or numeric character reference, equivalent. This means the letter a in an address becomes &#97;, the @ symbol &#64;, and so on. These should appear as gobbledygook to harvesters, while your browser renders them correctly.
+
+You can use a free online encoder to encode your email address (here"s another tool to encode your email using Javascript) or use the antispambot() function built into WordPress:
+
+<?php echo antispambot(get_the_author_meta("user_email")); ?>
+The function antispambot() above parses the email address passed by get_the_author_meta("user_email") (this is the same as the_author_meta("user_email"), except it returns rather than displays the author"s email address). Use of the echo command displays the output of antispambot(). An interesting feature is that it encodes only portions of an address, and does so randomly so the letters encoded are different each time the page loads, adding a little more firepower to the spam protection arsenal.
+
+NOTE: Unfortunately, WordPress does not allow invalidly formatted email addresses to be used in one"s profile, so obfuscating your e-mail address there will not work.
+
+Use Images Instead of Plain Text Email
+Another easy trick for disguising your email is to create an image of your email address using some screen capture software, cropping it to size with an image editor, and inserting it where ever you like :-)
+
+Be aware that screen reading software (commonly used by people with vision impairment) will not be able to read your email address either. If you use this method, provide a second form of contact as well.
+
+Use Anti-Spam Plugins
+There are some plugins that do this work automatically in posts and pages. For instance Pixeline"s Email protector provides a human-friendly solution that protects any mailto: link of plain email addresses inside posts and as a theme function, or Email Address Encoder which converts all plain email addresses and mailto links into decimal and hexadecimal entities. Another one is CryptX. There are some drawbacks as if it"s not properly configured, they might mess with contact form where users introduce email addresses (if they make some mistake and the form is refilled and re-filtered). A less automated approach is that of Slash Admin, which has an option for including disguised email addresses in posts and pages via shortcodes (using the antispambot() function).
+/--+--/Introduction to WordPress Terminology
+WordPress was created by the developers as weblogging or blogging software. A blog, as defined in the Codex Glossary, is an online journal, diary, or serial, published by a person or group of people. Many blogs are personal in nature, reflecting the opinions and interests of the owner. But, blogs are now important tools in the world of news, business, politics, and entertainment.
+
+Blogs are a form of a Content Management System (CMS) which Wikipedia calls "a system used to organize and facilitate collaborative content creation." Both blogs and Content Management Systems can perform the role of a website (site for short). A website can be thought of as a collection of articles and information about a specific subject, service, or product, which may not be a personal reflection of the owner. More recently, as the role of WordPress has expanded, WordPress developers have begun using the more general term site, in place of blog.
+
+Terminology Related to Content
+WordPress Terminology
+Introduction
+Developers
+Blog
+Content Management System
+Content
+Posts
+Dashboard
+Media
+Categories
+Tags
+Custom Taxonomies
+Post Meta Data
+Custom Fields
+Permalinks
+Pages
+Custom Post Types
+Design
+The Loop
+Templates
+Template Tags
+Template Hierarchy
+Headers
+Sidebars
+Archives
+Archives (by Category)
+Archives (by Tag)
+Database
+MySQL
+Themes
+Child Themes
+Theme Development
+Plugins
+Administration
+Administration Panels
+Links
+Link Categories
+Registered Users
+Roles and Capabilities
+Comments
+Comments Comments SubPanel
+Comment Moderation
+Discussion Settings
+Spam
+Combating Spam
+Help
+Finding WordPress Help
+WordPress FAQ
+Troubleshooting
+WordPress Lessons
+WordPress Support Forum
+Help with Codex
+The term Word in WordPress refers to the words used to compose posts. Posts are the principal element (or content) of a blog. The posts are the writings, compositions, discussions, discourses, musings, and, yes, the rantings of the blog"s owner and guest authors. Posts, in most cases, are the reason a blog exists; without posts, there is no blog!
+
+To facilitate the post writing process, WordPress provides a full featured authoring tool with modules that can be moved, via drag-and-drop, to fit the needs of all authors. The Dashboard QuickPress module makes it easy to quickly write and publish a post. There"s no excuse for not writing.
+
+Integral to a blog are the pictures, images, sounds, and movies, otherwise know as media. Media enhances, and gives life to a blog"s content. WordPress provides an easy to use method of inserting Media directly into posts, and a method to upload Media that can be later attached to posts, and a Media Manager to manage those various Media.
+
+An important part of the posting process is the act of assigning those posts to categories. Each post in WordPress is filed under one or more categories. Categories can be hierarchical in nature, where one category acts as a parent to several child, or grandchild, categories. Thoughtful categorization allows posts of similar content to be grouped, thereby aiding viewers in the navigation, and use of a site. In addition to categories, terms or keywords called tags can be assigned to each post. Tags act as another navigation tool, but are not hierarchical in nature. Both categories and tags are part of a system called taxonomies. If categories and tags are not enough, users can also create custom taxonomies that allow more specific identification of posts or pages or custom post types.
+
+In turn, post categories and tags are two of the elements of what"s called post meta data. Post meta data refers to the information associated with each post and includes the author"s name and the date posted as well as the post categories. Post meta data also refers to Custom Fields where you assign specific words, or keys, that can describe posts. But, you can"t mention post meta data without discussing the term meta.
+
+Generally, meta means "information about"; in WordPress, meta usually refers to administrative-type information. So, besides post meta data, Meta is the HTML tag used to describe and define a web page to the outside world, like meta tag keywords for search engines. Also, many WordPress-based sites offer a Meta section, usually found in the sidebar, with links to login or register at that site. And, don"t forget Meta Rules: The rules defining the general protocol to follow in using this Codex, or Meta, as in the MediaWiki namespace that refers to administrative functions within Codex. That"s a lot of Meta!
+
+After a post is made public, a blog"s readers will respond, via comments, to that post, and in turn, authors will reply. Comments enable the communication process, that give-and-take, between author and reader. Comments are the life-blood of most blogs.
+
+Finally, WordPress also offers two other content management tools called Pages and custom post types. Pages often present static information, such as "About Me", or "Contact Us", Pages. Typically "timeless" in nature, Pages should not be confused with the time-oriented objects called posts. Interestingly, a Page is allowed to be commented upon, but a Page cannot be categorized. A custom post type refers to a type of structured data that is different from a post or a page. Custom post types allow users to easily create and manage such things as portfolios, projects, video libraries, podcasts, quotes, chats, and whatever a user or developer can imagine.
+
+Terminology Related to Design
+A WordPress Theme is the overall design of a site and encompasses color, graphics, and text. A Theme is sometimes called the skin or template, but it isn"t really. A skin and template are really website paint jobs. A WordPress Theme is where code meets design, allowing a site to change based upon specific conditions set by the site administrator.
+
+Installation of WordPress Themes is made easy with the Themes Menu on the Administration Panels. Simply search for a new Theme from within the official WordPress Theme Directory and activate it with a few clicks. You can also preview your site before installing and activating the Theme to see what your site will look like with that WordPress Theme.
+
+The flexibility of WordPress is apparent when discussing terminology related to the design of a WordPress site. At the core of WordPress, developers created a programming structure named The Loop to handle the processing of posts. The Loop is the critical PHP program code used to display posts. Anyone wanting to enhance and customize WordPress will need to understand the mechanics of The Loop.
+
+Along with The Loop, WordPress developers have created Template Tags which are a group of PHP functions that can be invoked by designers to perform an action or display specific information. It is the Template Tags that form the basis of the Template Files. Templates (files) contain the programming pieces, such as Template Tags, that control the structure and flow of a WordPress site. These files draw information from your WordPress MySQL database and generate the HTML code which is sent to the web browser. A Template Hierarchy, in essence the order of processing, dictates how Templates control almost all aspects of the output, including Headers, Sidebars, and Archives. Archives are a dynamically generated list of posts, and are typically grouped by date, category, tag, or author.
+
+As the capabilities of WordPress have improved, developers have added tools that allow users to easily manage a site"s look and functionality:
+
+Widgets provide an easy way to add little programs, such as the current weather, to a sidebar.
+Menus make it easy to define the navigation buttons that are typically present near the top of a site"s pages.
+The Background tool allows the user to change the background image and color of a site.
+The Header tool gives the user control of the images displayed at the top of a site"s various pages.
+Post Formats allow the user to control the display of a specific post (i.e. display this post as an Aside or as a quote or as a gallery).
+Developers and users are encouraged to explore the latest default WordPress Themes named by the year in which they are released. Twenty-Eleven WordPress Theme, rightly called a showcase Theme, introduced many of the above features. It emphasized the use of the Child Theme concept to shield a theme from getting overwritten during a WordPress update. The Twenty-Thirteen Theme was designed to take advantage of Formats. The Twenty-Fourteen WordPress Theme is a magazine-style Theme. It includes a customizable, grid front-page template, custom author Page template, and the use of tags to feature content on the front page of the site rather than sticky posts or categories, further stretching the boundaries of the possible with WordPress Themes.
+
+Plugins are custom functions created to extend the core functionality of WordPress. The WordPress developers have maximized flexibility and minimized code bloat by allowing outside developers the opportunity to create their own useful add-on features. As evidenced by the WordPress Plugin Directory, there"s a Plugin to enhance virtually every aspect of WordPress.
+
+A Plugin management tool makes it extremely easy to find and install Plugins directly from the official directory.
+/--+--/WordPress uses an XML-RPC interface. WordPress has its own implementation for WordPress-specific functionality in an API called the WordPress API. This should be used when possible, and your client should use the API variants beginning with the wp prefix.
+
+WordPress also supports the Blogger API, metaWeblog API, Movable Type API, and the Pingback API.
+
+With WordPress XML-RPC support, you can post to your WordPress blog using many popular Weblog Clients. The XML-RPC system can be extended by WordPress Plugins to modify its behavior.
+
+Enabling XML-RPC
+XML-RPC functionality is turned on by default since WordPress 3.5.
+
+In previous versions of WordPress, XML-RPC was user enabled. To enable, go to Settings > Writing > Remote Publishing and check the checkbox.
+
+Endpoint
+The XML-RPC server/path is:
+
+If your WordPress root is http://example.com/wordpress/, then you have:
+Server: http://example.com/ (some tools need just the "example.com" hostname part)
+Path: /wordpress/xmlrpc.php
+complete URL (just in case): http://example.com/wordpress/xmlrpc.php
+/--+--/Permalinks are the permanent URLs to your individual weblog posts, as well as categories and other lists of weblog postings. A permalink is what another weblogger will use to link to your article (or section), or how you might send a link to your story in an e-mail message. The URL to each post should be permanent, and never change — hence permalink.
+
+Permalink Types
+There are three basic types of WordPress permalinks:
+
+Default: "Ugly"
+The default looks like
+
+http://example.com/?p=N
+where N is the Post ID number. It works on all server environments, but it doesn"t look as nice as some of the other options.
+
+mod_rewrite: "Pretty Permalinks"
+Using mod_rewrite or lighttpd you can produce much nicer permalinks (see Pretty Permalinks). There are many different formats, but the most common, and most versatile looks like
+
+http://example.com/2012/post-name/
+or
+
+http://example.com/2012/12/30/post-name
+Pretty permalinks are available under:
+
+Apache web server with the mod_rewrite module
+Hiawatha web server with UrlToolkit support enabled.
+Microsoft IIS 7+ web server with the URL Rewrite 1.1+ module and PHP 5 running as FastCGI
+Microsoft IIS 6+ using ASAPI_Rewrite (free for single-site server, $$ for multi-site server)
+Microsoft IIS 6+ using Ionic ISAPI Rewriting Filter (IIRF) (free for single-site or multi-site server)
+Lighttpd using a 404 handler
+Nginx using try-files, e.g. according to this tutorial
+Caddy using rewrite, e.g. according to this tutorial
+PATHINFO: "Almost Pretty"
+PATHINFO permalinks look very much like mod_rewrite permalinks but for one exception: they have /index.php inserted before them, like so:
+
+http://example.com/index.php/yyyy/mm/dd/post-name/
+Otherwise, they are the same as the "pretty" mod_rewrite permalinks, and are similarly flexible. Anything that mod_rewrite permalinks can do, PATHINFO permalinks can do, with the help of that /index.php part.
+
+Choosing your permalink structure
+In the Settings → Permalinks screen, you can choose one of the more common permalink structures or enter your own in the "Custom structure" field using the structure tags.
+
+Please note: You do not put your site url in the permalinks fields. You only use one of the structure tags, or a combination of tags.
+
+To activate PATHINFO permalinks, start your permalink structure with index.php/.
+
+permalink-settings.png
+
+Structure Tags
+You can use these tags to customize your "Pretty" or "Almost Pretty" permalinks. A few hints:
+
+You do not put your site url in the permalinks fields. You only use one of the structure tags, or a combination of tags.
+Make sure to end your structure with either %post_id% or %postname% (e.g. /%year%/%monthnum%/%day%/%postname%/) so that each permalink points to an individual post.
+ %year%
+The year of the post, four digits, for example 2004
+ %monthnum%
+Month of the year, for example 05
+ %day%
+Day of the month, for example 28
+ %hour%
+Hour of the day, for example 15
+ %minute%
+Minute of the hour, for example 43
+ %second%
+Second of the minute, for example 33
+ %post_id%
+The unique ID # of the post, for example 423
+ %postname%
+A sanitized version of the title of the post (post slug field on Edit Post/Page panel). So “This Is A Great Post!” becomes this-is-a-great-post in the URI.
+ %category%
+A sanitized version of the category name (category slug field on New/Edit Category panel). Nested sub-categories appear as nested directories in the URI.
+ %author%
+A sanitized version of the author name.
+Category base and Tag base
+The Category base and Tag base are prefixes used in URLs for category and tag archives, which look like this:
+
+ example.net/wp/category_base/category_name
+ example.net/wp/tag_base/tag_name
+The default values for these are category and tag. You can change them, but you can"t remove them from the URLs altogether.
+
+Custom permalinks work on most systems without any problems, but there are still some conditions where problems occur.
+
+permalinks-optional-settings.png
+
+Using %category% with multiple categories on a post
+When you assign multiple categories to a post, only one can show up in the permalink. The categories are ordered alphabetically. In each group of sub-categories the order will also be alphabetical. (see Manage Categories). The post will still be accessible through all the categories as normal.
+
+Try the WP Category Permalink plugin if you want to choose which category shows up in the permalink.
+
+Using "Pretty" permalinks
+Requirements:
+
+Apache web server with the mod_rewrite module installed
+In WordPress"s home directory,
+The FollowSymLinks option enabled
+FileInfo directives allowed (e.g. AllowOverride FileInfo or AllowOverride All)
+An .htaccess file (if this file is missing, WordPress will try to create it when you activate "pretty" permalinks)
+If you want WordPress to update the .htaccess file automatically, WordPress will need write access to the file.
+For nginx, a web server aimed at high concurrency, high performance and low memory usage, add the following location block within the server block:
+location / {
+            try_files $uri $uri/ /index.php?$args; 
+}
+For Hiawatha, a web server with a strong focus on security, use the following UrlToolkit rule:
+UrlToolkit {
+    ToolkitID = wordpress
+    RequestURI exists Return
+    Match .*\?(.*) Rewrite /index.php?$1
+    Match .* Rewrite /index.php
+}
+Mac Users running WordPress locally must edit their httpd.conf file editing the AllowOverride line to read AllowOverride All in the Directory "/Library/WebServer/Documents" host instructions. For Mac OS X 10.5.x and up this file is located in /private/etc/apache2/users/[your-username].conf, otherwise it is located at /etc/httpd/httpd.conf.
+When you create or update a "pretty" permalink structure, WordPress will generate rewrite rules and attempt to insert them into the proper .htaccess file. If it can"t, it will say something like You should update your .htaccess now and print out the rules for you to copy and paste into the file (put them at the end).
+
+In WordPress 2.0+ versions, you"ll probably need to do this only once, because WordPress does the rewriting internally. If you ever move your WordPress home directory (Site address), you"ll need to repeat this step.
+
+WordPress will play nice with an existing .htaccess and will not delete any existing RewriteRules or other directives. If you have other mod_rewrite rules, put yours before WordPress"s.
+
+Where"s my .htaccess file?
+WordPress"s index.php and .htaccess files should be together in the directory indicated by the Site address (URL) setting on your General Options page. Since the name of the file begins with a dot, the file may not be visible through an FTP client unless you change the preferences of the FTP tool to show all files, including the hidden files. Some hosts (e.g. Godaddy) may not show or allow you to edit .htaccess if you install WordPress through the Godaddy Hosting Connection installation.
+
+Creating and editing (.htaccess)
+If you do not already have a .htaccess file, create one. If you have shell or ssh access to the server, a simple touch .htaccess command will create the file. If you are using FTP to transfer files, create a file on your local computer, call it 1.htaccess, upload it to the root of your WordPress folder, and then rename it to .htaccess.
+
+You can edit the .htaccess file by FTP, shell, or (possibly) your host"s control panel.
+
+The following permalink rewrite code should be included in your .htaccess file (since WordPress 3.0):
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+If your .htaccess file contains errors that bring down your site ("Internal Server Error (500)"), you will need to use FTP or your host"s control panel to delete the rogue .htaccess file.
+
+Automatically updating .htaccess
+If WordPress can"t update your .htaccess file automatically, it will tell you something like If your .htaccess file were writable, we could do this automatically, but it isn’t… near the bottom of the Settings → Permalinks Screen.
+
+If you want to let WordPress do this, you"ll need to give WordPress write access to the .htaccess file. The exact permissions necessary depend on your server setup. Try adding write permissions for the owner, then group, then world, testing after each change; once WordPress has edited the file successfully, don"t add any further write permissions.
+
+After applying the permalinks, you should change the permissions to something stronger like 660 or 644 to prevent others on the server from potentially having access to it.
+
+Permalinks without mod_rewrite
+"Pretty" permalinks usually require mod_rewrite, and IIS (common on Windows servers) does not support mod_rewrite. (If you are using Apache 2.0.54, on Windows, mod_rewrite may work, provided it is enabled in apache\conf\httpd.conf.)
+
+If you are using IIS 7 and have admin rights on your server, you can use Microsoft"s URL Rewrite Module instead. Though not completely compatible with mod_rewrite, it does support WordPress"s pretty permalinks. Once installed, open the web.config file in the WordPress folder and add the following rule to the system.webServer element
+
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+<system.webServer>
+<rewrite>
+<rules>
+<rule name="WordPress Rule" stopProcessing="true">
+<match url=".*" />
+<conditions>
+<add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+<add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+</conditions>
+<action type="Rewrite" url="index.php" />
+</rule>
+</rules>
+</rewrite>
+</system.webServer>
+</configuration>
+There"s a full installation guide on the IIS site. The module is available for x64 and x86 systems.
+
+If this isn"t an option, you can try PATHINFO permalinks; put index.php/ at the start of your custom permalink structure:
+
+ /index.php/%year%/%monthnum%/%day%/%postname%/
+This option may not always work, especially in cases of WordPress running on IIS 6. To make this option work on IIS, add these 2 lines to a php.ini file and store that file in your webroot :
+
+ cgi.fix_pathinfo = 1
+ cgi.force_redirect = 0
+Another solution exists using IIS" custom 404 redirects. It requires that your web host allows you to add a custom 404 redirect, but it doesn"t require you to install any 3rd party mod_rewrite software and it also doesn"t require that your permalink structure begin with /index.php/.
+
+Fixing Permalink Problems
+Fixing .htaccess Generation Issues
+If your installation of WordPress does not generate a .htaccess file or if it does not write the new rules onto your existing .htaccess file then there are a couple reasons that could be causing this. Work step by step and continue to the next step only if the previous step does not work.
+
+Change File Permissions: You must chmod the .htaccess file to 666 to edit it with the WordPress template editor, but this is not recommended, since if you do that, any user of your blog, who can edit templates will be able to edit it. You can change the permissions to 660 to make it server-writable, which again will have the same limitation.
+Server Blockage: Your host might have blocked the SERVER_SOFTWARE variable and this will cause WordPress" .htaccess generation to fail. If you are sure that your server is running Apache, you can force WordPress to believe that your server is running Apache by changing your wp-includes/vars.php file. Follow the steps below to implement these changes.
+Open the wp-includes/vars.php file using the built in file editor in your WordPress Admin panel. To navigate to this panel, login to WordPress, click on "Manage", then on "Files", scroll to the bottom and type in wp-includes/vars.php into the text box under the "Other Files" title. Look for
+$is_apache = strstr($_SERVER["SERVER_SOFTWARE"], "Apache") ? 1 : 0;
+and replace it with
+// $is_apache = strstr($_SERVER["SERVER_SOFTWARE"], "Apache") ? 1 : 0;
+Add a new line under
+// $is_apache = strstr($_SERVER["SERVER_SOFTWARE"], "Apache") ? 1 : 0;
+and type in
+$is_apache = 1;
+Users of XAMPP (Windows): Some versions of XAMPP do not enable mod_rewrite by default (though it is compiled in Apache). To enable it — and thus enable WordPress to write the .htaccess file needed to create pretty permalinks — you must open apache/conf/httpd.conf and uncomment the line LoadModule rewrite_module modules/mod_rewrite.so (i.e., delete the hash/pound sign at the front of the line).
+Users of WAMP (Windows): Some versions of WAMP (all versions?) do not enable mod_rewrite or permit following SymLinks by default. To enable the required functionality navigate to the apache/conf/httpd.conf file, open with a text editor and uncomment the line LoadModule rewrite_module modules/mod_rewrite.so (i.e., delete the hash/pound sign at the front of the line). Then further down in the same file there is a section that starts with the line "Options FollowSymlinks". Change the second line in that section from "AllowOverride none" to AllowOverride all. Save edited httpd.conf and restart all WAMP modules. Your permalinks should now work.

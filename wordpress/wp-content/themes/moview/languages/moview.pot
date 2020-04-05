@@ -1,0 +1,2197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Moview\n"
+"POT-Creation-Date: 2016-03-11 12:23+0600\n"
+"PO-Revision-Date: 2016-03-11 12:23+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:11 coming-soon.php:28
+msgid "404 error"
+msgstr ""
+
+#: 404.php:14
+msgid "Page not found."
+msgstr ""
+
+#: 404.php:15
+msgid "HOME"
+msgstr ""
+
+#: 404.php:15
+msgid "Go Back Home"
+msgstr ""
+
+#: activity/activity-loop.php:33
+msgid "Load More"
+msgstr ""
+
+#: activity/activity-loop.php:47
+msgid "Sorry, there was no activity found. Please try a different filter."
+msgstr ""
+
+#. translators: 1: user profile link, 2: user name, 3: activity permalink, 4: activity timestamp
+#: activity/comment.php:29
+#, php-format
+msgid ""
+"<a href=\"%1$s\">%2$s</a> replied <a href=\"%3$s\" class=\"activity-time-"
+"since\"><span class=\"time-since\">%4$s</span></a>"
+msgstr ""
+
+#: activity/comment.php:39 groups/single/forum/edit.php:23
+#: groups/single/forum/topic.php:189 lib/main-function/themeum-core.php:88
+msgid "Reply"
+msgstr ""
+
+#: activity/comment.php:45 members/single/messages/messages-loop.php:133
+#: members/single/messages/single.php:44
+msgid "Delete"
+msgstr ""
+
+#: activity/entry.php:59
+msgid "View Conversation"
+msgstr ""
+
+#: activity/entry.php:67
+#, php-format
+msgid "Comment %s"
+msgstr ""
+
+#: activity/entry.php:75
+msgid "Mark as Favorite"
+msgstr ""
+
+#: activity/entry.php:75
+msgid "Favorite"
+msgstr ""
+
+#: activity/entry.php:79
+msgid "Remove Favorite"
+msgstr ""
+
+#: activity/entry.php:123 comments-single.php:57 comments.php:60
+msgid "Comment"
+msgstr ""
+
+#: activity/entry.php:126
+msgid "Post"
+msgstr ""
+
+#: activity/entry.php:126 lib/menu/admin-megamenu-walker.php:249
+msgid "Cancel"
+msgstr ""
+
+#: activity/index.php:56
+msgid "The public activity for everyone on this site."
+msgstr ""
+
+#: activity/index.php:56 members/index.php:55
+#, php-format
+msgid "All Members %s"
+msgstr ""
+
+#: activity/index.php:73
+msgid "The activity of my friends only."
+msgstr ""
+
+#: activity/index.php:73 members/index.php:58
+#, php-format
+msgid "My Friends %s"
+msgstr ""
+
+#: activity/index.php:92
+msgid "The activity of groups I am a member of."
+msgstr ""
+
+#: activity/index.php:92 groups/index.php:54
+#, php-format
+msgid "My Groups %s"
+msgstr ""
+
+#: activity/index.php:109
+msgid "The activity I've marked as a favorite."
+msgstr ""
+
+#: activity/index.php:109
+#, php-format
+msgid "My Favorites %s"
+msgstr ""
+
+#: activity/index.php:124
+msgid "Activity that I have been mentioned in."
+msgstr ""
+
+#: activity/index.php:124
+msgid "Mentions"
+msgstr ""
+
+#: activity/index.php:124
+#, php-format
+msgctxt "Number of new activity mentions"
+msgid "%s new"
+msgid_plural "%s new"
+msgstr[0] ""
+msgstr[1] ""
+
+#: activity/index.php:143 groups/single/activity.php:12
+msgid "RSS Feed"
+msgstr ""
+
+#: activity/index.php:143 groups/single/activity.php:12
+msgid "RSS"
+msgstr ""
+
+#: activity/index.php:155 groups/single/activity.php:24
+#: members/single/activity.php:17
+msgid "Show:"
+msgstr ""
+
+#: activity/index.php:157 groups/single/activity.php:26
+#: members/single/activity.php:19
+msgid "&mdash; Everything &mdash;"
+msgstr ""
+
+#: activity/post-form.php:29
+#, php-format
+msgid "What's new in %s, %s?"
+msgstr ""
+
+#: activity/post-form.php:31
+#, php-format
+msgid "What's new, %s?"
+msgstr ""
+
+#: activity/post-form.php:36
+msgid "Post what's new"
+msgstr ""
+
+#: activity/post-form.php:44
+msgid "Post Update"
+msgstr ""
+
+#: activity/post-form.php:51 activity/post-form.php:53
+msgid "Post in"
+msgstr ""
+
+#: activity/post-form.php:55 members/single/profile/profile-wp.php:28
+msgid "My Profile"
+msgstr ""
+
+#: bbpress.php:33 lib/sub-header.php:75 page-budp-activity.php:36
+#: page-budp-group.php:37 page-budp-memebr.php:37
+msgid "Search"
+msgstr ""
+
+#: bbpress.php:62 page-budp-activity.php:69 page-budp-group.php:70
+#: page-budp-memebr.php:70 page.php:29 post-format/entry-content-single.php:24
+msgid "Pages:"
+msgstr ""
+
+#: bbpress/form-topic.php:41
+#, php-format
+msgid "Now Editing &ldquo;%s&rdquo;"
+msgstr ""
+
+#: bbpress/form-topic.php:43
+#, php-format
+msgid "Create New Topic in &ldquo;%s&rdquo;"
+msgstr ""
+
+#: bbpress/form-topic.php:43
+msgid "Create New Topic"
+msgstr ""
+
+#: bbpress/form-topic.php:53
+msgid ""
+"This forum is marked as closed to new topics, however your posting "
+"capabilities still allow you to do so."
+msgstr ""
+
+#: bbpress/form-topic.php:61
+msgid "Your account has the ability to post unrestricted HTML content."
+msgstr ""
+
+#: bbpress/form-topic.php:75
+#, php-format
+msgid "Topic Title (Maximum Length: %d):"
+msgstr ""
+
+#: bbpress/form-topic.php:90
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes:"
+msgstr ""
+
+#: bbpress/form-topic.php:101
+msgid "Topic Tags:"
+msgstr ""
+
+#: bbpress/form-topic.php:114
+msgid "Forum:"
+msgstr ""
+
+#: bbpress/form-topic.php:117
+msgid "(No Forum)"
+msgstr ""
+
+#: bbpress/form-topic.php:133
+msgid "Topic Type:"
+msgstr ""
+
+#: bbpress/form-topic.php:145
+msgid "Topic Status:"
+msgstr ""
+
+#: bbpress/form-topic.php:164
+msgid "Notify the author of follow-up replies via email"
+msgstr ""
+
+#: bbpress/form-topic.php:168
+msgid "Notify me of follow-up replies via email"
+msgstr ""
+
+#: bbpress/form-topic.php:184
+msgid "Keep a log of this edit:"
+msgstr ""
+
+#: bbpress/form-topic.php:188
+msgid "Optional reason for editing:"
+msgstr ""
+
+#: bbpress/form-topic.php:203
+msgid "Submit"
+msgstr ""
+
+#: bbpress/form-topic.php:226
+#, php-format
+msgid "The forum &#8216;%s&#8217; is closed to new topics and replies."
+msgstr ""
+
+#: bbpress/form-topic.php:234
+msgid "You cannot create new topics."
+msgstr ""
+
+#: bbpress/form-topic.php:234
+msgid "You must be logged in to create new topics."
+msgstr ""
+
+#: bbpress/loop-replies.php:18
+msgid "Author"
+msgstr ""
+
+#: bbpress/loop-replies.php:24 bbpress/loop-topics.php:21
+msgid "Posts"
+msgstr ""
+
+#: bbpress/loop-replies.php:32 bbpress/loop-topics.php:21
+msgid "Replies"
+msgstr ""
+
+#: bbpress/loop-single-reply.php:21
+msgid "in reply to: "
+msgstr ""
+
+#: bbpress/loop-single-topic.php:60
+#, php-format
+msgid "Started by: %1$s"
+msgstr ""
+
+#: bbpress/loop-single-topic.php:68
+#, php-format
+msgid "in: <a href=\"%1$s\">%2$s</a>"
+msgstr ""
+
+#: bbpress/loop-topics.php:19
+msgid "Topic"
+msgstr ""
+
+#: bbpress/loop-topics.php:20
+msgid "Voices"
+msgstr ""
+
+#: bbpress/loop-topics.php:22
+msgid "Freshness"
+msgstr ""
+
+#: coming-soon.php:21
+msgid "DAY"
+msgstr ""
+
+#: coming-soon.php:21
+msgid "DAYS"
+msgstr ""
+
+#: coming-soon.php:21
+msgid "HOUR"
+msgstr ""
+
+#: coming-soon.php:21
+msgid "HOURS"
+msgstr ""
+
+#: coming-soon.php:21
+msgid "MINUTE"
+msgstr ""
+
+#: coming-soon.php:21
+msgid "MINUTES"
+msgstr ""
+
+#: coming-soon.php:21
+msgid "SECOND"
+msgstr ""
+
+#: coming-soon.php:21
+msgid "SECONDS"
+msgstr ""
+
+#: comments-single.php:10
+msgid "No Comment"
+msgstr ""
+
+#: comments-single.php:10
+msgid "One Comments"
+msgstr ""
+
+#: comments-single.php:10
+msgid "Comment List"
+msgstr ""
+
+#: comments-single.php:30 comments.php:30
+msgid "Comment navigation"
+msgstr ""
+
+#: comments-single.php:31 comments.php:31
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments-single.php:32 comments.php:32
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments-single.php:37 comments.php:37
+msgid "Comments are closed."
+msgstr ""
+
+#: comments-single.php:47 comments.php:52
+#: members/single/profile/profile-wp.php:35
+msgid "Name"
+msgstr ""
+
+#: comments-single.php:48 comments.php:53
+msgid "Email"
+msgstr ""
+
+#: comments-single.php:49 comments.php:54
+msgid "Website url"
+msgstr ""
+
+#: comments.php:10
+msgid "Reviews"
+msgstr ""
+
+#: functions.php:40
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:41
+msgid "Footer Menu"
+msgstr ""
+
+#: groups/create.php:66 groups/single/admin.php:39
+msgid "Group Name (required)"
+msgstr ""
+
+#: groups/create.php:71 groups/single/admin.php:42
+msgid "Group Description (required)"
+msgstr ""
+
+#: groups/create.php:101 groups/single/admin.php:100
+msgid "Privacy Options"
+msgstr ""
+
+#: groups/create.php:105 groups/single/admin.php:104
+msgid "This is a public group"
+msgstr ""
+
+#: groups/create.php:108 groups/single/admin.php:107
+msgid "Any site member can join this group."
+msgstr ""
+
+#: groups/create.php:109 groups/create.php:118 groups/single/admin.php:108
+#: groups/single/admin.php:116
+msgid ""
+"This group will be listed in the groups directory and in search results."
+msgstr ""
+
+#: groups/create.php:110 groups/single/admin.php:109
+msgid "Group content and activity will be visible to any site member."
+msgstr ""
+
+#: groups/create.php:114 groups/single/admin.php:112
+msgid "This is a private group"
+msgstr ""
+
+#: groups/create.php:117 groups/single/admin.php:115
+msgid "Only users who request membership and are accepted can join the group."
+msgstr ""
+
+#: groups/create.php:119 groups/create.php:128 groups/single/admin.php:117
+#: groups/single/admin.php:125
+msgid ""
+"Group content and activity will only be visible to members of the group."
+msgstr ""
+
+#: groups/create.php:123 groups/single/admin.php:120
+msgid "This is a hidden group"
+msgstr ""
+
+#: groups/create.php:126 groups/single/admin.php:123
+msgid "Only users who are invited can join the group."
+msgstr ""
+
+#: groups/create.php:127 groups/single/admin.php:124
+msgid ""
+"This group will not be listed in the groups directory or search results."
+msgstr ""
+
+#: groups/create.php:133 groups/single/admin.php:132
+msgid "Group Invitations"
+msgstr ""
+
+#: groups/create.php:135 groups/single/admin.php:134
+msgid "Which members of this group are allowed to invite others?"
+msgstr ""
+
+#: groups/create.php:139 groups/single/admin.php:138
+msgid "All group members"
+msgstr ""
+
+#: groups/create.php:141 groups/single/admin.php:140
+msgid "Group admins and mods only"
+msgstr ""
+
+#: groups/create.php:143 groups/single/admin.php:142
+msgid "Group admins only"
+msgstr ""
+
+#: groups/create.php:149
+msgid "Group Forums"
+msgstr ""
+
+#: groups/create.php:153
+msgid "Should this group have a forum?"
+msgstr ""
+
+#: groups/create.php:156 groups/single/admin.php:91
+msgid "Enable discussion forum"
+msgstr ""
+
+#: groups/create.php:160
+#, php-format
+msgid ""
+"<strong>Attention Site Admin:</strong> Group forums require the <a href=\"%s"
+"\">correct setup and configuration</a> of a bbPress installation."
+msgstr ""
+
+#: groups/create.php:200 groups/single/admin.php:167
+msgid ""
+"Upload an image to use as a profile photo for this group. The image will be "
+"shown on the main group page, and in search results."
+msgstr ""
+
+#: groups/create.php:203 groups/single/admin.php:170
+#: members/single/profile/change-avatar.php:34
+msgid "Select an image"
+msgstr ""
+
+#: groups/create.php:205 groups/single/admin.php:172
+#: members/single/profile/change-avatar.php:36
+msgid "Upload Image"
+msgstr ""
+
+#: groups/create.php:209
+msgid ""
+"To skip the group profile photo upload process, hit the \"Next Step\" button."
+msgstr ""
+
+#: groups/create.php:224
+msgid "Crop Group Profile Photo"
+msgstr ""
+
+#: groups/create.php:226 groups/single/admin.php:200
+#: members/single/profile/change-avatar.php:51
+msgid "Profile photo to crop"
+msgstr ""
+
+#: groups/create.php:229 groups/single/admin.php:203
+#: members/single/profile/change-avatar.php:54
+msgid "Profile photo preview"
+msgstr ""
+
+#: groups/create.php:232 groups/single/admin.php:206
+#: members/single/profile/change-avatar.php:57
+msgid "Crop Image"
+msgstr ""
+
+#: groups/create.php:270 groups/single/admin.php:234
+msgid "The Cover Image will be used to customize the header of your group."
+msgstr ""
+
+#: groups/create.php:316
+msgid "Select people to invite from your friends list."
+msgstr ""
+
+#: groups/create.php:334 groups/single/invites-loop.php:74
+msgid "Remove Invite"
+msgstr ""
+
+#: groups/create.php:351
+msgid ""
+"Once you have built up friend connections you will be able to invite others "
+"to your group."
+msgstr ""
+
+#: groups/create.php:396
+msgid "Back to Previous Step"
+msgstr ""
+
+#: groups/create.php:403
+msgid "Next Step"
+msgstr ""
+
+#: groups/create.php:410
+msgid "Create Group and Continue"
+msgstr ""
+
+#: groups/create.php:417
+msgid "Finish"
+msgstr ""
+
+#: groups/groups-loop.php:62 groups/single/cover-image-header.php:62
+#: groups/single/group-header.php:71
+#, php-format
+msgid "active %s"
+msgstr ""
+
+#: groups/groups-loop.php:131
+msgid "There were no groups found."
+msgstr ""
+
+#: groups/index.php:51
+#, php-format
+msgid "All Groups %s"
+msgstr ""
+
+#: groups/index.php:82 groups/single/forum.php:50 members/single/blogs.php:18
+#: members/single/forums.php:17 members/single/friends.php:19
+#: members/single/groups.php:19
+msgid "Order By:"
+msgstr ""
+
+#: groups/index.php:85 groups/single/forum.php:52 members/index.php:87
+#: members/single/blogs.php:20 members/single/forums.php:19
+#: members/single/friends.php:21 members/single/groups.php:21
+msgid "Last Active"
+msgstr ""
+
+#: groups/index.php:86 members/single/groups.php:22
+msgid "Most Members"
+msgstr ""
+
+#: groups/index.php:87 members/single/groups.php:23
+msgid "Newly Created"
+msgstr ""
+
+#: groups/index.php:88 members/index.php:91 members/single/blogs.php:22
+#: members/single/friends.php:23 members/single/groups.php:24
+msgid "Alphabetical"
+msgstr ""
+
+#: groups/single/admin.php:56
+msgid "Notify group members of these changes via email"
+msgstr ""
+
+#: groups/single/admin.php:69 groups/single/admin.php:157
+#: groups/single/forum/edit.php:92 groups/single/forum/edit.php:123
+#: members/single/profile/edit.php:105 members/single/settings/general.php:40
+#: members/single/settings/notifications.php:34
+msgid "Save Changes"
+msgstr ""
+
+#: groups/single/admin.php:178
+msgid ""
+"If you'd like to remove the existing group profile photo but not upload a "
+"new one, please use the delete group profile photo button."
+msgstr ""
+
+#: groups/single/admin.php:180
+msgid "Delete Group Profile Photo"
+msgstr ""
+
+#: groups/single/admin.php:198
+msgid "Crop Profile Photo"
+msgstr ""
+
+#: groups/single/admin.php:223
+#: members/single/profile/change-cover-image.php:11
+msgid "Change Cover Image"
+msgstr ""
+
+#: groups/single/admin.php:262
+msgid "Administrators"
+msgstr ""
+
+#: groups/single/admin.php:270 groups/single/admin.php:297
+#, php-format
+msgid "Profile picture of %s"
+msgstr ""
+
+#: groups/single/admin.php:275 groups/single/admin.php:302
+msgid "Demote to Member"
+msgstr ""
+
+#: groups/single/admin.php:290
+msgid "Moderators"
+msgstr ""
+
+#: groups/single/admin.php:301 groups/single/admin.php:357
+msgid "Promote to Admin"
+msgstr ""
+
+#: groups/single/admin.php:316
+msgid "Members"
+msgstr ""
+
+#: groups/single/admin.php:345
+msgid "(banned)"
+msgstr ""
+
+#: groups/single/admin.php:351
+msgid "Unban this member"
+msgstr ""
+
+#: groups/single/admin.php:351
+msgid "Remove Ban"
+msgstr ""
+
+#: groups/single/admin.php:355
+msgid "Kick and ban this member"
+msgstr ""
+
+#: groups/single/admin.php:355
+msgid "Kick &amp; Ban"
+msgstr ""
+
+#: groups/single/admin.php:356
+msgid "Promote to Mod"
+msgstr ""
+
+#: groups/single/admin.php:361
+msgid "Remove this member"
+msgstr ""
+
+#: groups/single/admin.php:361
+msgid "Remove from group"
+msgstr ""
+
+#: groups/single/admin.php:382
+msgid "This group has no members."
+msgstr ""
+
+#: groups/single/admin.php:453
+msgid ""
+"WARNING: Deleting this group will completely remove ALL content associated "
+"with it. There is no way back, please be careful with this option."
+msgstr ""
+
+#: groups/single/admin.php:456
+msgid "I understand the consequences of deleting this group."
+msgstr ""
+
+#: groups/single/admin.php:468
+msgid "Delete Group"
+msgstr ""
+
+#: groups/single/cover-image-header.php:73 groups/single/group-header.php:22
+msgid "Group Admins"
+msgstr ""
+
+#: groups/single/cover-image-header.php:93 groups/single/group-header.php:42
+msgid "Group Mods"
+msgstr ""
+
+#: groups/single/forum.php:30
+msgid "New Topic"
+msgstr ""
+
+#: groups/single/forum.php:38 groups/single/forum/edit.php:29
+#: groups/single/forum/topic.php:30
+msgid "Forum Directory"
+msgstr ""
+
+#: groups/single/forum.php:53 members/single/forums.php:20
+msgid "Most Posts"
+msgstr ""
+
+#: groups/single/forum.php:54 members/single/forums.php:21
+msgid "Unreplied"
+msgstr ""
+
+#: groups/single/forum.php:100
+msgid "You will auto join this group when you start a new topic."
+msgstr ""
+
+#: groups/single/forum.php:104
+msgid "Post a New Topic:"
+msgstr ""
+
+#: groups/single/forum.php:106 groups/single/forum/edit.php:74
+msgid "Title:"
+msgstr ""
+
+#: groups/single/forum.php:109 groups/single/forum/edit.php:77
+msgid "Content:"
+msgstr ""
+
+#: groups/single/forum.php:112 groups/single/forum/edit.php:80
+msgid "Tags (comma separated):"
+msgstr ""
+
+#: groups/single/forum.php:125
+msgid "Post Topic"
+msgstr ""
+
+#: groups/single/forum/edit.php:38
+msgid "Edit:"
+msgstr ""
+
+#: groups/single/forum/edit.php:111
+msgid "Edit text"
+msgstr ""
+
+#: groups/single/forum/edit.php:136
+msgid "This topic does not exist."
+msgstr ""
+
+#: groups/single/forum/topic.php:22
+msgid "New Reply"
+msgstr ""
+
+#: groups/single/forum/topic.php:45
+msgid "Topic tags:"
+msgstr ""
+
+#: groups/single/forum/topic.php:108
+#, php-format
+msgid "%1$s said %2$s:"
+msgstr ""
+
+#: groups/single/forum/topic.php:129
+msgid "Permanent link to this post"
+msgstr ""
+
+#: groups/single/forum/topic.php:160
+msgid "There are no posts for this topic."
+msgstr ""
+
+#: groups/single/forum/topic.php:175
+msgid "You will auto join this group when you reply to this topic."
+msgstr ""
+
+#: groups/single/forum/topic.php:187
+msgid "Add a reply:"
+msgstr ""
+
+#: groups/single/forum/topic.php:193
+msgid "Post Reply"
+msgstr ""
+
+#: groups/single/forum/topic.php:211
+msgid "This topic is closed, replies are no longer accepted."
+msgstr ""
+
+#: groups/single/invites-loop.php:110
+msgid "Select friends to invite."
+msgstr ""
+
+#: groups/single/members.php:131
+msgid "No members were found."
+msgstr ""
+
+#: groups/single/request-membership.php:17
+#, php-format
+msgid "You are requesting to become a member of the group '%s'."
+msgstr ""
+
+#: groups/single/request-membership.php:20
+msgid "Comments (optional)"
+msgstr ""
+
+#: groups/single/request-membership.php:32
+msgid "Send Request"
+msgstr ""
+
+#: groups/single/requests-loop.php:48 members/single/friends/requests.php:57
+#: members/single/groups/invites.php:45
+msgid "Accept"
+msgstr ""
+
+#: groups/single/requests-loop.php:50 members/single/friends/requests.php:58
+#: members/single/groups/invites.php:46
+msgid "Reject"
+msgstr ""
+
+#: groups/single/requests-loop.php:86
+msgid "There are no pending membership requests."
+msgstr ""
+
+#: groups/single/send-invites.php:28
+msgid "Send Invites"
+msgstr ""
+
+#: groups/single/send-invites.php:43
+msgid "Group invitations can only be extended to friends."
+msgstr ""
+
+#: groups/single/send-invites.php:44
+msgid ""
+"Once you've made some friendships, you'll be able to invite those members to "
+"this group."
+msgstr ""
+
+#: groups/single/send-invites.php:52
+msgid "All of your friends already belong to this group."
+msgstr ""
+
+#: header.php:51
+msgid "Open"
+msgstr ""
+
+#: header.php:55 members/single/profile/edit.php:72
+msgid "Close"
+msgstr ""
+
+#: header.php:143
+msgid "Logo"
+msgstr ""
+
+#: header.php:174 header.php:181 header.php:212 header.php:217
+msgid "Hi"
+msgstr ""
+
+#: header.php:187 header.php:223
+msgid "Logout"
+msgstr ""
+
+#: header.php:189 header.php:225
+msgid "Welcome Guest!"
+msgstr ""
+
+#: header.php:189 header.php:225 header.php:241
+msgid "Login"
+msgstr ""
+
+#: header.php:246
+msgid "User Name"
+msgstr ""
+
+#: header.php:247
+msgid "Password"
+msgstr ""
+
+#: header.php:249
+msgid "Forgot password?"
+msgstr ""
+
+#: header.php:250
+msgid "Not a member?"
+msgstr ""
+
+#: header.php:250
+msgid "Join today"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:333
+#: lib/main-function/themeum-register.php:253
+msgid "Install Required Plugins"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:334
+#: lib/main-function/themeum-register.php:254
+msgid "Install Plugins"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:335
+#: lib/main-function/themeum-register.php:255
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:336
+#: lib/main-function/themeum-register.php:256
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:338
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:348
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:353
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:358
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:363
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:368
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:378
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:383
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:388
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:393
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:397
+#: lib/main-function/themeum-register.php:257
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:399
+#: lib/class-tgm-plugin-activation.php:3029
+#: lib/main-function/themeum-register.php:258
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:400
+#: lib/class-tgm-plugin-activation.php:2832
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:524
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:525
+msgid "Update Required"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:639
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:833
+#: lib/class-tgm-plugin-activation.php:3438
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:940
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:940
+#: lib/class-tgm-plugin-activation.php:943
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:943
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:1121
+#: lib/class-tgm-plugin-activation.php:2828
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:1886
+#, php-format
+msgctxt "%s = version number"
+msgid "TGMPA v%s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2167
+msgid "Required"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2170
+msgid "Recommended"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2186
+msgid "WordPress Repository"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2189
+msgid "External Source"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2192
+msgid "Pre-Packaged"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2209
+msgid "Not Installed"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2213
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2215
+msgid "Active"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2221
+msgid "Required Update not Available"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2224
+msgid "Requires Update"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2227
+msgid "Update recommended"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2235
+#, php-format
+msgctxt "%1$s = install status, %2$s = update status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2280
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:2283
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:2286
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:2289
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:2371
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2379
+msgid "Installed version:"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2387
+msgid "Minimum required version:"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2399
+msgid "Available version:"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2422
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2436
+msgid "Plugin"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2437
+msgid "Source"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2438
+msgid "Type"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2442
+msgid "Version"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2443
+msgid "Status"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2491
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Install %2$s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2495
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Update %2$s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2500
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Activate %2$s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2570
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2603
+msgid "Install"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2609
+msgid "Update"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2612
+msgid "Activate"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2643
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2645
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2681
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2683
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2788
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2814
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3028
+msgid "Plugin activation failed."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3362
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3364
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3365
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3369
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3370
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3370
+#: lib/class-tgm-plugin-activation.php:3376
+msgid "Show Details"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3370
+#: lib/class-tgm-plugin-activation.php:3376
+msgid "Hide Details"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3371
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3372
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3375
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3376
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3377
+msgid "All installations have been completed."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3378
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: lib/main-function/ajax-login.php:11
+msgid "Sending user info, please wait..."
+msgstr ""
+
+#: lib/main-function/ajax-login.php:44
+msgid "Wrong username or password."
+msgstr ""
+
+#: lib/main-function/ajax-login.php:46
+msgid "Login successful, redirecting..."
+msgstr ""
+
+#: lib/main-function/themeum-core.php:86
+msgid "Edit"
+msgstr ""
+
+#: lib/main-function/themeum-core.php:93
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: lib/main-function/themeum-core.php:116
+msgid "Home"
+msgstr ""
+
+#: lib/main-function/themeum-core.php:127
+msgid "shop"
+msgstr ""
+
+#: lib/main-function/themeum-core.php:130
+msgid "Posts Tagged "
+msgstr ""
+
+#: lib/main-function/themeum-core.php:132
+#: lib/main-function/themeum-core.php:134
+#: lib/main-function/themeum-core.php:136
+msgid "Posts made in"
+msgstr ""
+
+#: lib/main-function/themeum-core.php:138
+msgid "Search results for"
+msgstr ""
+
+#: lib/main-function/themeum-core.php:168
+msgid "Posts by "
+msgstr ""
+
+#: lib/main-function/themeum-core.php:172
+msgid "Blog"
+msgstr ""
+
+#: lib/main-function/themeum-register.php:11
+msgid "Sidebar"
+msgstr ""
+
+#: lib/main-function/themeum-register.php:13
+#: lib/main-function/themeum-register.php:35
+msgid "Widgets in this area will be shown on Sidebar."
+msgstr ""
+
+#: lib/main-function/themeum-register.php:22
+msgid "Bottom"
+msgstr ""
+
+#: lib/main-function/themeum-register.php:24
+msgid "Widgets in this area will be shown before Footer."
+msgstr ""
+
+#: lib/main-function/themeum-register.php:33
+msgid "Buddypress Sidebar"
+msgstr ""
+
+#: lib/main-function/themeum-register.php:47
+msgid "BB Press Sidebar"
+msgstr ""
+
+#: lib/main-function/themeum-register.php:49
+msgid "Widgets in this area will be shown on BB Press Sidebar."
+msgstr ""
+
+#: lib/main-function/themeum-register.php:62 lib/sub-header.php:66
+msgid "Shop"
+msgstr ""
+
+#: lib/main-function/themeum-register.php:64
+msgid "Widgets in this area will be shown on Shop Sidebar."
+msgstr ""
+
+#: lib/main-function/themeum-register.php:259
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:100
+msgid "sub item"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:115
+msgid "Move up"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:128
+msgid "Move down"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:130
+#: lib/menu/admin-megamenu-walker.php:132
+msgid "Edit Menu Item"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:141
+msgid "URL"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:149
+msgid "Navigation Label"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:156
+msgid "Title Attribute"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:164
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:170
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:177
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:184
+msgid "Description"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:186
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:194
+msgid "Megamenu Settings"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:209
+msgid "Coulumn Number"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:223
+msgid "Move"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:224
+msgid "Up one"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:225
+msgid "Down one"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:228
+msgid "To the top"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:235
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: lib/menu/admin-megamenu-walker.php:248
+msgid "Remove"
+msgstr ""
+
+#: lib/moview-search.php:9
+msgid "Movies"
+msgstr ""
+
+#: lib/moview-search.php:10
+msgid "Celebrities"
+msgstr ""
+
+#: lib/widgets/double-ads.php:39 lib/widgets/double-ads.php:44
+#: lib/widgets/double-ads.php:49 lib/widgets/double-ads.php:54
+#: lib/widgets/image_widget.php:38
+msgid "Ads"
+msgstr ""
+
+#: lib/widgets/double-ads.php:107 lib/widgets/image_widget.php:78
+msgid "Title : "
+msgstr ""
+
+#: lib/widgets/double-ads.php:112
+msgid "Ads Link 1"
+msgstr ""
+
+#: lib/widgets/double-ads.php:116
+msgid "Ads Image URL 1"
+msgstr ""
+
+#: lib/widgets/double-ads.php:119 lib/widgets/double-ads.php:130
+#: lib/widgets/double-ads.php:141 lib/widgets/double-ads.php:152
+#: lib/widgets/image_widget.php:90 lib/widgets/themeum_about_widget.php:111
+msgid "Upload image"
+msgstr ""
+
+#: lib/widgets/double-ads.php:123
+msgid "Ads Link 2"
+msgstr ""
+
+#: lib/widgets/double-ads.php:127
+msgid "Ads Image URL 2"
+msgstr ""
+
+#: lib/widgets/double-ads.php:134
+msgid "Ads Link 3"
+msgstr ""
+
+#: lib/widgets/double-ads.php:138
+msgid "Ads Image URL 3"
+msgstr ""
+
+#: lib/widgets/double-ads.php:145
+msgid "Ads Link 4"
+msgstr ""
+
+#: lib/widgets/double-ads.php:149
+msgid "Ads Image URL 4"
+msgstr ""
+
+#: lib/widgets/image_widget.php:83
+msgid "Ads Link"
+msgstr ""
+
+#: lib/widgets/image_widget.php:87
+msgid "Ads Image URL"
+msgstr ""
+
+#: lib/widgets/themeum_about_widget.php:14
+msgid "Themeum About Us Widgets"
+msgstr ""
+
+#: lib/widgets/themeum_about_widget.php:14
+msgid "This About Us Widgets"
+msgstr ""
+
+#: lib/widgets/themeum_about_widget.php:35 post-format/content-gallery.php:17
+#: post-format/content-gallery.php:52
+msgid "image"
+msgstr ""
+
+#: lib/widgets/themeum_about_widget.php:45
+msgid "Email: "
+msgstr ""
+
+#: lib/widgets/themeum_about_widget.php:49
+msgid "Fax: "
+msgstr ""
+
+#: lib/widgets/themeum_about_widget.php:53
+msgid "Phone: "
+msgstr ""
+
+#: lib/widgets/themeum_about_widget.php:103
+msgid "Title :"
+msgstr ""
+
+#: lib/widgets/themeum_about_widget.php:108
+msgid "About Image URL"
+msgstr ""
+
+#: lib/widgets/themeum_about_widget.php:116
+msgid "About Text :"
+msgstr ""
+
+#: lib/widgets/themeum_about_widget.php:122
+msgid "Email ID: "
+msgstr ""
+
+#: lib/widgets/themeum_about_widget.php:127
+msgid "Fax No: "
+msgstr ""
+
+#: lib/widgets/themeum_about_widget.php:132
+msgid "Phone No: "
+msgstr ""
+
+#: members/index.php:85
+msgid "Show"
+msgstr ""
+
+#: members/index.php:88 members/single/friends.php:22
+msgid "Newest Registered"
+msgstr ""
+
+#: members/single/blogs.php:21
+msgid "Newest"
+msgstr ""
+
+#: members/single/friends/requests.php:102
+msgid "You have no pending friendship requests."
+msgstr ""
+
+#: members/single/groups/invites.php:29
+#, php-format
+msgctxt "Group member count"
+msgid "%d member"
+msgid_plural "%d members"
+msgstr[0] ""
+msgstr[1] ""
+
+#: members/single/groups/invites.php:66
+msgid "You have no outstanding group invites."
+msgstr ""
+
+#: members/single/messages/compose.php:21
+msgid "Send To (Username or Friend's Name)"
+msgstr ""
+
+#: members/single/messages/compose.php:30
+msgid "This is a notice to all users."
+msgstr ""
+
+#: members/single/messages/compose.php:33
+#: members/single/messages/messages-loop.php:56
+msgid "Subject"
+msgstr ""
+
+#: members/single/messages/compose.php:36
+msgid "Message"
+msgstr ""
+
+#: members/single/messages/compose.php:51
+msgid "Send Message"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:54
+#: members/single/notifications/notifications-loop.php:15
+msgid "Select all"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:55
+msgid "From"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:71
+msgid "Star"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:74
+#: members/single/notifications/notifications-loop.php:18
+msgid "Actions"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:84
+msgid "Select this message"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:90
+msgid "From:"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:97
+msgid "To:"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:104
+msgid "View Message"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:128
+msgid "Read"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:130
+msgid "Unread"
+msgstr ""
+
+#: members/single/messages/messages-loop.php:171
+msgid "Sorry, no messages were found."
+msgstr ""
+
+#: members/single/messages/notices-loop.php:63
+msgid "Sent:"
+msgstr ""
+
+#: members/single/messages/notices-loop.php:77
+msgid "Delete Message"
+msgstr ""
+
+#: members/single/messages/notices-loop.php:95
+msgid "Sorry, no notices were found."
+msgstr ""
+
+#: members/single/messages/single.php:30
+msgid "You are alone in this conversation."
+msgstr ""
+
+#: members/single/messages/single.php:34
+#, php-format
+msgid "Conversation between %s recipients."
+msgstr ""
+
+#: members/single/messages/single.php:38
+#, php-format
+msgid "Conversation between %s and you."
+msgstr ""
+
+#: members/single/messages/single.php:44
+msgid "Delete Conversation"
+msgstr ""
+
+#: members/single/messages/single.php:92
+msgid "Send a Reply"
+msgstr ""
+
+#: members/single/messages/single.php:113
+msgid "Reply to Message"
+msgstr ""
+
+#: members/single/messages/single.php:126
+msgid "Send Reply"
+msgstr ""
+
+#: members/single/notifications/feedback-no-notifications.php:16
+msgid "You have no unread notifications."
+msgstr ""
+
+#: members/single/notifications/feedback-no-notifications.php:20
+msgid "This member has no unread notifications."
+msgstr ""
+
+#: members/single/notifications/feedback-no-notifications.php:28
+msgid "You have no notifications."
+msgstr ""
+
+#: members/single/notifications/feedback-no-notifications.php:32
+msgid "This member has no notifications."
+msgstr ""
+
+#: members/single/notifications/notifications-loop.php:16
+msgid "Notification"
+msgstr ""
+
+#: members/single/notifications/notifications-loop.php:17
+msgid "Date Received"
+msgstr ""
+
+#: members/single/notifications/notifications-loop.php:28
+msgid "Select this notification"
+msgstr ""
+
+#: members/single/profile/change-avatar.php:11
+msgid "Change Profile Photo"
+msgstr ""
+
+#: members/single/profile/change-avatar.php:24
+msgid ""
+"Your profile photo will be used on your profile and throughout the site. If "
+"there is a <a href=\"http://gravatar.com\">Gravatar</a> associated with your "
+"account email we will use that, or you can upload an image from your "
+"computer."
+msgstr ""
+
+#: members/single/profile/change-avatar.php:31
+msgid ""
+"Click below to select a JPG, GIF or PNG format photo from your computer and "
+"then click 'Upload Image' to proceed."
+msgstr ""
+
+#: members/single/profile/change-avatar.php:41
+msgid ""
+"If you'd like to delete your current profile photo but not upload a new one, "
+"please use the delete profile photo button."
+msgstr ""
+
+#: members/single/profile/change-avatar.php:42
+msgid "Delete Profile Photo"
+msgstr ""
+
+#: members/single/profile/change-avatar.php:42
+msgid "Delete My Profile Photo"
+msgstr ""
+
+#: members/single/profile/change-avatar.php:49
+msgid "Crop Your New Profile Photo"
+msgstr ""
+
+#: members/single/profile/change-avatar.php:81
+msgid ""
+"Your profile photo will be used on your profile and throughout the site. To "
+"change your profile photo, please create an account with <a href=\"http://"
+"gravatar.com\">Gravatar</a> using the same email address as you used to "
+"register with this site."
+msgstr ""
+
+#: members/single/profile/change-cover-image.php:22
+msgid "Your Cover Image will be used to customize the header of your profile."
+msgstr ""
+
+#: members/single/profile/edit.php:26
+#, php-format
+msgid "Editing '%s' Profile Group"
+msgstr ""
+
+#: members/single/profile/edit.php:58 members/single/profile/edit.php:78
+#, php-format
+msgid "This field can be seen by: %s"
+msgstr ""
+
+#: members/single/profile/edit.php:62
+msgid "Change"
+msgstr ""
+
+#: members/single/profile/edit.php:67
+msgid "Who can see this field?"
+msgstr ""
+
+#: members/single/profile/profile-wp.php:28
+#, php-format
+msgid "%s's Profile"
+msgstr ""
+
+#: members/single/profile/profile-wp.php:44
+msgid "About Me"
+msgstr ""
+
+#: members/single/profile/profile-wp.php:53
+msgid "Website"
+msgstr ""
+
+#: members/single/profile/profile-wp.php:62
+msgid "Jabber"
+msgstr ""
+
+#: members/single/profile/profile-wp.php:71
+msgid "AOL Messenger"
+msgstr ""
+
+#: members/single/profile/profile-wp.php:80
+msgid "Yahoo Messenger"
+msgstr ""
+
+#: members/single/settings/capabilities.php:25
+msgid "This user is a spammer."
+msgstr ""
+
+#: members/single/settings/capabilities.php:29
+msgid "Save"
+msgstr ""
+
+#: members/single/settings/delete-account.php:16
+msgid ""
+"Deleting your account will delete all of the content you have created. It "
+"will be completely irrecoverable."
+msgstr ""
+
+#: members/single/settings/delete-account.php:20
+msgid ""
+"Deleting this account will delete all of the content it has created. It will "
+"be completely irrecoverable."
+msgstr ""
+
+#: members/single/settings/delete-account.php:39
+msgid "I understand the consequences."
+msgstr ""
+
+#: members/single/settings/delete-account.php:43
+msgid "Delete Account"
+msgstr ""
+
+#: members/single/settings/general.php:16
+msgid ""
+"Current Password <span>(required to update email or change current "
+"password)</span>"
+msgstr ""
+
+#: members/single/settings/general.php:17
+msgid "Password Lost and Found"
+msgstr ""
+
+#: members/single/settings/general.php:17
+msgid "Lost your password?"
+msgstr ""
+
+#: members/single/settings/general.php:21
+msgid "Account Email"
+msgstr ""
+
+#: members/single/settings/general.php:24
+msgid "Change Password <span>(leave blank for no change)</span>"
+msgstr ""
+
+#: members/single/settings/general.php:25
+msgid "New Password"
+msgstr ""
+
+#: members/single/settings/general.php:27
+#: members/single/settings/general.php:28
+msgid "Repeat New Password"
+msgstr ""
+
+#: members/single/settings/notifications.php:13
+msgid "Send an email notice when:"
+msgstr ""
+
+#: members/single/settings/profile.php:28
+msgid "Visibility"
+msgstr ""
+
+#: members/single/settings/profile.php:62
+msgid "Save Settings"
+msgstr ""
+
+#: page-archive-tmp.php:18
+msgid "Latest Post"
+msgstr ""
+
+#: page-archive-tmp.php:35
+msgid "Archive by Monthly"
+msgstr ""
+
+#: page-archive-tmp.php:41
+msgid "Archive by Categories"
+msgstr ""
+
+#: page-reviews.php:72
+msgid "10"
+msgstr ""
+
+#: page-reviews.php:98
+msgid "No Reviews Found!"
+msgstr ""
+
+#: post-format/content-none.php:4
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: post-format/content-none.php:7
+msgid "Error Search"
+msgstr ""
+
+#: post-format/content-none.php:8
+msgid "Nothing Found"
+msgstr ""
+
+#: post-format/content-none.php:10
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+msgstr ""
+
+#: post-format/content-none.php:16
+msgid "Find Course, Tutorials"
+msgstr ""
+
+#: post-format/content-none.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: post-format/entry-content-single.php:15
+msgid "Continue Reading"
+msgstr ""
+
+#: post-format/entry-content-single.php:39
+#: post-format/entry-content-single.php:47
+msgid "Tags: "
+msgstr ""
+
+#: post-format/entry-content.php:13
+msgid "Sticky"
+msgstr ""
+
+#: post-format/entry-content.php:19
+msgid "By"
+msgstr ""
+
+#: post-format/entry-content.php:27
+msgid "Category: "
+msgstr ""
+
+#: post-format/entry-content.php:33
+msgid "No comment"
+msgstr ""
+
+#: post-format/entry-content.php:33
+msgid "One comment"
+msgstr ""
+
+#: post-format/entry-content.php:33
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: post-format/entry-content.php:37
+msgid "Hits: "
+msgstr ""
+
+#: post-format/social-buttons.php:12
+msgid "Share"
+msgstr ""
+
+#: search.php:91
+msgid "No Item Found!"
+msgstr ""
+
+#: searchform.php:2
+msgid "Search . . . . ."
+msgstr ""
+
+#: single.php:16
+msgid "Previous"
+msgstr ""
+
+#: single.php:17
+msgid "Next"
+msgstr ""
+
+#: woocommerce/cart/cart.php:27
+msgid "Product"
+msgstr ""
+
+#: woocommerce/cart/cart.php:28
+msgid "Price"
+msgstr ""
+
+#: woocommerce/cart/cart.php:29
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:30
+msgid "Total"
+msgstr ""
+
+#: woocommerce/cart/cart.php:47
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/cart.php:74
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:119
+msgid "Coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:119
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:119
+msgid "Apply Coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:126
+msgid "Update Cart"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:40
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:34
+msgid "SKU:"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:34
+msgid "N/A"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:38
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/meta.php:40
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/related.php:41
+msgid "Related Products"
+msgstr ""
+
+#: woocommerce/single-product/review.php:28
+msgid "Your comment is awaiting approval"
+msgstr ""
+
+#: woocommerce/single-product/review.php:37
+msgid "verified owner"
+msgstr ""
+
+#: woocommerce/single-product/review.php:46
+#, php-format
+msgid "Rated %d out of 5"
+msgstr ""
+
+#: woocommerce/single-product/review.php:47
+msgid "out of 5"
+msgstr ""

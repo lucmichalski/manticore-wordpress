@@ -1,0 +1,27 @@
+<?php echo $this->render('admin/messagebox.phtml'); ?>
+<div class="postbox">
+    <h3 class="hndle">Setup path to Manticore indexes</h3>
+    <div class="inside">
+
+    <form  action="<?php echo $_SERVER["REQUEST_URI"]; ?>" method="post"  id="wizard_form">
+        <input type="hidden" name="folder_process" value="1" />
+        <input type="hidden" name="action" value="folder" />
+        <table class="form-table">
+            <tr>
+                <th>Manticore indexes directory</th>
+                <td><input type="text" name="sphinx_path" size="50"
+                         value="<?php echo $this->view->install_path?>" />
+                </td>
+            </tr>
+        </table>
+        <p class="submit">
+            <input class="button-secondary cancel" type="button"
+                   onClick="return wizard_skip('folder');" value="Skip step" />
+            <input type="submit" class="button-primary" onClick="return wizard_next();"
+                   value="Save &amp; Continue" />
+             <input class="button-secondary cancel alignright" type="button"
+                    onClick="return wizard_cancel();" value="Cancel Wizard" />
+        </p>
+    </form>
+    </div>
+</div>

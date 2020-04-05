@@ -1,0 +1,3396 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Themeum Core\n"
+"POT-Creation-Date: 2016-03-09 12:15+0600\n"
+"PO-Revision-Date: 2016-03-09 12:15+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: lib/admin-config.php:106
+msgid "Section via hook"
+msgstr ""
+
+#: lib/admin-config.php:107
+msgid ""
+"<p class=\"description\">This is a section created by adding a filter to the "
+"sections array. Can be used by child themes to add/remove sections from the "
+"options.</p>"
+msgstr ""
+
+#: lib/admin-config.php:185
+#, php-format
+msgid "Customize &#8220;%s&#8221;"
+msgstr ""
+
+#: lib/admin-config.php:192 lib/admin-config.php:195
+msgid "Current theme preview"
+msgstr ""
+
+#: lib/admin-config.php:202
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: lib/admin-config.php:203 lib/redux/inc/welcome/views/about.php:8
+#: lib/redux/inc/welcome/views/changelog.php:10
+#: lib/redux/inc/welcome/views/credits.php:10
+#: lib/redux/inc/welcome/views/extensions.php:81
+#: lib/redux/inc/welcome/views/status_report.php:34
+#: lib/redux/inc/welcome/views/support.php:8
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: lib/admin-config.php:204
+msgid "Tags"
+msgstr ""
+
+#: lib/admin-config.php:209
+msgid "This child theme requires its parent theme"
+msgstr ""
+
+#: lib/admin-config.php:209
+msgid "http://codex.wordpress.org/Child_Themes"
+msgstr ""
+
+#: lib/admin-config.php:228
+msgid "Header"
+msgstr ""
+
+#: lib/admin-config.php:237
+msgid "Select Menu Style"
+msgstr ""
+
+#: lib/admin-config.php:238
+msgid "Select Menu Style of the Theme"
+msgstr ""
+
+#: lib/admin-config.php:249
+msgid "Header Top Padding"
+msgstr ""
+
+#: lib/admin-config.php:250
+msgid "Enter custom header top padding"
+msgstr ""
+
+#: lib/admin-config.php:258
+msgid "Header Bottom Padding"
+msgstr ""
+
+#: lib/admin-config.php:259
+msgid "Enter custom header bottom padding"
+msgstr ""
+
+#: lib/admin-config.php:266
+msgid "Header Height ex. 52"
+msgstr ""
+
+#: lib/admin-config.php:267
+msgid "Enter custom header Height"
+msgstr ""
+
+#: lib/admin-config.php:274
+msgid "Sticky Header"
+msgstr ""
+
+#: lib/admin-config.php:275
+msgid "Enable or disable sicky Header"
+msgstr ""
+
+#: lib/admin-config.php:288
+msgid "All Logo & favicon"
+msgstr ""
+
+#: lib/admin-config.php:297
+msgid "Favicon"
+msgstr ""
+
+#: lib/admin-config.php:298
+msgid "Upload favicon image"
+msgstr ""
+
+#: lib/admin-config.php:306
+msgid "Logo"
+msgstr ""
+
+#: lib/admin-config.php:308
+msgid "Upload your custom site logo."
+msgstr ""
+
+#: lib/admin-config.php:314
+msgid "Text Type Logo"
+msgstr ""
+
+#: lib/admin-config.php:315
+msgid "Enable or disable text type logo"
+msgstr ""
+
+#: lib/admin-config.php:322
+msgid "Logo Text"
+msgstr ""
+
+#: lib/admin-config.php:323
+msgid "Use your Custom logo text Ex. Moview"
+msgstr ""
+
+#: lib/admin-config.php:332
+msgid "404 Page Logo"
+msgstr ""
+
+#: lib/admin-config.php:333
+msgid "Upload 404 Page Logo"
+msgstr ""
+
+#: lib/admin-config.php:341
+msgid "404 Page BG"
+msgstr ""
+
+#: lib/admin-config.php:349
+msgid "Coming Soon Page Logo"
+msgstr ""
+
+#: lib/admin-config.php:350
+msgid "Upload Coming Soon Page Logo"
+msgstr ""
+
+#: lib/admin-config.php:358
+msgid "Coming Soon Page Background"
+msgstr ""
+
+#: lib/admin-config.php:359
+msgid "Upload Coming Soon Page Background"
+msgstr ""
+
+#: lib/admin-config.php:373
+msgid "Category Page"
+msgstr ""
+
+#: lib/admin-config.php:381
+msgid "Movie Category Page Number:"
+msgstr ""
+
+#: lib/admin-config.php:382
+msgid "Number of Post Show on the Movie Category Listing Page"
+msgstr ""
+
+#: lib/admin-config.php:389
+msgid "Celebrity Category Page Number:"
+msgstr ""
+
+#: lib/admin-config.php:390
+msgid "Number of Post Show on the Celebrity Category Listing Page"
+msgstr ""
+
+#: lib/admin-config.php:401
+msgid "Banner Image"
+msgstr ""
+
+#: lib/admin-config.php:409
+msgid "Blog Banner"
+msgstr ""
+
+#: lib/admin-config.php:410
+msgid "Upload Blog Banner image"
+msgstr ""
+
+#: lib/admin-config.php:417
+msgid "Buddypress Member Page Banner"
+msgstr ""
+
+#: lib/admin-config.php:418
+msgid "Upload Buddypress Member Page Banner image"
+msgstr ""
+
+#: lib/admin-config.php:425
+msgid "Buddypress Group Page Banner"
+msgstr ""
+
+#: lib/admin-config.php:426
+msgid "Upload Buddypress Group Page Banner image"
+msgstr ""
+
+#: lib/admin-config.php:433
+msgid "Buddypress Activity Page Banner"
+msgstr ""
+
+#: lib/admin-config.php:434
+msgid "Upload Buddypress Activity Page Banner image"
+msgstr ""
+
+#: lib/admin-config.php:441
+msgid "bbPress Forums Page Banner"
+msgstr ""
+
+#: lib/admin-config.php:442
+msgid "Upload bbpress Forums Page Banner image"
+msgstr ""
+
+#: lib/admin-config.php:449
+msgid "Background Color"
+msgstr ""
+
+#: lib/admin-config.php:450
+msgid "Blog Subtitle BG Color"
+msgstr ""
+
+#: lib/admin-config.php:466
+msgid "Layout & Styling"
+msgstr ""
+
+#: lib/admin-config.php:472
+msgid "Select Layout"
+msgstr ""
+
+#: lib/admin-config.php:473
+msgid "Select BoxWidth of FullWidth"
+msgstr ""
+
+#: lib/admin-config.php:486
+msgid "Body Background"
+msgstr ""
+
+#: lib/admin-config.php:487
+msgid "You can set Background color or images or patterns for site body tag"
+msgstr ""
+
+#: lib/admin-config.php:497
+msgid "Preset Layout"
+msgstr ""
+
+#: lib/admin-config.php:498
+msgid "select any preset"
+msgstr ""
+
+#: lib/admin-config.php:512
+msgid "Select Custom Color"
+msgstr ""
+
+#: lib/admin-config.php:513
+msgid "You can use unlimited color"
+msgstr ""
+
+#: lib/admin-config.php:521
+msgid "Link Color"
+msgstr ""
+
+#: lib/admin-config.php:522
+msgid "Pick a link color (default: #f26522)."
+msgstr ""
+
+#: lib/admin-config.php:532
+msgid "Hover Color"
+msgstr ""
+
+#: lib/admin-config.php:533
+msgid "Pick a hover color (default: #d54d0d)."
+msgstr ""
+
+#: lib/admin-config.php:543
+msgid "Header Background Color"
+msgstr ""
+
+#: lib/admin-config.php:544
+msgid "Pick a background color for the header (default: #fff)."
+msgstr ""
+
+#: lib/admin-config.php:554
+msgid "Bottom Background"
+msgstr ""
+
+#: lib/admin-config.php:555
+msgid ""
+"You can set Background color or images or patterns for site Bottom Background"
+msgstr ""
+
+#: lib/admin-config.php:570
+msgid "Typography"
+msgstr ""
+
+#: lib/admin-config.php:576
+msgid "Body Font"
+msgstr ""
+
+#: lib/admin-config.php:592
+msgid "Select your website Body Font"
+msgstr ""
+
+#: lib/admin-config.php:604
+msgid "Menu Font"
+msgstr ""
+
+#: lib/admin-config.php:620
+msgid "Select your website Menu Font"
+msgstr ""
+
+#: lib/admin-config.php:632
+msgid "Headings Font h1"
+msgstr ""
+
+#: lib/admin-config.php:648 lib/admin-config.php:676 lib/admin-config.php:704
+#: lib/admin-config.php:732 lib/admin-config.php:760
+msgid "Select your website Headings Font"
+msgstr ""
+
+#: lib/admin-config.php:660
+msgid "Headings Font h2"
+msgstr ""
+
+#: lib/admin-config.php:688
+msgid "Headings Font h3"
+msgstr ""
+
+#: lib/admin-config.php:716
+msgid "Headings Font h4"
+msgstr ""
+
+#: lib/admin-config.php:744
+msgid "Headings Font h5"
+msgstr ""
+
+#: lib/admin-config.php:782
+msgid "Social Media"
+msgstr ""
+
+#: lib/admin-config.php:789 lib/admin-config.php:906
+msgid "Add Facebook URL"
+msgstr ""
+
+#: lib/admin-config.php:794 lib/admin-config.php:911
+msgid "Add Twitter URL"
+msgstr ""
+
+#: lib/admin-config.php:799 lib/admin-config.php:916
+msgid "Add Google Plus URL"
+msgstr ""
+
+#: lib/admin-config.php:804 lib/admin-config.php:921
+msgid "Add Pinterest URL"
+msgstr ""
+
+#: lib/admin-config.php:809 lib/admin-config.php:926
+msgid "Add Youtube URL"
+msgstr ""
+
+#: lib/admin-config.php:814 lib/admin-config.php:931
+msgid "Add Linkedin URL"
+msgstr ""
+
+#: lib/admin-config.php:819 lib/admin-config.php:936
+msgid "Add Dribbble URL"
+msgstr ""
+
+#: lib/admin-config.php:824
+msgid "Add Behance URL"
+msgstr ""
+
+#: lib/admin-config.php:829
+msgid "Add Flickr URL"
+msgstr ""
+
+#: lib/admin-config.php:834
+msgid "Add vk URL"
+msgstr ""
+
+#: lib/admin-config.php:839
+msgid "Add skype URL"
+msgstr ""
+
+#: lib/admin-config.php:844 lib/admin-config.php:941
+msgid "Add Instagram URL"
+msgstr ""
+
+#: lib/admin-config.php:860 lib/admin-config.php:885
+#: vc-addons/themeum-spotlight.php:17
+msgid "Coming Soon"
+msgstr ""
+
+#: lib/admin-config.php:866
+msgid "Enable Coming Soon"
+msgstr ""
+
+#: lib/admin-config.php:867
+msgid "Enable or disable coming soon mode"
+msgstr ""
+
+#: lib/admin-config.php:874
+msgid "Coming Soon date"
+msgstr ""
+
+#: lib/admin-config.php:875
+msgid "Coming Soon Date"
+msgstr ""
+
+#: lib/admin-config.php:876
+msgid "08/30/2018"
+msgstr ""
+
+#: lib/admin-config.php:883 lib/redux/inc/fields/slides/field_slides.php:145
+#: lib/redux/inc/fields/slides/field_slides.php:200
+#: vc-addons/themeum-title.php:58 vc-addons/themeum-title.php:68
+msgid "Title"
+msgstr ""
+
+#: lib/admin-config.php:884
+msgid "Coming Soon Title"
+msgstr ""
+
+#: lib/admin-config.php:891
+msgid "Sub Title"
+msgstr ""
+
+#: lib/admin-config.php:892
+msgid "Coming Soon Sub Title"
+msgstr ""
+
+#: lib/admin-config.php:893
+msgid "We are working on something awesome!"
+msgstr ""
+
+#: lib/admin-config.php:899
+msgid "Coming Soon Copyright"
+msgstr ""
+
+#: lib/admin-config.php:900
+msgid "Coming Soon Copyright Text"
+msgstr ""
+
+#: lib/admin-config.php:901
+msgid "Copyright 2016 © Moview. All Rights Reserved"
+msgstr ""
+
+#: lib/admin-config.php:955
+msgid "Blog"
+msgstr ""
+
+#: lib/admin-config.php:961
+msgid "Blog Single Page Social Share"
+msgstr ""
+
+#: lib/admin-config.php:962
+msgid "Enable or disable blog social share for single page"
+msgstr ""
+
+#: lib/admin-config.php:969
+msgid "Post View Count"
+msgstr ""
+
+#: lib/admin-config.php:970
+msgid "Enable or disable Post View Count"
+msgstr ""
+
+#: lib/admin-config.php:977
+msgid "Blog Author"
+msgstr ""
+
+#: lib/admin-config.php:978
+msgid "Enable Blog Author ex. Admin"
+msgstr ""
+
+#: lib/admin-config.php:985
+msgid "Blog Date"
+msgstr ""
+
+#: lib/admin-config.php:986
+msgid "Enable Blog Date "
+msgstr ""
+
+#: lib/admin-config.php:993
+msgid "Blog Category"
+msgstr ""
+
+#: lib/admin-config.php:994
+msgid "Enable or disable blog category"
+msgstr ""
+
+#: lib/admin-config.php:1001
+msgid "Blog Comment"
+msgstr ""
+
+#: lib/admin-config.php:1002
+msgid "Enable or disable blog Comment"
+msgstr ""
+
+#: lib/admin-config.php:1010
+msgid "Blog Tag"
+msgstr ""
+
+#: lib/admin-config.php:1011
+msgid "Enable Blog Tag "
+msgstr ""
+
+#: lib/admin-config.php:1018
+msgid "Single Post Comment"
+msgstr ""
+
+#: lib/admin-config.php:1019
+msgid "Enable Single post comment "
+msgstr ""
+
+#: lib/admin-config.php:1026
+msgid "Post navigation"
+msgstr ""
+
+#: lib/admin-config.php:1027
+msgid "Enable Post navigation "
+msgstr ""
+
+#: lib/admin-config.php:1034
+msgid "Blog Readmore"
+msgstr ""
+
+#: lib/admin-config.php:1035
+msgid "Enable Blog Readmore"
+msgstr ""
+
+#: lib/admin-config.php:1042 lib/admin-config.php:1043
+#: lib/admin-config.php:1044
+msgid "Continue Reading"
+msgstr ""
+
+#: lib/admin-config.php:1061
+msgid "Footer"
+msgstr ""
+
+#: lib/admin-config.php:1067
+msgid "Copyright"
+msgstr ""
+
+#: lib/admin-config.php:1068
+msgid "Enable Copyright Text"
+msgstr ""
+
+#: lib/admin-config.php:1075
+msgid "Copyright Text"
+msgstr ""
+
+#: lib/admin-config.php:1076
+msgid "Add Copyright Text"
+msgstr ""
+
+#: lib/admin-config.php:1077
+msgid "© 2016 Your Company. All Rights Reserved. Designed By THEMEUM"
+msgstr ""
+
+#: lib/admin-config.php:1091
+#: lib/redux/inc/extensions/import_export/extension_import_export.php:120
+msgid "Import / Export"
+msgstr ""
+
+#: lib/admin-config.php:1092
+msgid "Import and Export your Theme Options settings from file, text or URL."
+msgstr ""
+
+#: lib/admin-config.php:1098
+msgid "Import Export"
+msgstr ""
+
+#: lib/admin-config.php:1112
+msgid "Theme Information 1"
+msgstr ""
+
+#: lib/admin-config.php:1113 lib/admin-config.php:1119
+msgid "<p>This is the tab content, HTML is allowed.</p>"
+msgstr ""
+
+#: lib/admin-config.php:1118
+msgid "Theme Information 2"
+msgstr ""
+
+#: lib/admin-config.php:1123
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr ""
+
+#: lib/admin-config.php:1143 lib/admin-config.php:1144
+msgid "Theme Options"
+msgstr ""
+
+#: lib/redux/core/enqueue.php:453
+#: lib/redux/inc/extensions/customizer/extension_customizer.php:687
+msgid "You have changes that are not saved. Would you like to save them now?"
+msgstr ""
+
+#: lib/redux/core/enqueue.php:461
+#: lib/redux/inc/extensions/customizer/extension_customizer.php:688
+msgid "Are you sure? Resetting will lose all custom values."
+msgstr ""
+
+#: lib/redux/core/enqueue.php:469
+msgid "Are you sure? Resetting will lose all custom values in this section."
+msgstr ""
+
+#: lib/redux/core/enqueue.php:477
+#: lib/redux/inc/extensions/customizer/extension_customizer.php:689
+msgid ""
+"Your current options will be replaced with the values of this preset. Would "
+"you like to proceed?"
+msgstr ""
+
+#: lib/redux/core/enqueue.php:484
+msgid "Please Wait"
+msgstr ""
+
+#: lib/redux/core/enqueue.php:495
+msgid "There was an error saving. Here is the result of your action:"
+msgstr ""
+
+#: lib/redux/core/enqueue.php:496
+msgid ""
+"There was a problem with your action. Please try again or reload the page."
+msgstr ""
+
+#: lib/redux/core/panel.php:65
+msgid "Warning- This options panel will not work properly without javascript!"
+msgstr ""
+
+#: lib/redux/core/panel.php:141
+msgid "Settings Imported!"
+msgstr ""
+
+#: lib/redux/core/panel.php:156
+msgid "All Defaults Restored!"
+msgstr ""
+
+#: lib/redux/core/panel.php:170
+msgid "Section Defaults Restored!"
+msgstr ""
+
+#: lib/redux/core/panel.php:184
+msgid "Settings Saved!"
+msgstr ""
+
+#: lib/redux/core/panel.php:204
+msgid "Settings have changed, you should save them!"
+msgstr ""
+
+#: lib/redux/core/panel.php:212
+msgid "error(s) were found!"
+msgstr ""
+
+#: lib/redux/core/panel.php:220
+msgid "warning(s) were found!"
+msgstr ""
+
+#: lib/redux/core/panel.php:312
+msgid ""
+"<strong>Your panel has bundled outdated copies of Redux Framework template "
+"files</strong> &#8211; if you encounter functionality issues this could be "
+"the reason. Ensure you update or remove them."
+msgstr ""
+
+#: lib/redux/framework.php:226
+#, php-format
+msgid "Options panel created using %1$s"
+msgstr ""
+
+#: lib/redux/framework.php:226
+msgid "Redux Framework"
+msgstr ""
+
+#: lib/redux/framework.php:230 lib/redux/framework.php:234
+msgid "Options"
+msgstr ""
+
+#: lib/redux/framework.php:1722
+msgid "Enable"
+msgstr ""
+
+#: lib/redux/framework.php:1727
+msgid "Disable"
+msgstr ""
+
+#: lib/redux/framework.php:1733
+msgid "moving the mouse over"
+msgstr ""
+
+#: lib/redux/framework.php:1735
+msgid "clicking"
+msgstr ""
+
+#: lib/redux/framework.php:1739
+#, php-format
+msgid ""
+"Hints are tooltips that popup when %d the hint icon, offering addition "
+"information about the field in which they appear.  They can be %d d by using "
+"the link below."
+msgstr ""
+
+#: lib/redux/framework.php:1744
+msgid "Hints"
+msgstr ""
+
+#: lib/redux/framework.php:1871
+msgid "Default"
+msgstr ""
+
+#: lib/redux/framework.php:2750
+msgid "Invalid security credential.  Please reload the page and try again."
+msgstr ""
+
+#: lib/redux/framework.php:2759
+msgid "Invalid user capability.  Please reload the page and try again."
+msgstr ""
+
+#: lib/redux/framework.php:2835
+msgid "Your panel has no fields. Nothing to save."
+msgstr ""
+
+#: lib/redux/inc/class.redux_admin_notices.php:97
+msgid "Dismiss"
+msgstr ""
+
+#: lib/redux/inc/class.redux_cdn.php:74
+msgid ""
+"Please wait a few minutes, then try refreshing the page. Unable to load some "
+"remotely hosted scripts."
+msgstr ""
+
+#: lib/redux/inc/class.redux_cdn.php:76
+#, php-format
+msgid ""
+"If you are developing offline, please download and install the <a href=\"%s"
+"\" target=\"_blank\">Redux Vendor Support</a> plugin/extension to bypass the "
+"our CDN and avoid this warning"
+msgstr ""
+
+#: lib/redux/inc/class.redux_cdn.php:81
+msgid "Redux Framework Warning"
+msgstr ""
+
+#: lib/redux/inc/class.redux_cdn.php:81
+#, php-format
+msgid "%s CDN unavailable.  Some controls may not render properly."
+msgstr ""
+
+#: lib/redux/inc/class.redux_cdn.php:113
+#, php-format
+msgid ""
+"The <a href=\"%s\">Vendor Support plugin</a> (or extension) is either not "
+"installed or not activated and thus, some controls may not render properly.  "
+"Please ensure that it is installed and <a href=\"%s\">activated</a>"
+msgstr ""
+
+#: lib/redux/inc/class.redux_filesystem.php:31
+#: lib/redux/inc/class.redux_filesystem.php:60
+#: lib/redux/inc/class.redux_filesystem.php:270
+msgid "File Permission Issues"
+msgstr ""
+
+#: lib/redux/inc/class.redux_filesystem.php:31
+#, php-format
+msgid ""
+"We were unable to modify required files. Please check your permissions, or "
+"modify your wp-config.php file to contain your FTP login credentials as <a "
+"href=\"%s\" target=\"_blank\">outlined here</a>."
+msgstr ""
+
+#: lib/redux/inc/class.redux_filesystem.php:60
+#: lib/redux/inc/class.redux_filesystem.php:270
+#, php-format
+msgid ""
+"We were unable to modify required files. Please ensure that <code>%1s</code> "
+"has the proper read-write permissions, or modify your wp-config.php file to "
+"contain your FTP login credentials as <a href=\"%2s\" target=\"_blank"
+"\">outlined here</a>."
+msgstr ""
+
+#: lib/redux/inc/class.redux_helpers.php:604
+#, php-format
+msgid ""
+"<code>%s</code> version <strong style=\"color:red\">%s</strong> is out of "
+"date. The core version is %s"
+msgstr ""
+
+#: lib/redux/inc/class.redux_themecheck.php:61
+#, php-format
+msgid ""
+"The theme you are testing has %s embedded. We invite you to read the %sTheme-"
+"Check Documentation%s to understand some warnings you will see because of "
+"Redux."
+msgstr ""
+
+#: lib/redux/inc/class.redux_themecheck.php:109
+msgid ""
+"The following directories & files are still located in your <strong>Redux</"
+"strong>  directory. They may cause errors in Theme-Check."
+msgstr ""
+
+#: lib/redux/inc/debug.php:41 lib/redux/inc/debug.php:69
+#: lib/redux/inc/debug.php:76 lib/redux/inc/debug.php:77
+#: lib/redux/inc/extensions/options_object/extension_options_object.php:82
+#: lib/redux/inc/extensions/options_object/options_object/field_options_object.php:104
+msgid "Options Object"
+msgstr ""
+
+#: lib/redux/inc/debug.php:54
+#: lib/redux/inc/extensions/options_object/options_object/field_options_object.php:107
+msgid "Show Object in Javascript Console Object"
+msgstr ""
+
+#: lib/redux/inc/extensions/customizer/extension_customizer.php:722
+msgid "You have changes that are not saved.  Would you like to save them now?"
+msgstr ""
+
+#: lib/redux/inc/extensions/customizer/extension_customizer.php:723
+msgid "Are you sure?  Resetting will lose all custom values."
+msgstr ""
+
+#: lib/redux/inc/extensions/customizer/extension_customizer.php:724
+msgid ""
+"Your current options will be replaced with the values of this preset.  Would "
+"you like to proceed?"
+msgstr ""
+
+#: lib/redux/inc/extensions/customizer/inc/customizer_panel.php:89
+msgid "Press return or enter to open this panel"
+msgstr ""
+
+#. translators: %s is the site/panel title in the Customizer
+#: lib/redux/inc/extensions/customizer/inc/customizer_panel.php:114
+#: lib/redux/inc/extensions/customizer/inc/customizer_panel.php:142
+#, php-format
+msgid "You are customizing %s"
+msgstr ""
+
+#: lib/redux/inc/extensions/customizer/inc/customizer_panel.php:138
+#: lib/redux/inc/extensions/customizer/inc/customizer_section.php:79
+msgid "Back"
+msgstr ""
+
+#: lib/redux/inc/extensions/customizer/inc/customizer_panel.php:146
+msgid "Help"
+msgstr ""
+
+#: lib/redux/inc/extensions/customizer/inc/customizer_section.php:72
+msgid "Press return or enter to open"
+msgstr ""
+
+#: lib/redux/inc/extensions/customizer/inc/customizer_section.php:122
+msgid "Press return or enter to expand"
+msgstr ""
+
+#: lib/redux/inc/extensions/import_export/import_export/field_import_export.php:91
+msgid "Import Options"
+msgstr ""
+
+#: lib/redux/inc/extensions/import_export/import_export/field_import_export.php:95
+msgid "Import from File"
+msgstr ""
+
+#: lib/redux/inc/extensions/import_export/import_export/field_import_export.php:98
+msgid "Import from URL"
+msgstr ""
+
+#: lib/redux/inc/extensions/import_export/import_export/field_import_export.php:104
+msgid ""
+"Input your backup file below and hit Import to restore your sites options "
+"from a backup."
+msgstr ""
+
+#: lib/redux/inc/extensions/import_export/import_export/field_import_export.php:111
+msgid ""
+"Input the URL to another sites options set and hit Import to load the "
+"options from that site."
+msgstr ""
+
+#: lib/redux/inc/extensions/import_export/import_export/field_import_export.php:116
+msgid "Import"
+msgstr ""
+
+#: lib/redux/inc/extensions/import_export/import_export/field_import_export.php:116
+msgid ""
+"WARNING! This will overwrite all existing option values, please proceed with "
+"caution!"
+msgstr ""
+
+#: lib/redux/inc/extensions/import_export/import_export/field_import_export.php:120
+msgid "Export Options"
+msgstr ""
+
+#: lib/redux/inc/extensions/import_export/import_export/field_import_export.php:124
+msgid ""
+"Here you can copy/download your current option settings. Keep this safe as "
+"you can use it as a backup should anything go wrong, or you can use it to "
+"restore your settings on this site (or any other site)."
+msgstr ""
+
+#: lib/redux/inc/extensions/import_export/import_export/field_import_export.php:132
+msgid "Copy Data"
+msgstr ""
+
+#: lib/redux/inc/extensions/import_export/import_export/field_import_export.php:133
+msgid "Download Data File"
+msgstr ""
+
+#: lib/redux/inc/extensions/import_export/import_export/field_import_export.php:134
+msgid "Copy Export URL"
+msgstr ""
+
+#: lib/redux/inc/fields/background/field_background.php:124
+#: lib/redux/inc/fields/color/field_color.php:73
+#: lib/redux/inc/fields/color_gradient/field_color_gradient.php:79
+#: lib/redux/inc/fields/color_gradient/field_color_gradient.php:91
+msgid "Transparent"
+msgstr ""
+
+#: lib/redux/inc/fields/background/field_background.php:141
+msgid "Background Repeat"
+msgstr ""
+
+#: lib/redux/inc/fields/background/field_background.php:157
+msgid "Background Clip"
+msgstr ""
+
+#: lib/redux/inc/fields/background/field_background.php:173
+msgid "Background Origin"
+msgstr ""
+
+#: lib/redux/inc/fields/background/field_background.php:188
+msgid "Background Size"
+msgstr ""
+
+#: lib/redux/inc/fields/background/field_background.php:203
+msgid "Background Attachment"
+msgstr ""
+
+#: lib/redux/inc/fields/background/field_background.php:223
+msgid "Background Position"
+msgstr ""
+
+#: lib/redux/inc/fields/background/field_background.php:277
+#: lib/redux/inc/fields/media/field_media.php:149
+msgid "No media selected"
+msgstr ""
+
+#: lib/redux/inc/fields/background/field_background.php:314
+#: lib/redux/inc/fields/media/field_media.php:198
+#: lib/redux/inc/fields/slides/field_slides.php:126
+#: lib/redux/inc/fields/slides/field_slides.php:188
+msgid "Upload"
+msgstr ""
+
+#: lib/redux/inc/fields/background/field_background.php:321
+#: lib/redux/inc/fields/media/field_media.php:205
+#: lib/redux/inc/fields/multi_text/field_multi_text.php:69
+#: lib/redux/inc/fields/multi_text/field_multi_text.php:73
+#: lib/redux/inc/fields/multi_text/field_multi_text.php:76
+#: lib/redux/inc/fields/slides/field_slides.php:133
+#: lib/redux/inc/fields/slides/field_slides.php:190
+#: post-type/meta-box/inc/fields/file-input.php:42
+msgid "Remove"
+msgstr ""
+
+#: lib/redux/inc/fields/border/field_border.php:125
+#: lib/redux/inc/fields/spacing/field_spacing.php:191
+#: post-type/meta-box/inc/fields/select.php:211
+msgid "All"
+msgstr ""
+
+#: lib/redux/inc/fields/border/field_border.php:138
+#: lib/redux/inc/fields/spacing/field_spacing.php:215
+msgid "Top"
+msgstr ""
+
+#: lib/redux/inc/fields/border/field_border.php:145
+#: lib/redux/inc/fields/spacing/field_spacing.php:222
+msgid "Right"
+msgstr ""
+
+#: lib/redux/inc/fields/border/field_border.php:152
+#: lib/redux/inc/fields/spacing/field_spacing.php:229
+msgid "Bottom"
+msgstr ""
+
+#: lib/redux/inc/fields/border/field_border.php:159
+#: lib/redux/inc/fields/spacing/field_spacing.php:236
+msgid "Left"
+msgstr ""
+
+#: lib/redux/inc/fields/border/field_border.php:174
+msgid "Border style"
+msgstr ""
+
+#: lib/redux/inc/fields/color_gradient/field_color_gradient.php:68
+msgid "From "
+msgstr ""
+
+#: lib/redux/inc/fields/color_gradient/field_color_gradient.php:82
+msgid "To "
+msgstr ""
+
+#: lib/redux/inc/fields/dimensions/field_dimensions.php:162
+msgid "Width"
+msgstr ""
+
+#: lib/redux/inc/fields/dimensions/field_dimensions.php:178
+#: lib/redux/inc/fields/typography/field_typography.php:442
+msgid "Height"
+msgstr ""
+
+#: lib/redux/inc/fields/dimensions/field_dimensions.php:189
+#: lib/redux/inc/fields/dimensions/field_dimensions.php:190
+#: lib/redux/inc/fields/spacing/field_spacing.php:245
+#: lib/redux/inc/fields/spacing/field_spacing.php:246
+msgid "Units"
+msgstr ""
+
+#: lib/redux/inc/fields/gallery/field_gallery.php:73
+msgid "Add/Edit Gallery"
+msgstr ""
+
+#: lib/redux/inc/fields/gallery/field_gallery.php:74
+msgid "Clear Gallery"
+msgstr ""
+
+#: lib/redux/inc/fields/link_color/field_link_color.php:88
+msgid "Regular"
+msgstr ""
+
+#: lib/redux/inc/fields/link_color/field_link_color.php:92
+msgid "Hover"
+msgstr ""
+
+#: lib/redux/inc/fields/link_color/field_link_color.php:96
+msgid "Visited"
+msgstr ""
+
+#: lib/redux/inc/fields/link_color/field_link_color.php:100
+msgid "Active"
+msgstr ""
+
+#: lib/redux/inc/fields/multi_text/field_multi_text.php:61
+msgid "Add More"
+msgstr ""
+
+#: lib/redux/inc/fields/password/field_password.php:62
+msgid "Password"
+msgstr ""
+
+#: lib/redux/inc/fields/password/field_password.php:63
+msgid "Username"
+msgstr ""
+
+#: lib/redux/inc/fields/select/field_select.php:83
+#: lib/redux/inc/fields/select_image/field_select_image.php:63
+msgid "Select an item"
+msgstr ""
+
+#: lib/redux/inc/fields/select/field_select.php:134
+#: lib/redux/inc/fields/select_image/field_select_image.php:144
+msgid "No items of this type were found."
+msgstr ""
+
+#: lib/redux/inc/fields/slides/field_slides.php:68
+msgid "Slide"
+msgstr ""
+
+#: lib/redux/inc/fields/slides/field_slides.php:73
+#: lib/redux/inc/fields/slides/field_slides.php:174
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: lib/redux/inc/fields/slides/field_slides.php:149
+#: lib/redux/inc/fields/slides/field_slides.php:204
+msgid "Description"
+msgstr ""
+
+#: lib/redux/inc/fields/slides/field_slides.php:153
+#: lib/redux/inc/fields/slides/field_slides.php:207
+msgid "URL"
+msgstr ""
+
+#: lib/redux/inc/fields/slides/field_slides.php:167
+#: lib/redux/inc/fields/slides/field_slides.php:220
+#: post-type/meta-box/inc/fields/autocomplete.php:18
+#: post-type/meta-box/inc/fields/autocomplete.php:83
+#: post-type/meta-box/inc/fields/autocomplete.php:100
+msgid "Delete"
+msgstr ""
+
+#: lib/redux/inc/fields/slides/field_slides.php:223
+#, php-format
+msgid "Add %s"
+msgstr ""
+
+#: lib/redux/inc/fields/switch/field_switch.php:41
+msgid "On"
+msgstr ""
+
+#: lib/redux/inc/fields/switch/field_switch.php:44
+msgid "Off"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:231
+msgid "Font Family"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:232
+msgid "Font family"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:258
+#: lib/redux/inc/fields/typography/field_typography.php:259
+msgid "Backup Font Family"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:273
+#: lib/redux/inc/fields/typography/field_typography.php:281
+msgid "Font style"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:274
+msgid "Font Weight &amp; Style"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:281
+msgid "Style"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:321
+msgid "Font subsets"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:323
+msgid "Font Subsets"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:325
+msgid "Subsets"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:325
+msgid "Font script"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:342
+#: lib/redux/inc/fields/typography/field_typography.php:343
+#: lib/redux/inc/fields/typography/field_typography.php:344
+msgid "Text Align"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:365
+#: lib/redux/inc/fields/typography/field_typography.php:366
+#: lib/redux/inc/fields/typography/field_typography.php:367
+msgid "Text Transform"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:388
+#: lib/redux/inc/fields/typography/field_typography.php:389
+#: lib/redux/inc/fields/typography/field_typography.php:390
+msgid "Font Variant"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:408
+#: lib/redux/inc/fields/typography/field_typography.php:409
+#: lib/redux/inc/fields/typography/field_typography.php:410
+msgid "Text Decoration"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:432
+#: lib/redux/inc/fields/typography/field_typography.php:433
+msgid "Font Size"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:433
+msgid "Size"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:441
+#: lib/redux/inc/fields/typography/field_typography.php:442
+msgid "Line Height"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:450
+#: lib/redux/inc/fields/typography/field_typography.php:451
+msgid "Word Spacing"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:459
+#: lib/redux/inc/fields/typography/field_typography.php:460
+msgid "Letter Spacing"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:478
+msgid "Font Color"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:480
+msgid "Font color"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:890
+msgid "Standard Fonts"
+msgstr ""
+
+#: lib/redux/inc/fields/typography/field_typography.php:991
+msgid "Google Webfonts"
+msgstr ""
+
+#: lib/redux/inc/themecheck/checks/embedded.php:15
+#, php-format
+msgid ""
+"<span class=\"tc-lead tc-recommended\">RECOMMENDED</span>: If you are "
+"submitting to WordPress.org Theme Repository, it is <strong>strongly</"
+"strong> suggested that you read <a href=\"%s\" target=\"_blank\">this "
+"document</a>, or your theme will be rejected because of Redux."
+msgstr ""
+
+#: lib/redux/inc/themecheck/checks/embedded.php:24
+#, php-format
+msgid ""
+"<span class=\"tc-lead tc-required\">REQUIRED</span>: You MUST delete "
+"<strong> %s </strong>, or your theme will be rejected by WP.org theme "
+"submission because of Redux."
+msgstr ""
+
+#: lib/redux/inc/themecheck/checks/embedded.php:38
+msgid "Optional"
+msgstr ""
+
+#: lib/redux/inc/themecheck/checks/embedded.php:40
+msgid ""
+"<span class=\"tc-lead tc-recommended\">RECOMMENDED</span>: The following "
+"arguments MUST be used for WP.org submissions, or you will be rejected "
+"because of your Redux configuration."
+msgstr ""
+
+#: lib/redux/inc/themecheck/checks/full_package.php:16
+msgid "Redux localization utilities"
+msgstr ""
+
+#: lib/redux/inc/themecheck/checks/full_package.php:17
+msgid "Redux Resting Diles"
+msgstr ""
+
+#: lib/redux/inc/themecheck/checks/full_package.php:18
+msgid "Redux Code Styles"
+msgstr ""
+
+#: lib/redux/inc/themecheck/checks/full_package.php:19
+msgid "Redux Unit Testing"
+msgstr ""
+
+#: lib/redux/inc/themecheck/checks/full_package.php:20
+msgid "Redux Plugin File"
+msgstr ""
+
+#: lib/redux/inc/themecheck/checks/full_package.php:21
+msgid "Redux Boostrap Tests"
+msgstr ""
+
+#: lib/redux/inc/themecheck/checks/full_package.php:22
+msgid "CI Testing FIle"
+msgstr ""
+
+#: lib/redux/inc/themecheck/checks/full_package.php:23
+msgid "PHP Unit Testing"
+msgstr ""
+
+#: lib/redux/inc/themecheck/checks/full_package.php:36
+msgid ""
+"It appears that you have embedded the full Redux package inside your theme. "
+"You need only embed the <strong>ReduxCore</strong> folder. Embedding "
+"anything else will get your rejected from theme submission. Suspected Redux "
+"package file(s):"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:129
+msgid "Help improve Our Panel"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:130
+msgid ""
+"Please helps us improve our panel by allowing us to gather anonymous usage "
+"stats so we know which configurations, plugins and themes to test to ensure "
+"compatibility."
+msgstr ""
+
+#: lib/redux/inc/tracking.php:135
+msgid "Allow tracking"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:140
+msgid "Do not allow tracking"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:151
+msgid "Welcome to the Redux Demo Panel"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:152
+msgid "Getting Started"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:152
+#, php-format
+msgid ""
+"This panel demonstrates the many features of Redux.  Before digging in, we "
+"suggest you get up to speed by reviewing %1$s."
+msgstr ""
+
+#: lib/redux/inc/tracking.php:152
+msgid "our documentation"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:153
+msgid "Redux Generator"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:153
+#, php-format
+msgid ""
+"Want to get a head start? Use the %1$s. It will create a customized "
+"boilerplate theme or a standalone admin folder complete with all things "
+"Redux (with the help of Underscores and TGM). Save yourself a headache and "
+"try it today."
+msgstr ""
+
+#: lib/redux/inc/tracking.php:154
+msgid "Redux Extensions"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:154
+#, php-format
+msgid ""
+"Did you know we have extensions, which greatly enhance the features of "
+"Redux?  Visit our %1$s to learn more!"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:154
+msgid "extensions directory"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:155
+msgid "Like Redux?"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:155
+#, php-format
+msgid ""
+"If so, please %1$s and consider making a %2$s to keep development of Redux "
+"moving forward."
+msgstr ""
+
+#: lib/redux/inc/tracking.php:155
+msgid "leave us a favorable review on WordPress.org"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:155
+msgid "donation"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:156
+msgid "Newsletter"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:156
+msgid ""
+"If you'd like to keep up to with all things Redux, please subscribe to our "
+"newsletter"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:157
+msgid "Email address"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:157
+msgid "Subscribe"
+msgstr ""
+
+#: lib/redux/inc/tracking.php:166
+msgid "Close"
+msgstr ""
+
+#: lib/redux/inc/validation/color/validation_color.php:15
+#: lib/redux/inc/validation/color_rgba/validation_color_rgba.php:14
+#: lib/redux/inc/validation/colorrgba/validation_colorrgba.php:16
+msgid "This field must be a valid color value."
+msgstr ""
+
+#: lib/redux/inc/validation/comma_numeric/validation_comma_numeric.php:16
+msgid ""
+"You must provide a comma separated list of numerical values for this option."
+msgstr ""
+
+#: lib/redux/inc/validation/css/validation_css.php:39
+msgid "Unsafe strings were found in your CSS and have been filtered out."
+msgstr ""
+
+#: lib/redux/inc/validation/date/validation_date.php:16
+msgid "This field must be a valid date."
+msgstr ""
+
+#: lib/redux/inc/validation/email/validation_email.php:16
+#: lib/redux/inc/validation/email_not_empty/validation_email_not_empty.php:16
+msgid "You must provide a valid email for this option."
+msgstr ""
+
+#: lib/redux/inc/validation/no_html/validation_no_html.php:15
+msgid ""
+"You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr ""
+
+#: lib/redux/inc/validation/no_special_chars/validation_no_special_chars.php:16
+msgid ""
+"You must not enter any special characters in this field, all special "
+"characters have been removed."
+msgstr ""
+
+#: lib/redux/inc/validation/not_empty/validation_not_empty.php:16
+msgid "This field cannot be empty. Please provide a value."
+msgstr ""
+
+#: lib/redux/inc/validation/numeric/validation_numeric.php:16
+#: lib/redux/inc/validation/numeric_not_empty/validation_numeric_not_empty.php:16
+msgid "You must provide a numerical value for this option."
+msgstr ""
+
+#: lib/redux/inc/validation/unique_slug/validation_unique_slug.php:16
+#, php-format
+msgid ""
+"That URL slug is in use, please choose another. <code>%s</code> is open for "
+"use."
+msgstr ""
+
+#: lib/redux/inc/validation/url/validation_url.php:16
+msgid "You must provide a valid URL for this option."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/about.php:2
+#, php-format
+msgid "Welcome to Redux Framework %s"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/about.php:5
+#, php-format
+msgid ""
+"Thank you for updating to the latest version! Redux Framework %s is a huge "
+"step forward in Redux Development. Look at all that's new."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/about.php:15
+msgid "What is Redux Framework?"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/about.php:17
+msgid ""
+"Redux Framework is the core of many products on the web. It is an option "
+"framework which developers use to\n"
+"            enhance their products."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/about.php:22
+msgid "Learn More"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/about.php:28
+msgid "New in this Release"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/changelog.php:2
+msgid "Redux Framework - Changelog"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/changelog.php:5
+#: lib/redux/inc/welcome/views/status_report.php:30
+msgid ""
+"Our core mantra at Redux is backwards compatibility. With hundreds of "
+"thousands of instances worldwide, you can be assured that we will take care "
+"of you and your clients."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/credits.php:2
+msgid "Redux Framework - A Community Effort"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/credits.php:5
+msgid ""
+"We recognize we are nothing without our community. We would like to thank "
+"all of those who help Redux to be what it is. Thank you for your involvement."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/credits.php:18
+#, php-format
+msgid ""
+"Redux is created by a community of developers world wide. Want to have your "
+"name listed too? <a href=\"%d\" target=\"_blank\">Contribute to Redux</a>."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/extensions.php:73
+msgid "Redux Framework - Extensions"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/extensions.php:76
+msgid ""
+"Supercharge your Redux experience. Our extensions provide you with features "
+"that will take your products to the next level."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/extensions.php:89
+msgid ""
+"While some are built specificially for developers, extensions such as Custom "
+"Fonts are sure to make any user happy."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:26
+msgid "Redux Framework - System Status"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:43
+msgid ""
+"Please copy and paste this information in your ticket when contacting "
+"support:"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:48
+msgid "Get System Report"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:53
+msgid "Understanding the Status Report"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:62
+msgid "Copied!"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:63
+msgid "Copy for Support"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:73
+msgid "WordPress Environment"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:80
+msgid "Home URL"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:83
+msgid "The URL of your site's homepage."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:89
+msgid "Site URL"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:92
+msgid "The root URL of your site."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:100
+msgid "Redux Version"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:103
+msgid "The version of Redux Framework installed on your site."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:111
+msgid "Redux Data Directory Writable"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:114
+msgid ""
+"Redux and its extensions write data to the <code>uploads</code> directory. "
+"This directory must be writable."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:120
+#, php-format
+msgid "To allow data saving, make <code>%s</code> writable."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:126
+msgid "WP Content URL"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:129
+msgid "The location of Wordpress's content URL."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:137
+msgid "WP Version"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:140
+msgid "The version of WordPress installed on your site."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:148
+msgid "WP Multisite"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:151
+msgid "Whether or not you have WordPress Multisite enabled."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:162
+msgid "Permalink Structure"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:165
+msgid ""
+"The current permalink structure as defined in Wordpress Settings->Permalinks."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:174
+msgid "Front Page Display"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:176
+msgid "The current Reading mode of Wordpress."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:185
+msgid "Front Page"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:188
+msgid "The currently selected page which acts as the site's Front Page."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:196
+msgid "Posts Page"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:199
+msgid "The currently selected page in where blog posts are displayed."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:210
+msgid "WP Memory Limit"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:213
+msgid "The maximum amount of memory (RAM) that your site can use at one time."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:220
+#, php-format
+msgid ""
+"%s - We recommend setting memory to at least 40MB. See: <a href=\"%s\" "
+"target=\"_blank\">Increasing memory allocated to PHP</a>"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:229
+msgid "Database Table Prefix"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:232
+msgid "The prefix structure of the current Wordpress database."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:240
+msgid "WP Debug Mode"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:243
+msgid "Displays whether or not WordPress is in Debug Mode."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:255
+msgid "Language"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:258
+msgid "The current language used by WordPress. Default = English"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:270
+msgid "Browser"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:277
+msgid "Browser Info"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:280
+msgid "Information about web browser current in use."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:297
+msgid "Server Environment"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:304
+msgid "Server Info"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:307
+msgid "Information about the web server that is currently hosting your site."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:315
+msgid "Localhost Environment"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:318
+msgid "Is the server running in a localhost environment."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:332
+msgid "PHP Version"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:335
+msgid "The version of PHP installed on your hosting server."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:343
+msgid "ABSPATH"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:346
+msgid "The ABSPATH variable on the server."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:355
+msgid "PHP Memory Limit"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:356
+#: lib/redux/inc/welcome/views/status_report.php:361
+msgid "The largest filesize that can be contained in one post."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:360
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:365
+msgid "PHP Time Limit"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:366
+msgid ""
+"The amount of time (in seconds) that your site will spend on a single "
+"operation before timing out (to avoid server lockups)"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:370
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:371
+msgid ""
+"The maximum number of variables your server can use for a single function to "
+"avoid overloads."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:375
+msgid "PHP Display Errors"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:376
+msgid "Determines if PHP will display errors within the browser."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:387
+msgid "SUHOSIN Installed"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:388
+msgid ""
+"Suhosin is an advanced protection system for PHP installations. It was "
+"designed to protect your servers on the one hand against a number of well "
+"known problems in PHP applications and on the other hand against potential "
+"unknown vulnerabilities within these applications or the PHP core itself.  "
+"If enabled on your server, Suhosin may need to be configured to increase its "
+"data submission limits."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:399
+msgid "MySQL Version"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:400
+msgid "The version of MySQL installed on your hosting server."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:404
+msgid "Max Upload Size"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:405
+msgid ""
+"The largest filesize that can be uploaded to your WordPress installation."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:410
+msgid "Default Timezone is UTC"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:412
+msgid "The default timezone for your server."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:416
+#, php-format
+msgid "Default timezone is %s - it should be UTC"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:428
+msgid "Used when communicating with remote services with PHP."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:434
+msgid ""
+"Your server does not have fsockopen or cURL enabled - cURL is used to "
+"communicate with other servers. Please contact your hosting provider."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:473
+msgid "Remote Post"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:474
+msgid "Used to send data to remote servers."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:479
+msgid ""
+"wp_remote_post() failed. Many advanced features may not function. Contact "
+"your hosting provider."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:482
+#: lib/redux/inc/welcome/views/status_report.php:497
+#, php-format
+msgid "Error: %s"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:489
+msgid "Remote Get"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:490
+msgid "Used to grab information from remote servers for updates updates."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:495
+msgid ""
+"wp_remote_get() failed. This is needed to get information from remote "
+"servers. Contact your hosting provider."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:531
+msgid "Active Plugins"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:546
+msgid "Visit plugin homepage"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:553
+#, php-format
+msgctxt "by author"
+msgid "by %s"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:572
+msgid "Redux Instance: "
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:579
+msgid "The opt_name argument for this instance of Redux."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:587
+msgid "The global_variable argument for this instance of Redux."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:595
+msgid "Indicates if developer mode is enabled for this instance of Redux."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:600
+msgid "Indicates if ajax based saving is enabled for this instance of Redux."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:605
+msgid ""
+"The page slug denotes the string used for the options panel page for this "
+"instance of Redux."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:610
+msgid ""
+"The page permissions variable sets the permission level required to access "
+"the options panel for this instance of Redux."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:615
+msgid ""
+"This variable set whether or not the menu is displayed as an admin menu item "
+"for this instance of Redux."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:620
+msgid ""
+"The page parent variable sets where the options menu will be placed on the "
+"WordPress admin sidebar for this instance of Redux."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:626
+msgid "Indicates if the compiler flag is enabled for this instance of Redux."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:631
+msgid ""
+"Indicates if output flag for globally shutting off all CSS output is enabled "
+"for this instance of Redux."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:636
+msgid ""
+"The output_tag variable sets whether or not dynamic CSS will be generated "
+"for the customizer and Google fonts for this instance of Redux."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:645
+msgid ""
+"The specified template path containing custom template files for this "
+"instance of Redux."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:650
+msgid "List of template files overriding the default Redux template files."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:676
+msgid "Indicates the installed Redux extensions and their version numbers."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:705
+msgid "Theme"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:710
+msgid "Name"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:711
+msgid "The name of the current active theme."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:715
+msgid "Version"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:716
+msgid "The installed version of the current active theme."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:722
+msgid "is available"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:728
+msgid "Author URL"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:729
+msgid "The theme developers URL."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:733
+msgid "Child Theme"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:734
+msgid "Displays whether or not the current theme is a child theme."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:737
+#, php-format
+msgid ""
+"If you're modifying Redux Framework or a parent theme you didn't build "
+"personally, we recommend using a child theme. See: <a href=\"%s\" target="
+"\"_blank\">How to create a child theme</a>"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:745
+msgid "Parent Theme Name"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:747
+msgid "The name of the parent theme."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:752
+msgid "Parent Theme Version"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:754
+msgid "The installed version of the parent theme."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:759
+msgid "Parent Theme Author URL"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/status_report.php:761
+msgid "The parent theme developers URL."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:2
+msgid "Redux Framework - Support"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:4
+msgid ""
+"We are an open source project used by developers to make powerful control "
+"panels."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:19
+#: lib/redux/inc/welcome/views/support.php:40
+msgid "Generate a Support URL"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:20
+msgid "Select Support Type"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:21
+#: lib/redux/inc/welcome/views/support.php:87
+msgid "How to Get Support"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:27
+msgid "Submit a Support Request"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:31
+msgid "To get started, we will need to generate a support hash."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:35
+#, php-format
+msgid ""
+"This will provide to your developer all the information they may need to "
+"remedy your issue. This action WILL send information securely to a remote "
+"server. To see the type of information sent, please look at the  <a href=\"%s"
+"\">Status tab</a>."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:52
+msgid "Select Your Support Type"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:56
+msgid "What type of user are you?"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:63
+msgid "User"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:65
+msgid "I am a user, using a pre-built product."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:70
+msgid "Developer"
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:72
+msgid "I am a developer, building a product using Redux."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:92
+msgid ""
+"Please proceed to the Redux Framework issue tracker and supply us with your "
+"support URL below. Please also provide any information that will help us to "
+"reproduce your issue."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:101
+msgid ""
+"Listed below are the Wordpress plugins and/or theme installed on your site "
+"that utilize Redux Framework. We do not directly support products created "
+"with our framework.  It is the responsibility of the plugin or theme "
+"developer to support their work. You will need to contact the author(s) of "
+"the products listed below with your support questions."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:105
+msgid ""
+"Please be sure to include for your developer - via cut and paste - the "
+"Support URL in the box below."
+msgstr ""
+
+#: lib/redux/inc/welcome/views/support.php:134
+#, php-format
+msgid ""
+"Should the developer not be responsive, read the <a href=\"%s\" target="
+"\"_blank\">following article</a> before asking for support from us directly."
+msgstr ""
+
+#: lib/redux/inc/welcome/welcome.php:102
+msgid ""
+"If you like <strong>Redux</strong> please leave us a <a href=\"https://"
+"wordpress.org/support/view/plugin-reviews/redux-framework?filter=5#postform"
+"\" target=\"_blank\" class=\"redux-rating-link\" data-rated="
+"\"Thanks :)\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> rating. A huge thank "
+"you from Redux in advance!"
+msgstr ""
+
+#: lib/redux/inc/welcome/welcome.php:177
+msgid "Support hash could not be generated. Please try again later."
+msgstr ""
+
+#: lib/redux/inc/welcome/welcome.php:291
+msgid "What's New"
+msgstr ""
+
+#: lib/redux/inc/welcome/welcome.php:294 post-type/meta-box/inc/common.php:49
+msgid "Extensions"
+msgstr ""
+
+#: lib/redux/inc/welcome/welcome.php:297
+msgid "Changelog"
+msgstr ""
+
+#: lib/redux/inc/welcome/welcome.php:300
+msgid "Credits"
+msgstr ""
+
+#: lib/redux/inc/welcome/welcome.php:303
+msgid "Support"
+msgstr ""
+
+#: lib/redux/inc/welcome/welcome.php:306
+msgid "Status"
+msgstr ""
+
+#: lib/redux/inc/welcome/welcome.php:463
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: lib/redux/templates/panel/footer.tpl.php:50
+#: lib/redux/templates/panel/header_stickybar.tpl.php:21
+msgid "Save Changes"
+msgstr ""
+
+#: lib/redux/templates/panel/footer.tpl.php:54
+#: lib/redux/templates/panel/header_stickybar.tpl.php:25
+msgid "Reset Section"
+msgstr ""
+
+#: lib/redux/templates/panel/footer.tpl.php:55
+#: lib/redux/templates/panel/header_stickybar.tpl.php:26
+msgid "Reset All"
+msgstr ""
+
+#: lib/redux/templates/panel/footer.tpl.php:60
+#: lib/redux/templates/panel/header_stickybar.tpl.php:29
+msgid "Working..."
+msgstr ""
+
+#: lib/redux/templates/panel/header.tpl.php:11
+#: lib/redux/templates/panel/header.tpl.php:49
+msgid "Developer Mode Enabled"
+msgstr ""
+
+#: lib/redux/templates/panel/header.tpl.php:20
+msgid "WP_DEBUG is enabled"
+msgstr ""
+
+#: lib/redux/templates/panel/header.tpl.php:26
+msgid "you are working in a localhost environment"
+msgstr ""
+
+#: lib/redux/templates/panel/header.tpl.php:31
+msgid "and"
+msgstr ""
+
+#: lib/redux/templates/panel/header.tpl.php:34
+msgid "This has been automatically enabled because"
+msgstr ""
+
+#: lib/redux/templates/panel/header.tpl.php:36
+msgid ""
+"If you are not a developer, your theme/plugin author shipped with developer "
+"mode enabled. Contact them directly to fix it."
+msgstr ""
+
+#: lib/redux/templates/panel/header.tpl.php:58
+msgid "FORCED DEV MODE OFF ENABLED"
+msgstr ""
+
+#: lib/redux/templates/panel/header_stickybar.tpl.php:15
+msgid "Expand"
+msgstr ""
+
+#: lib/registration.php:68
+msgid "Register New Account"
+msgstr ""
+
+#: lib/registration.php:70
+msgid "Username *"
+msgstr ""
+
+#: lib/registration.php:73
+msgid "Password *"
+msgstr ""
+
+#: lib/registration.php:76
+msgid "Email *"
+msgstr ""
+
+#: lib/registration.php:79
+msgid "Website"
+msgstr ""
+
+#: lib/registration.php:82
+msgid "First Name"
+msgstr ""
+
+#: lib/registration.php:85
+msgid "Last Name"
+msgstr ""
+
+#: lib/registration.php:88
+msgid "Nickname"
+msgstr ""
+
+#: lib/registration.php:91
+msgid "About / Bio"
+msgstr ""
+
+#: lib/registration.php:94
+msgid "Register"
+msgstr ""
+
+#: lib/registration.php:107
+msgid "Required form field is missing"
+msgstr ""
+
+#: lib/registration.php:111
+msgid "Username too short. At least 4 characters is required"
+msgstr ""
+
+#: lib/registration.php:115
+msgid "Sorry, that username already exists!"
+msgstr ""
+
+#: lib/registration.php:118
+msgid "Sorry, the username you entered is not valid"
+msgstr ""
+
+#: lib/registration.php:122
+msgid "Password length must be greater than 5"
+msgstr ""
+
+#: lib/registration.php:126
+msgid "Email is not valid"
+msgstr ""
+
+#: lib/registration.php:130
+msgid "Email Already in use"
+msgstr ""
+
+#: lib/registration.php:135
+msgid "Website is not a valid URL"
+msgstr ""
+
+#: lib/registration.php:142
+msgid "ERROR"
+msgstr ""
+
+#: lib/registration.php:162
+msgid "Registration complete."
+msgstr ""
+
+#: post-type/celebrities.php:25
+msgctxt "Celebrities"
+msgid "Celebrity"
+msgstr ""
+
+#: post-type/celebrities.php:26
+msgctxt "Celebrity"
+msgid "Celebrity"
+msgstr ""
+
+#: post-type/celebrities.php:27
+msgid "Celebritys"
+msgstr ""
+
+#: post-type/celebrities.php:28
+msgid "Parent Celebrity:"
+msgstr ""
+
+#: post-type/celebrities.php:29
+msgid "All Celebrity"
+msgstr ""
+
+#: post-type/celebrities.php:30
+msgid "View Celebrity"
+msgstr ""
+
+#: post-type/celebrities.php:31
+msgid "Add New Celebrity"
+msgstr ""
+
+#: post-type/celebrities.php:32
+msgid "New Celebrity"
+msgstr ""
+
+#: post-type/celebrities.php:33
+msgid "Edit Celebrity"
+msgstr ""
+
+#: post-type/celebrities.php:34
+msgid "Update Celebrity"
+msgstr ""
+
+#: post-type/celebrities.php:35
+msgid "Search Celebrity"
+msgstr ""
+
+#: post-type/celebrities.php:36 post-type/movies.php:36
+msgid "No article found"
+msgstr ""
+
+#: post-type/celebrities.php:37 post-type/movies.php:37
+msgid "No article found in Trash"
+msgstr ""
+
+#: post-type/celebrities.php:74
+#, php-format
+msgid "Celebrity updated. <a href=\"%s\">View Celebrity</a>"
+msgstr ""
+
+#: post-type/celebrities.php:75 post-type/movies.php:76
+msgid "Custom field updated."
+msgstr ""
+
+#: post-type/celebrities.php:76 post-type/movies.php:77
+msgid "Custom field deleted."
+msgstr ""
+
+#: post-type/celebrities.php:77
+msgid "Celebrity updated."
+msgstr ""
+
+#: post-type/celebrities.php:78
+#, php-format
+msgid "Celebrity restored to revision from %s"
+msgstr ""
+
+#: post-type/celebrities.php:79
+#, php-format
+msgid "Celebrity published. <a href=\"%s\">View Celebrity</a>"
+msgstr ""
+
+#: post-type/celebrities.php:80
+msgid "Celebrity saved."
+msgstr ""
+
+#: post-type/celebrities.php:81
+#, php-format
+msgid ""
+"Celebrity submitted. <a target=\"_blank\" href=\"%s\">Preview Celebrity</a>"
+msgstr ""
+
+#: post-type/celebrities.php:82
+#, php-format
+msgid ""
+"Celebrity scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview Celebrity</a>"
+msgstr ""
+
+#: post-type/celebrities.php:82 post-type/movies.php:83
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: post-type/celebrities.php:83
+#, php-format
+msgid ""
+"Celebrity draft updated. <a target=\"_blank\" href=\"%s\">Preview Celebrity</"
+"a>"
+msgstr ""
+
+#: post-type/celebrities.php:101
+msgctxt "taxonomy general name"
+msgid "Celebrity Categories"
+msgstr ""
+
+#: post-type/celebrities.php:102
+msgctxt "taxonomy singular name"
+msgid "Celebrity Category"
+msgstr ""
+
+#: post-type/celebrities.php:103
+msgid "Search Category"
+msgstr ""
+
+#: post-type/celebrities.php:104
+msgid "All Category"
+msgstr ""
+
+#: post-type/celebrities.php:105
+msgid "Parent Category"
+msgstr ""
+
+#: post-type/celebrities.php:106
+msgid "Parent Category:"
+msgstr ""
+
+#: post-type/celebrities.php:107
+msgid "Edit Category"
+msgstr ""
+
+#: post-type/celebrities.php:108
+msgid "Update Category"
+msgstr ""
+
+#: post-type/celebrities.php:109
+msgid "Add New Category"
+msgstr ""
+
+#: post-type/celebrities.php:110
+msgid "New Category Name"
+msgstr ""
+
+#: post-type/celebrities.php:111
+msgid "Celebrity Category"
+msgstr ""
+
+#: post-type/meta-box-group/class-rwmb-group-field.php:155
+#: post-type/meta-box/inc/field.php:250
+msgid "+ Add more"
+msgstr ""
+
+#: post-type/meta-box/inc/common.php:48
+msgid "Documentation"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/button.php:35
+msgid "Click me"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/checkbox.php:95
+msgid "Yes"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/checkbox.php:95
+msgid "No"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/file-input.php:17
+msgid "Select File"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/file-input.php:40
+#: post-type/meta-box/inc/fields/select.php:211
+msgid "Select"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/file.php:19
+#, php-format
+msgid "You may only upload maximum %d file"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/file.php:20
+#, php-format
+msgid "You may only upload maximum %d files"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/file.php:98
+msgid "Error: Cannot delete file"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/file.php:111
+msgctxt "file upload"
+msgid "Upload Files"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/file.php:112
+msgctxt "file upload"
+msgid "+ Add new file"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/file.php:168
+msgctxt "file upload"
+msgid "Delete"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/file.php:169
+msgctxt "file upload"
+msgid "Edit"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/image-advanced.php:35
+#: post-type/meta-box/inc/fields/media.php:163
+msgctxt "media"
+msgid "+ Add Media"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/image.php:70
+#: post-type/meta-box/inc/fields/thickbox-image.php:34
+msgctxt "image upload"
+msgid "Upload Images"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/image.php:71
+msgctxt "image upload"
+msgid "+ Add new image"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/image.php:136
+msgctxt "image upload"
+msgid "Delete"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/image.php:137
+msgctxt "image upload"
+msgid "Edit"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/key-value.php:19
+msgid "Key"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/key-value.php:20
+msgid "Value"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/map.php:51
+msgid "Find Address"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/media.php:164
+msgctxt "media"
+msgid "Remove"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/media.php:165
+msgctxt "media"
+msgid "Edit"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/media.php:166
+msgctxt "media"
+msgid "View"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/media.php:167
+msgctxt "media"
+msgid " file"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/media.php:168
+msgctxt "media"
+msgid " files"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/media.php:169
+msgctxt "media"
+msgid "No Title"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/oembed.php:62
+msgid "Embed HTML not available."
+msgstr ""
+
+#: post-type/meta-box/inc/fields/oembed.php:84
+msgid "Preview"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/plupload-image.php:105
+msgctxt "image upload"
+msgid "Drop images here"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/plupload-image.php:106
+msgctxt "image upload"
+msgid "or"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/plupload-image.php:107
+msgctxt "image upload"
+msgid "Select Files"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/plupload-image.php:182
+msgctxt "image upload"
+msgid "Allowed Image Files"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/post.php:67
+msgid "Select a post"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/post.php:71
+#: post-type/meta-box/inc/fields/taxonomy.php:40
+#, php-format
+msgid "Select a %s"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/select.php:211
+msgid "None"
+msgstr ""
+
+#: post-type/meta-box/inc/fields/user.php:49
+msgid "Select an user"
+msgstr ""
+
+#: post-type/meta-box/inc/validation.php:43
+msgid "Please correct the errors highlighted below and try again."
+msgstr ""
+
+#: post-type/meta_box.php:59
+msgid "Post Quote Settings"
+msgstr ""
+
+#: post-type/meta_box.php:77
+msgid "Qoute Text"
+msgstr ""
+
+#: post-type/meta_box.php:80
+msgid "Write Your Qoute Here"
+msgstr ""
+
+#: post-type/meta_box.php:87
+msgid "Qoute Author"
+msgstr ""
+
+#: post-type/meta_box.php:90
+msgid "Write Qoute Author or Source"
+msgstr ""
+
+#: post-type/meta_box.php:105
+msgid "Post Link Settings"
+msgstr ""
+
+#: post-type/meta_box.php:123
+msgid "Link URL"
+msgstr ""
+
+#: post-type/meta_box.php:126
+msgid "Write Your Link"
+msgstr ""
+
+#: post-type/meta_box.php:140
+msgid "Post Audio Settings"
+msgstr ""
+
+#: post-type/meta_box.php:158
+msgid "Audio Embed Code"
+msgstr ""
+
+#: post-type/meta_box.php:161
+msgid "Write Your Audio Embed Code Here"
+msgstr ""
+
+#: post-type/meta_box.php:174
+msgid "Post Video Settings"
+msgstr ""
+
+#: post-type/meta_box.php:192
+msgid "Video Embed Code/ID"
+msgstr ""
+
+#: post-type/meta_box.php:195
+msgid "Write Your Vedio Embed Code/ID Here"
+msgstr ""
+
+#: post-type/meta_box.php:201
+msgid "Video Durations"
+msgstr ""
+
+#: post-type/meta_box.php:207
+msgid "Select Vedio Type/Source"
+msgstr ""
+
+#: post-type/meta_box.php:212
+msgid "Embed Code"
+msgstr ""
+
+#: post-type/meta_box.php:213 post-type/meta_box.php:518
+#: post-type/meta_box.php:747
+msgid "YouTube"
+msgstr ""
+
+#: post-type/meta_box.php:214 post-type/meta_box.php:519
+#: post-type/meta_box.php:748
+msgid "Vimeo"
+msgstr ""
+
+#: post-type/meta_box.php:229
+msgid "Post Gallery Settings"
+msgstr ""
+
+#: post-type/meta_box.php:246
+msgid "Gallery Image Upload"
+msgstr ""
+
+#: post-type/meta_box.php:265
+msgid "Page Settings"
+msgstr ""
+
+#: post-type/meta_box.php:279
+msgid "Upload Sub Title Banner Image"
+msgstr ""
+
+#: post-type/meta_box.php:286
+msgid "Upload Sub Title BG Color"
+msgstr ""
+
+#: post-type/meta_box.php:305
+msgid "Movie Post Settings"
+msgstr ""
+
+#: post-type/meta_box.php:313 post-type/meta_box.php:315
+msgid "Featured Movie"
+msgstr ""
+
+#: post-type/meta_box.php:321
+msgid "Movie Cover Image"
+msgstr ""
+
+#: post-type/meta_box.php:329
+msgid "Release Year"
+msgstr ""
+
+#: post-type/meta_box.php:331
+msgid "Add Your Movie Release Year Here(Eg: 2016)"
+msgstr ""
+
+#: post-type/meta_box.php:338
+msgid "Movie Type"
+msgstr ""
+
+#: post-type/meta_box.php:340
+msgid "Add Your Movie Type Here(Eg: Action)"
+msgstr ""
+
+#: post-type/meta_box.php:347
+msgid "Movie Lenght"
+msgstr ""
+
+#: post-type/meta_box.php:349
+msgid "Add Your Movie Lenght Here(Eg: 120 Min)"
+msgstr ""
+
+#: post-type/meta_box.php:356
+msgid "Movie Director"
+msgstr ""
+
+#: post-type/meta_box.php:362
+msgid "Select Director"
+msgstr ""
+
+#: post-type/meta_box.php:367
+msgid "Movie Actor"
+msgstr ""
+
+#: post-type/meta_box.php:373
+msgid "Select Actor"
+msgstr ""
+
+#: post-type/meta_box.php:379
+msgid "Release Date"
+msgstr ""
+
+#: post-type/meta_box.php:383
+msgid "(yyyy-mm-dd)"
+msgstr ""
+
+#: post-type/meta_box.php:384
+msgid "yy-mm-dd"
+msgstr ""
+
+#: post-type/meta_box.php:398
+msgid "Social Profile Settings"
+msgstr ""
+
+#: post-type/meta_box.php:406 post-type/meta_box.php:674
+msgid "Facebook URL"
+msgstr ""
+
+#: post-type/meta_box.php:412 post-type/meta_box.php:679
+msgid "Twitter URL"
+msgstr ""
+
+#: post-type/meta_box.php:418
+msgid "Vimeo URL"
+msgstr ""
+
+#: post-type/meta_box.php:424 post-type/meta_box.php:684
+msgid "Google Plus URL"
+msgstr ""
+
+#: post-type/meta_box.php:430 post-type/meta_box.php:689
+msgid "Youtube URL"
+msgstr ""
+
+#: post-type/meta_box.php:436 post-type/meta_box.php:694
+msgid "Instagram URL"
+msgstr ""
+
+#: post-type/meta_box.php:442 post-type/meta_box.php:699
+msgid "Website URL"
+msgstr ""
+
+#: post-type/meta_box.php:454
+msgid "Movie Info Settings"
+msgstr ""
+
+#: post-type/meta_box.php:469
+msgid "Movie Info Title"
+msgstr ""
+
+#: post-type/meta_box.php:475
+msgid "Movie Info Description"
+msgstr ""
+
+#: post-type/meta_box.php:491
+msgid "Video Trailer Info Settings"
+msgstr ""
+
+#: post-type/meta_box.php:507 post-type/meta_box.php:736
+msgid "Video Info Title"
+msgstr ""
+
+#: post-type/meta_box.php:513 post-type/meta_box.php:742
+msgid "Select Video Type/Source"
+msgstr ""
+
+#: post-type/meta_box.php:517 post-type/meta_box.php:746
+msgid "Self Hosted"
+msgstr ""
+
+#: post-type/meta_box.php:525 post-type/meta_box.php:754
+msgid "Video"
+msgstr ""
+
+#: post-type/meta_box.php:529 post-type/meta_box.php:758
+msgid "Add Video ID for Youtube and Vimeo / Video URL for Self Hosted Video."
+msgstr ""
+
+#: post-type/meta_box.php:532 post-type/meta_box.php:761
+msgid "Upload Trailer Image"
+msgstr ""
+
+#: post-type/meta_box.php:548
+msgid "Showtimes Settings"
+msgstr ""
+
+#: post-type/meta_box.php:562
+msgid "Theatre Name"
+msgstr ""
+
+#: post-type/meta_box.php:568
+msgid "Theatre Location"
+msgstr ""
+
+#: post-type/meta_box.php:574
+msgid "Show Time"
+msgstr ""
+
+#: post-type/meta_box.php:578
+msgid "Add Movie Show Time Here(Eg: 12:30AM,8:20PM,9:20PM )"
+msgstr ""
+
+#: post-type/meta_box.php:581
+msgid "Ticket URL"
+msgstr ""
+
+#: post-type/meta_box.php:603
+msgid "Celebrity General Settings"
+msgstr ""
+
+#: post-type/meta_box.php:611
+msgid "Celebrity Cover Image"
+msgstr ""
+
+#: post-type/meta_box.php:618
+msgid "Celebrity Type"
+msgstr ""
+
+#: post-type/meta_box.php:620
+msgid "Add Your Celebrity Type Here(Eg: Actor, producer)"
+msgstr ""
+
+#: post-type/meta_box.php:632
+msgid "Celebrity Info Settings"
+msgstr ""
+
+#: post-type/meta_box.php:646
+msgid "Celebrity Info Title"
+msgstr ""
+
+#: post-type/meta_box.php:652
+msgid "Celebrity Info Description"
+msgstr ""
+
+#: post-type/meta_box.php:667
+msgid "Celebrity Social Settings"
+msgstr ""
+
+#: post-type/meta_box.php:720
+msgid "Video Trailer Settings"
+msgstr ""
+
+#: post-type/movies.php:25
+msgctxt "Movies"
+msgid "Movies"
+msgstr ""
+
+#: post-type/movies.php:26
+msgctxt "Movie"
+msgid "Movie"
+msgstr ""
+
+#: post-type/movies.php:27
+msgid "Movies"
+msgstr ""
+
+#: post-type/movies.php:28
+msgid "Parent Movie:"
+msgstr ""
+
+#: post-type/movies.php:29
+msgid "All Movies"
+msgstr ""
+
+#: post-type/movies.php:30
+msgid "View Movie"
+msgstr ""
+
+#: post-type/movies.php:31
+msgid "Add New Movie"
+msgstr ""
+
+#: post-type/movies.php:32
+msgid "New Movie"
+msgstr ""
+
+#: post-type/movies.php:33
+msgid "Edit Movie"
+msgstr ""
+
+#: post-type/movies.php:34
+msgid "Update Movie"
+msgstr ""
+
+#: post-type/movies.php:35
+msgid "Search Movie"
+msgstr ""
+
+#: post-type/movies.php:75
+#, php-format
+msgid "Movie updated. <a href=\"%s\">View Movie</a>"
+msgstr ""
+
+#: post-type/movies.php:78
+msgid "Movie updated."
+msgstr ""
+
+#: post-type/movies.php:79
+#, php-format
+msgid "Movie restored to revision from %s"
+msgstr ""
+
+#: post-type/movies.php:80
+#, php-format
+msgid "Movie published. <a href=\"%s\">View Movie</a>"
+msgstr ""
+
+#: post-type/movies.php:81
+msgid "Movie saved."
+msgstr ""
+
+#: post-type/movies.php:82
+#, php-format
+msgid "Movie submitted. <a target=\"_blank\" href=\"%s\">Preview Movie</a>"
+msgstr ""
+
+#: post-type/movies.php:83
+#, php-format
+msgid ""
+"Movie scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview Movie</a>"
+msgstr ""
+
+#: post-type/movies.php:84
+#, php-format
+msgid "Movie draft updated. <a target=\"_blank\" href=\"%s\">Preview Movie</a>"
+msgstr ""
+
+#: post-type/movies.php:102
+msgctxt "taxonomy general name"
+msgid "Movie Categories"
+msgstr ""
+
+#: post-type/movies.php:103
+msgctxt "taxonomy singular name"
+msgid "Movie Category"
+msgstr ""
+
+#: post-type/movies.php:104
+msgid "Search Movie Category"
+msgstr ""
+
+#: post-type/movies.php:105
+msgid "All Movie Category"
+msgstr ""
+
+#: post-type/movies.php:106
+msgid "Movie Parent Category"
+msgstr ""
+
+#: post-type/movies.php:107
+msgid "Movie Parent Category:"
+msgstr ""
+
+#: post-type/movies.php:108
+msgid "Edit Movie Category"
+msgstr ""
+
+#: post-type/movies.php:109
+msgid "Update Movie Category"
+msgstr ""
+
+#: post-type/movies.php:110
+msgid "Add New Movie Category"
+msgstr ""
+
+#: post-type/movies.php:111
+msgid "New Movie Category Name"
+msgstr ""
+
+#: post-type/movies.php:112
+msgid "Movie Category"
+msgstr ""
+
+#: templates/celebrity-single.php:50 templates/movie-single.php:196
+msgid "Share"
+msgstr ""
+
+#: templates/celebrity-single.php:79
+msgid "Personal Info"
+msgstr ""
+
+#: templates/celebrity-single.php:127
+msgid "Biography"
+msgstr ""
+
+#: templates/celebrity-single.php:154
+msgid "Filmography"
+msgstr ""
+
+#: templates/celebrity-single.php:159
+msgid "Movie Name"
+msgstr ""
+
+#: templates/celebrity-single.php:160
+msgid "Ratings"
+msgstr ""
+
+#: templates/celebrity-single.php:202 templates/taxonomy-movie_cat.php:91
+#: vc-addons/themeum-feature.php:92 vc-addons/themeum-featured-movies.php:215
+#: vc-addons/themeum-movie-listing.php:113 vc-addons/themeum-spotlight.php:66
+msgid "10"
+msgstr ""
+
+#: templates/celebrity-single.php:223 templates/movie-single.php:208
+msgid "Trailers & Videos"
+msgstr ""
+
+#: templates/celebrity-single.php:239 templates/celebrity-single.php:272
+#: templates/movie-single.php:224 templates/movie-single.php:257
+#: themeum-core.php:178 vc-addons/themeum-trailers-video.php:73
+#: vc-addons/themeum-trailers-video.php:124
+msgid "trailers"
+msgstr ""
+
+#: templates/movie-single.php:63
+msgid "Rating: "
+msgstr ""
+
+#: templates/movie-single.php:129
+msgid "Movie Info"
+msgstr ""
+
+#: templates/movie-single.php:135
+msgid "Director:"
+msgstr ""
+
+#: templates/movie-single.php:155
+msgid "Actors:"
+msgstr ""
+
+#: templates/movie-single.php:190
+msgid "Movie Story"
+msgstr ""
+
+#: templates/movie-single.php:301
+msgid "Movie Showtimes"
+msgstr ""
+
+#: templates/movie-single.php:330
+msgid "Buy Ticket"
+msgstr ""
+
+#: templates/movie-single.php:351
+msgid "Recommend movies"
+msgstr ""
+
+#: themeum-core.php:158
+msgid "Trailer"
+msgstr ""
+
+#: vc-addons/themeum-celebrity-listing.php:107
+msgid "Celebrity Listing"
+msgstr ""
+
+#: vc-addons/themeum-celebrity-listing.php:111
+#: vc-addons/themeum-latest-celebrities.php:158
+msgid "Widget Celebrity Listing"
+msgstr ""
+
+#: vc-addons/themeum-celebrity-listing.php:112
+#: vc-addons/themeum-feature.php:153 vc-addons/themeum-featured-movies.php:277
+#: vc-addons/themeum-latest-celebrities.php:159
+#: vc-addons/themeum-movie-listing.php:182 vc-addons/themeum-movies.php:235
+#: vc-addons/themeum-news-feed.php:104 vc-addons/themeum-spotlight.php:254
+#: vc-addons/themeum-title.php:63 vc-addons/themeum-top-celebrities.php:81
+#: vc-addons/themeum-trailers-video.php:174
+msgid "Moview"
+msgstr ""
+
+#: vc-addons/themeum-celebrity-listing.php:117
+#: vc-addons/themeum-feature.php:158 vc-addons/themeum-featured-movies.php:282
+#: vc-addons/themeum-latest-celebrities.php:164
+#: vc-addons/themeum-movie-listing.php:187 vc-addons/themeum-movies.php:240
+#: vc-addons/themeum-news-feed.php:110
+#: vc-addons/themeum-top-celebrities.php:88
+#: vc-addons/themeum-trailers-video.php:179
+msgid "Category Filter"
+msgstr ""
+
+#: vc-addons/themeum-celebrity-listing.php:124
+#: vc-addons/themeum-feature.php:165 vc-addons/themeum-featured-movies.php:289
+#: vc-addons/themeum-latest-celebrities.php:171
+#: vc-addons/themeum-movie-listing.php:194 vc-addons/themeum-movies.php:247
+#: vc-addons/themeum-news-feed.php:117
+#: vc-addons/themeum-top-celebrities.php:95
+#: vc-addons/themeum-trailers-video.php:186
+msgid "Number of items"
+msgstr ""
+
+#: vc-addons/themeum-celebrity-listing.php:131
+#: vc-addons/themeum-featured-movies.php:296
+#: vc-addons/themeum-latest-celebrities.php:178
+#: vc-addons/themeum-movie-listing.php:201 vc-addons/themeum-movies.php:254
+msgid "Number Of Column"
+msgstr ""
+
+#: vc-addons/themeum-celebrity-listing.php:138
+#: vc-addons/themeum-feature.php:179 vc-addons/themeum-featured-movies.php:311
+#: vc-addons/themeum-latest-celebrities.php:193
+#: vc-addons/themeum-movie-listing.php:215 vc-addons/themeum-movies.php:269
+#: vc-addons/themeum-news-feed.php:124
+#: vc-addons/themeum-trailers-video.php:193
+msgid "OderBy"
+msgstr ""
+
+#: vc-addons/themeum-celebrity-listing.php:145
+#: vc-addons/themeum-feature.php:172 vc-addons/themeum-featured-movies.php:318
+#: vc-addons/themeum-latest-celebrities.php:200
+#: vc-addons/themeum-movie-listing.php:222 vc-addons/themeum-movies.php:276
+#: vc-addons/themeum-news-feed.php:138
+#: vc-addons/themeum-top-celebrities.php:102
+#: vc-addons/themeum-trailers-video.php:207
+msgid "Order"
+msgstr ""
+
+#: vc-addons/themeum-celebrity-listing.php:152
+#: vc-addons/themeum-feature.php:186 vc-addons/themeum-featured-movies.php:325
+#: vc-addons/themeum-latest-celebrities.php:207
+#: vc-addons/themeum-movie-listing.php:229 vc-addons/themeum-movies.php:283
+#: vc-addons/themeum-news-feed.php:145
+#: vc-addons/themeum-top-celebrities.php:109
+#: vc-addons/themeum-trailers-video.php:214
+msgid "Custom Class"
+msgstr ""
+
+#: vc-addons/themeum-feature.php:108
+msgid "Cast :"
+msgstr ""
+
+#: vc-addons/themeum-feature.php:148
+msgid "Feature Post"
+msgstr ""
+
+#: vc-addons/themeum-feature.php:152 vc-addons/themeum-spotlight.php:253
+#: vc-addons/themeum-title.php:62 vc-addons/themeum-trailers-video.php:173
+msgid "Widget Title Heading"
+msgstr ""
+
+#: vc-addons/themeum-featured-movies.php:141 vc-addons/themeum-movies.php:107
+msgid "ALL"
+msgstr ""
+
+#: vc-addons/themeum-featured-movies.php:272
+msgid "Featured Movies Listing"
+msgstr ""
+
+#: vc-addons/themeum-featured-movies.php:276
+#: vc-addons/themeum-movie-listing.php:181
+msgid "Widget Featured Movies"
+msgstr ""
+
+#: vc-addons/themeum-featured-movies.php:304
+#: vc-addons/themeum-latest-celebrities.php:186
+#: vc-addons/themeum-movies.php:262
+msgid "Show Top Filter"
+msgstr ""
+
+#: vc-addons/themeum-latest-celebrities.php:87
+msgid "Total Post:"
+msgstr ""
+
+#: vc-addons/themeum-latest-celebrities.php:154
+msgid "Celebrity Latest Listing"
+msgstr ""
+
+#: vc-addons/themeum-movie-listing.php:177
+msgid "Movies Listing"
+msgstr ""
+
+#: vc-addons/themeum-movie-listing.php:208
+msgid "Year Filter"
+msgstr ""
+
+#: vc-addons/themeum-movies.php:230
+msgid "Latest Movies Listing"
+msgstr ""
+
+#: vc-addons/themeum-movies.php:234
+msgid "Widget Movies Listing"
+msgstr ""
+
+#: vc-addons/themeum-news-feed.php:99
+msgid "News Feed"
+msgstr ""
+
+#: vc-addons/themeum-news-feed.php:103
+msgid "Widget News Feed"
+msgstr ""
+
+#: vc-addons/themeum-news-feed.php:131
+#: vc-addons/themeum-trailers-video.php:200
+msgid "Show Date"
+msgstr ""
+
+#: vc-addons/themeum-spotlight.php:16
+msgid "Latest"
+msgstr ""
+
+#: vc-addons/themeum-spotlight.php:18
+msgid "Top Rated"
+msgstr ""
+
+#: vc-addons/themeum-spotlight.php:249
+msgid "Spotlight"
+msgstr ""
+
+#: vc-addons/themeum-spotlight.php:260
+msgid "Latest Section:"
+msgstr ""
+
+#: vc-addons/themeum-spotlight.php:266
+msgid "Coming Soon:"
+msgstr ""
+
+#: vc-addons/themeum-spotlight.php:272
+msgid "Top Rated:"
+msgstr ""
+
+#: vc-addons/themeum-title.php:75
+msgid "Title Style"
+msgstr ""
+
+#: vc-addons/themeum-title.php:82
+msgid "Border Enable"
+msgstr ""
+
+#: vc-addons/themeum-title.php:89
+msgid "Slect Icon"
+msgstr ""
+
+#: vc-addons/themeum-title.php:97
+msgid "Fontawesome Icon Name "
+msgstr ""
+
+#: vc-addons/themeum-title.php:106
+msgid "Moview Icon Name "
+msgstr ""
+
+#: vc-addons/themeum-title.php:115
+msgid "Icon Font Size"
+msgstr ""
+
+#: vc-addons/themeum-title.php:123
+msgid "Icon Color"
+msgstr ""
+
+#: vc-addons/themeum-title.php:131
+msgid "Title Heading"
+msgstr ""
+
+#: vc-addons/themeum-title.php:138
+msgid "Title Font Size"
+msgstr ""
+
+#: vc-addons/themeum-title.php:145
+msgid "Title Font Weight"
+msgstr ""
+
+#: vc-addons/themeum-title.php:152
+msgid "Title Color"
+msgstr ""
+
+#: vc-addons/themeum-title.php:159
+msgid "Button URL"
+msgstr ""
+
+#: vc-addons/themeum-title.php:166
+msgid "Button Text"
+msgstr ""
+
+#: vc-addons/themeum-title.php:173
+msgid "Custom Class "
+msgstr ""
+
+#: vc-addons/themeum-top-celebrities.php:76
+msgid "Top Celebrities"
+msgstr ""
+
+#: vc-addons/themeum-top-celebrities.php:80
+msgid "Widget Top Celebrities"
+msgstr ""
+
+#: vc-addons/themeum-trailers-video.php:169
+msgid "Trailers Video"
+msgstr ""

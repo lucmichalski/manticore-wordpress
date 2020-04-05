@@ -1,0 +1,99 @@
+
+<form id="comments-form" action="<?php echo $_SERVER["REQUEST_URI"]; ?>" method="post">
+<input type="hidden" name="menu" value="<?php echo $this->view->tab?>" />
+
+<div class="tablenav">
+<div class="alignleft actions">
+<select name="action">
+<option value="-1" selected="selected">Bulk Actions</option>
+<option value="approve">Mark as approved</option>
+<option value="ban">Mark as banned</option>
+</select>
+<input type="submit" name="doaction" id="doaction" value="Apply" class="button-secondary apply" />
+
+<input type="text" name="sterm" value="<?php echo $this->view->sterm?>" size="30">
+<input type="submit" id="post-query-submit" value="Filter" class="button-secondary"
+       onClick="$('#apage').val('1')"/>
+
+</div>
+<br class="clear" />
+</div>
+
+<div class="clear"></div>
+
+
+<table class="widefat comments fixed" cellspacing="0">
+    <thead>
+        <tr>
+            <th scope="col" id="cb" class="manage-column column-cb check-column"
+                style=""><input type="checkbox" /></th>
+            <th scope="col" id="keyword" class="manage-column column-name" style="">
+                Search term                
+            </th>
+            <th scope="col" id="action" class="manage-column column-date" style="">
+                Last search
+            </th>
+            <th scope="col" id="action" class="manage-column column-posts num" style="">
+                Search count
+            </th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th scope="col" class="manage-column column-cb check-column" style=""><input type="checkbox"/></th>
+            <th scope="col" class="manage-column column-name" style="">Search term</th>
+            <th scope="col" id="action" class="manage-column column-date" style="">Last search</th>
+            <th scope="col" class="manage-column column-posts num" style="">Search count</th>
+        </tr>
+    </tfoot>
+
+    <tbody id="the-list" class="list:tags">
+    <?php
+        if (!empty($this->view->keywords)):
+            foreach($this->view->keywords as $keyword):?>
+                <tr id="tag-1" class="alternate">
+                    <th scope="row" class="check-column" style="padding:7px 0 7px;">
+                        <input type="checkbox" value="<?php echo urlencode($keyword->keywords)?>" name="keywords[]"/>
+                    </th>
+                    <td class="name column-name"><?php echo $keyword->keywords?></td>
+                    <td class="name column-date"><?php echo date("Y-m-d H:i",strtotime($keyword->date_added))?></td>
+                    <td class="posts column-posts num"><?php echo $keyword->cnt?></td>
+                </tr>
+            <?php endforeach;
+        endif;
+       ?>
+    </tbody>
+</table>
+
+<div class="tablenav">
+
+<?php if ( $this->view->page_links ) : ?>
+<div class="tablenav-pages"><?php $page_links_text = sprintf( '<span class="displaying-num">' . __( 'Displaying %s&#8211;%s of %s' ) . '</span>%s',
+        number_format_i18n( $this->view->start + 1 ),
+        number_format_i18n( min( $this->view->page * $this->view->keywords_per_page, $this->view->total ) ),
+        '<span class="total-type-count">' . number_format_i18n( $this->view->total ) . '</span>',
+        $this->view->page_links
+); echo $page_links_text; ?></div>
+<input type="hidden" name="apage" id="apage" value="<?php echo esc_attr($this->view->page); ?>" />
+<?php endif; ?>
+
+
+<div class="alignleft actions">
+<select name="action2">
+<option value="-1" selected="selected">Bulk Actions</option>
+<option value="approve">Mark as approved</option>
+<option value="ban">Mark as banned</option>
+</select>
+<input type="submit" name="doaction2" id="doaction" value="Apply" class="button-secondary apply" />
+
+</div>
+
+<br class="clear" />
+
+</div>
+
+<br class="clear" />
+</form>
+
+
+

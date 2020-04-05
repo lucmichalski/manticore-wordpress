@@ -1,0 +1,20 @@
+<form id="comments-form" action="<?php echo $_SERVER["REQUEST_URI"]; ?>" method="post">
+<input type="hidden" name="menu" value="<?php echo $this->view->tab?>" />
+<fieldset class="options">
+    <table class="form-table" border="0">
+    <tbody>
+    <tr valign="top" >
+        <th scope="row">Search terms containing the keywords from this list will not be shown on widgets. (one keyword per line)</th>
+        <td >
+            <textarea id="censor_words" name="censor_words" rows="10"
+                cols="45"><?php echo $this->view->devOptions['censor_words'];?></textarea>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+</fieldset>
+<p class="submit">
+<input type="submit" name="update_blacklist" class="button-primary"
+    value="<?php _e('Update Keywords', 'ManticoreSearch' ) ?>" />
+</p>
+</form>

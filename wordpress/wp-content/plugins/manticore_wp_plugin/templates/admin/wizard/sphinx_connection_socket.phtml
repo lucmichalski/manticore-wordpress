@@ -1,0 +1,27 @@
+<?php echo $this->render('admin/messagebox.phtml'); ?>
+                <div class="postbox">
+                    <h3 class="hndle">Set Manticore connection parameters</h3>
+                    <div class="inside">
+                    <form  action="<?php echo $_SERVER["REQUEST_URI"]; ?>" method="post" id="wizard_form">
+                        <input type="hidden" name="connection_process" value="1" />
+                        <input type="hidden" name="action" value="connection_socket" />
+                        <table class="form-table">
+                            <tr>
+                                <th scope="row"><label for="sphinx_socket">Path to unix socket</label></th>
+                                <td>
+                                    <input type="text" name="sphinx_socket" id="sphinx_socket"
+                                           value="<?php echo $this->view->sphinx_socket?>" />
+                                </td>
+                            </tr>
+                        </table>
+                            <p class="submit">
+                                <input class="button-secondary cancel" type="button"
+                                       onClick="return wizard_skip('connection');" value="Skip step" />
+                                <input class="button-primary" type="button" name="next"
+                                       onClick="return wizard_next();" value="Save &amp; Continue" />
+                                 <input class="button-secondary cancel alignright" type="button"
+                                       onClick="return wizard_cancel();" value="Cancel Wizard" />
+                            </p>
+                    </form>
+                    </div>
+                </div>
