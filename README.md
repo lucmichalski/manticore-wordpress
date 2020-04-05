@@ -1,4 +1,4 @@
-# WordPress: with Manticore/Nginx web server dockerized
+# WordPress with Manticore/Nginx/MySQL all dockerized
 
 This project is a docker compose installation of a single site WordPress instance using Nginx as the web server, MySQL as the database and Manticore as the full-text engine.
 
@@ -6,9 +6,21 @@ This project is a docker compose installation of a single site WordPress instanc
 - Work inspired by: [Dockerizing WordPress with Nginx and PHP-FPM on Ubuntu 16.04](https://www.howtoforge.com/tutorial/dockerizing-wordpress-with-nginx-and-php-fpm/)
 
 **What is WordPress?** 
-
+![alt text](https://dhdesign.be/wp-content/uploads/2019/02/logo-wordpress.png "Wordpress")
 - WordPress is open source software you can use to create a beautiful website, blog, or app.
 - More information at [https://wordpress.org](https://wordpress.org)
+
+**What is Manticore?** 
+![alt text](https://manticoresearch.com/wp-content/uploads/2018/03/logo-manticore-h.svg "Manticore")
+- Open source text search engine for big data and stream filtering
+  - Filtering multi-language user generated data streams in real time
+  - Indexing and searching over hundreds of terabytes of data
+  - Search results grouping and faceting
+  - High-quality search results ranking following best industry practices
+  - Backend for search UI (eg. “Did you mean”, search phrase autocompletion, spelling correction etc.)
+- More information at [https://manticoresearch.com/](https://manticoresearch.com/)
+- Repository [https://github.com/manticoresoftware/manticoresearch](https://github.com/manticoresoftware/manticoresearch)
+- Docker image [https://github.com/manticoresoftware/docker](https://github.com/manticoresoftware/docker)
 
 ## Table of Contents
 
