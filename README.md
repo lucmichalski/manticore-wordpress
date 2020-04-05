@@ -6,6 +6,7 @@ This project is a docker compose installation of a single site WordPress instanc
 - Work inspired by: [Dockerizing WordPress with Nginx and PHP-FPM on Ubuntu 16.04](https://www.howtoforge.com/tutorial/dockerizing-wordpress-with-nginx-and-php-fpm/)
 
 ![alt text](https://dhdesign.be/wp-content/uploads/2019/02/logo-wordpress.png "Wordpress")
+
 **What is WordPress?** 
 - WordPress is open source software you can use to create a beautiful website, blog, or app.
 - More information at [https://wordpress.org](https://wordpress.org)
