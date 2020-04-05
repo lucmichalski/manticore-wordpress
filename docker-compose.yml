@@ -65,22 +65,23 @@ services:
     ports:
       - 8080:8080
 
-  pneus-illico:
-    image: lucmichalski/pneus-illico:latest
-    container_name: ${NAMESPACE}-pneus
-    build: .
-    ports:
-    - 7000:7000
-    volumes:
-    - cache-data:/opt/lucmichalski/bin/shared/cache
-    - public-data:/opt/lucmichalski/bin/public
-    links:
-    - mysql:mysql
-    - manticore:manticore
+  backup:
+    image: zeenlym/mariadb-backup
+    container_name: ${NAMESPACE}_backup
     depends_on:
     - mysql
-    - manticore
-    command: ["pneu-illico", "--no-ssl"]
+    restart: unless-stopped
+    environment:
+    - TIMEZONE=${TIME_ZONE}
+    - SCHEDULE=0 0 3 * *
+    - BACKUP_METHOD=mysqldump
+    - MYSQL_HOST=mysql
+    - MYSQL_DATABASE=${WORDPRESS_DB_NAME}
+    - MYSQL_USER=${WORDPRESS_DB_USER}
+    - MYSQL_PASSWORD=${WORDPRESS_DB_PASSWORD}
+    volumes:
+    - ${MYSQL_BACKUP_DIR}:/backup
+    restart: unless-stopped
 
 volumes:
   cache-data:
