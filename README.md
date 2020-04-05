@@ -5,13 +5,13 @@ This project is a docker compose installation of a single site WordPress instanc
 - Let's Encrypt SSL enabled option using [https://hub.docker.com/r/certbot/certbot/](https://hub.docker.com/r/certbot/certbot/)
 - Work inspired by: [Dockerizing WordPress with Nginx and PHP-FPM on Ubuntu 16.04](https://www.howtoforge.com/tutorial/dockerizing-wordpress-with-nginx-and-php-fpm/)
 
-**What is WordPress?** 
 ![alt text](https://dhdesign.be/wp-content/uploads/2019/02/logo-wordpress.png "Wordpress")
+**What is WordPress?** 
 - WordPress is open source software you can use to create a beautiful website, blog, or app.
 - More information at [https://wordpress.org](https://wordpress.org)
 
-**What is Manticore?** 
 ![alt text](https://manticoresearch.com/wp-content/uploads/2018/03/logo-manticore-h.svg "Manticore")
+**What is Manticore?** 
 - Open source text search engine for big data and stream filtering
   - Filtering multi-language user generated data streams in real time
   - Indexing and searching over hundreds of terabytes of data
