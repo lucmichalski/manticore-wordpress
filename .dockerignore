@@ -1,0 +1,7 @@
+.git
+.git/
+.git/*
+.git/**
+docker-compose.yml
+*.md
+# *.txt
